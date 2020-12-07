@@ -1,0 +1,103 @@
+1、电脑系统
+
+                |---   PE工具箱
+    安装环境 ----|
+                |---   Vmware（虚拟机）
+
+                   |--- U盘安装win10
+    Windows10 -----|--- 直接安装win10
+                   |--- 虚拟机安装win10
+
+                  |--- U盘安装win7
+    Windows7 -----|--- 直接安装win7
+                  |--- 虚拟机安装win7
+
+               |---   win上安装Linux
+    Linux -----|
+               |---   虚拟机安装Linux
+
+2、办公软件
+                |--- Office365
+                |--- Office2019
+                |--- Office2016
+    Office -----|--- Office2013
+                |--- Office2010
+                |--- Office2007
+                |--- Office2003
+
+    WPS
+    Xmind
+    Visio
+    Project
+    InCopy
+    Bridge
+    Prelude
+    PDF格式转换工具
+    文献工具
+
+3、图像处理
+    Photoshop(ps)
+    illustrator(AI)
+    InDesign(ID)
+    Lightroom(lr)
+    SketchBook
+    Corel Painter
+    ACDSee
+    PaintTool SAI
+4、影视动画
+    Premier(pr)
+    After Effects(AE)
+    Maya
+    C4D
+    Audition(Au)
+    Media Encode(ME)
+    Edius
+    Character Animator(Ch)
+    DaVinci Resolve
+    屏幕录像工具
+5、AutoCAD
+    CAD
+    CAD精简版
+    CAD电气版
+    CAD机械版
+    CAD建筑版
+    天正软件
+6、3D设计
+    3ds Max
+    SketchUp(草图大师)
+    V-Ray渲染器(for 3ds Max)
+    V-Ray渲染器(for SketchUp)
+    V-Ray渲染器(for Rhino)
+7、机械设计
+    Solidworks
+    Pro/E
+    Creo
+    Abaqus
+    MATLAB
+    Inventor
+8、建筑设计
+    Revit(BIM)
+    Civil3D
+    Navisworks
+9、网页设计
+    Dreamweaver
+    Flash
+    Axure RP
+10、开发编程
+    VB6.0
+    VC++6.0
+    eclipse
+    AndroidStudio
+    MyEclipse10
+    MyEclipse2017
+    Sublime Text3
+
+    Visual Studio
+    JDK
+    LabVIEW
+    Keil
+    PyCharm
+    Python
+    Unity3D
+    IDEA
+    Quartus

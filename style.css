@@ -249,6 +249,7 @@ button:focus {
 	padding: 5px 0;
 	z-index: 999;
 	transition: all 0.5s;
+	background-color: #339999;
 }
 
 .navbar-default .navbar-brand, 
@@ -350,7 +351,7 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	padding: 7% 10% 7% 10%;
+	padding-bottom: 50px;
 	text-align: center;
 }
 
@@ -805,6 +806,10 @@ button:focus {
 	width: 100%;
 }
 
+.mu-portfolio-header h2{
+	font-size: 50px;
+}
+
 .mu-heading-title {
 	color: #1c1b1b;
 	margin-bottom: 15px;
@@ -849,12 +854,16 @@ button:focus {
 	right: 16px;
 	bottom: 16px;
 	color: #fff;
-	padding-top: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	opacity: 0;
 }
+
+
 
 .mu-item-thumbonail{
 	display: inline;
@@ -910,6 +919,10 @@ button:focus {
 
 .mu-simplefilter {
 	text-align: center;
+}
+
+.mu-simplefilter .all{
+	font-size: 20px;
 }
 
 .mu-simplefilter li {
@@ -1359,6 +1372,10 @@ button:focus {
 	.navbar-default .navbar-form {
 		background-color: rgba(0,0,0,0.8);
 		text-align: center;
+	}
+
+	.navbar-collapse{
+		display: flex;
 	}
 
 	.navbar-default .mu-menu li a {
