@@ -28,7 +28,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
     <!-- Poppins for Title -->
   	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
- 
+	<link rel="stylesheet" href="assets/css/login.css"/>
+	<script src="assets/js/login/Suspended_window.js"></script>
  
 	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -39,7 +40,7 @@
     <![endif]-->
   </head>
   <body>
-  	
+
   	<!-- Start Header -->
 	<header id="mu-header" class="" role="banner">
 		<div class="container">
@@ -57,7 +58,7 @@
 		      	<ul class="nav navbar-nav mu-menu navbar-right">
 					<!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
 					<li><a href="" class="navbar-brand-img">
-						<img src="assets/images/test.jpg">
+						<img   src="assets/images/test.jpg">
 					</a></li>
 		      	</ul>
 		    </div><!-- /.navbar-collapse -->
@@ -113,7 +114,7 @@
 
 
 					</div>
-				</div>			
+				</div>
 			</div>
 			<!--Start nav-bar-->
 			<div class="row">
@@ -142,7 +143,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Start main content -->
 	<main role="main">
 
@@ -626,25 +627,25 @@
 
 											</div>
 										</div>
-									</div>	
+									</div>
 
 									<div class="col-md-12">
 										<div class="mu-contact-bottom">
 										<div id="form-messages"></div>
 											<form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
-												<div class="form-group">                
+												<div class="form-group">
 													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
 												</div>
-												<div class="form-group">                
+												<div class="form-group">
 													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
-												</div>              
+												</div>
 												<div class="form-group">
 													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
 												</div>
 												<button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
 								            </form>
 										</div>
-									</div>	
+									</div>
 
 								</div>
 							</div>
@@ -658,10 +659,10 @@
 		<!-- End Contact -->
 
 	</main>
-	
-	<!-- End main content -->	
-			
-			
+
+	<!-- End main content -->
+
+
 	<!-- Start footer -->
 	<footer id="mu-footer" role="contentinfo">
 			<div class="container">
@@ -673,8 +674,8 @@
 	</footer>
 	<!-- End footer -->
 
-	
-	
+
+
     <!-- jQuery library -->
     <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -694,13 +695,22 @@
     <script src="assets/js/jquery.appear.js"></script>
 	<!-- Progress Bar -->
     <script type="text/javascript" src="assets/js/jquery.lineProgressbar.js"></script>
-    
-	
+
+
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
-	
-	
-    
+
+	<div class="a_XuanFu" id="XuanFu" onclick="login_test('XuanFu')">
+		<div class="a_login" id="login" onclick="login_cancelBubble()">
+			<p align="center">注册登录</p>
+			<form>
+				<input class="a_input" type="text" name="fname"  placeholder="账户或者邮箱"/><br/>
+				<input class="a_input" type="text" name="pwd"  placeholder="密码"><br/>
+				<input class="a_submit" id="submit" type="button"  value="Submit"/>
+			</form>
+		</div>
+	</div>
+
   </body>
 </html>
