@@ -17,4 +17,5 @@
 
 
 ## 12/8 刘佳乐：   
-已完成软件下载页面(software.html)
+已完成软件下载页面(software.html)  
+解决了news.html的header部分bug
