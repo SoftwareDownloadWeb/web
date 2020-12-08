@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+
 
     <style>
         .section-title {
@@ -216,7 +216,7 @@
 <header id="mu-header" class="" role="banner" style="background-color: #339999">
     <div class="container">
         <nav class="navbar navbar-default mu-navbar">
-            <div class="container-fluid">
+            <div class="container-fluid" style="display: flex;flex-wrap: nowrap">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <!-- Text Logo -->
@@ -239,7 +239,8 @@
 </header>
 <!-- End Header -->
 
-<div class="container" style="margin: auto">
+<section id="mu-testimonials">
+<div class="container">
 
     <h1 style="text-align: center;margin-top: 7rem">每日新闻精选</h1>
     <div class="carousel" data-ride="carousel" id="demo">
@@ -279,21 +280,22 @@
     </div>
 
 </div>
-
+</section>
 <!-- latest-course start -->
+
 <div class="row">
     <div class="col-2" style="margin: 3rem;background-color: white">
         <h1 style="background-color: #669966">热搜</h1>
-        <ul class="list-unstyled">
-            <li>
+        <ul>
+            <li class="list-unstyled">
                 <div><img src="assets/images/portfolio/img-1.jpeg" style="width: 150px;height: 100px"></div>
                 <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
         </ul>
     </div>
 
@@ -480,19 +482,38 @@
 
     <div class="col-1" style="margin: 5rem;background-color: white">
         <h1 style="background-color: #669966">最新新闻</h1>
-        <ul class="list-unstyled">
-            <li>
+        <ul>
+            <li class="list-unstyled">
                 <div><img src="assets/images/portfolio/img-1.jpeg" style="width: 150px;height: 100px"></div>
                 <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
-            <li class="celanbiaoti" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
         </ul>
     </div>
 </div>
+
+<!-- Start  Software-->
+<section id="mu-portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Start Software Content -->
+                <div class="mu-portfolio-content">
+                    <div class="filtr-container">
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="7">
+                        </div>
+                    </div>
+                    <!-- End Software Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Software -->
 
 <!-- latest-course end -->
 
@@ -506,6 +527,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 
 <!-- Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
 <!--<script src="assets/js/bootstrap.min.js"></script>-->
 <!-- Slick slider -->
 <script type="text/javascript" src="assets/js/slick.min.js"></script>

@@ -575,6 +575,14 @@ button:focus {
 	margin-right: 0;
 	margin-left: 0;
 }
+
+.see-more{
+	padding-left: 90%;
+}
+.see-more h6{
+	color: #339999
+}
+
 .mr-lg-1,
 .mx-lg-1 {
 	margin-right: 0.25rem !important;
@@ -736,7 +744,7 @@ button:focus {
 .mu-service-content{
 	display: inline;
 	float: left;
-	margin-top: 70px;
+	margin-top: 50px;
 	width: 100%;
 }
 
