@@ -20,7 +20,7 @@
 已完成软件下载页面(software.html)  
 解决了news.html和newsinfo.html的header部分bug
 
-##12/10 陈丽莎，张婉淳
+## 12/10 陈丽莎，张婉淳：
 完成整个项目页面的跳转，实现登录，数据显示功能，创建数据库。
 3dproject.rar文件为整合后的项目压缩包。
 解压之后，
