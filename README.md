@@ -29,3 +29,6 @@
 然后通过网页输入127.0.0.1:（port）进入index.html页面。
 除了index.html/app.js/pool.js之外，所有的index页面放在public文件夹下，所有的js/css/images文件放在assets文件夹下。
 
+## 12/10 姜智伦
+完成专栏页和专栏详情页
+
