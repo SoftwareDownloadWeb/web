@@ -18,4 +18,17 @@
 
 ## 12/8 刘佳乐：   
 已完成软件下载页面(software.html)  
-解决了news.html的header部分bug
+解决了news.html和newsinfo.html的header部分bug
+
+## 12/10 陈丽莎，张婉淳：
+完成整个项目页面的跳转，实现登录，数据显示功能，创建数据库。
+3dproject.rar文件为整合后的项目压缩包。
+解压之后，
+首先需要导入数据库文件（注意修改pool.js里面的数据库密码）
+其次，通过nodejs环境运行app.js
+然后通过网页输入127.0.0.1:（port）进入index.html页面。
+除了index.html/app.js/pool.js之外，所有的index页面放在public文件夹下，所有的js/css/images文件放在assets文件夹下。
+
+## 12/10 姜智伦
+完成专栏页和专栏详情页
+
