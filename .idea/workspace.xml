@@ -34,19 +34,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\web\assets\images" />
-      <recent name="D:\GitHub\web\assets\images\categories" />
-      <recent name="D:\GitHub\web\assets\images\portfolio" />
-      <recent name="D:\GitHub\web\assets\images\news" />
-      <recent name="D:\GitHub\web\assets\images\focus" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\web\assets\images\categories" />
       <recent name="D:\GitHub\web\assets\images\news" />
       <recent name="D:\GitHub\web\assets\images\News" />
       <recent name="D:\GitHub\web\assets\images\focus" />
       <recent name="D:\GitHub\web\assets\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\web\assets\images\softwareinfo_icon\pr" />
+      <recent name="D:\GitHub\web\assets\images\softwareinfo_icon" />
+      <recent name="D:\GitHub\web\assets\images" />
+      <recent name="D:\GitHub\web\assets\images\categories" />
+      <recent name="D:\GitHub\web\assets\images\portfolio" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,6 +73,8 @@
       <workItem from="1607522540073" duration="980000" />
       <workItem from="1607560319863" duration="27136000" />
       <workItem from="1607652559971" duration="5102000" />
+      <workItem from="1607665136720" duration="819000" />
+      <workItem from="1607672907546" duration="18451000" />
     </task>
     <servers />
   </component>
@@ -80,10 +82,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="638" y="382" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607577172083">
+    <state x="638" y="382" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607673225974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="638" y="382" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607577172083" />
+    <state x="638" y="382" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607673225974" />
     <state x="517" y="131" width="1283" height="680" key="DiffContextDialog" timestamp="1607578774055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -98,10 +100,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607002459871" />
-    <state x="3" y="64" width="1010" height="859" key="dock-window-1" timestamp="1607657754863">
+    <state x="1207" y="71" width="715" height="850" key="dock-window-1" timestamp="1607689352223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="3" y="64" width="1010" height="859" key="dock-window-1/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607657754863" />
+    <state x="1207" y="71" width="715" height="850" key="dock-window-1/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607689352223" />
     <state x="-98" y="6" width="565" height="810" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1607392181890" />
     <state x="16" y="78" width="780" height="858" key="dock-window-2" timestamp="1607598998897">
       <screen x="0" y="0" width="1920" height="1040" />

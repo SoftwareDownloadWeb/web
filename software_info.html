@@ -47,25 +47,31 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <!-- Text Logo -->
-                    <a class="navbar-brand" href="#">LOGO</a>
+                    <!--Text Logo-->
+                    <a class="navbar-brand" href="#">DOWNLOADME!</a>
                     <!-- Image Logo -->
                     <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                     <ul class="nav navbar-nav mu-menu navbar-right">
                         <li>
-                            <div class="mu-featured-content" style="margin-right: 450px">
+                            <div class="mu-featured-content" style="margin-right: 150px">
                                 <input type="search" placeholder="请输入..." class="form-control" style="margin-top: 8px;width: 100%;height: 25px"/>
                                 <button href="#mu-portfolio" class="mu-primary-btn view-my-work-btn" style="margin-top: 8px;height: 25px">Go!</button>
                             </div>
                         </li>
+                        <li>
+                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;">SIGN UP</button>
+                        </li>
+                        <li>
+                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;margin-left: 20px;margin-right: 20px">SIGN IN</button>
+                        </li>
                         <!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
-                        <li><a href="" class="navbar-brand-img">
-                            <img src="assets/images/test.jpg">
+                        <li><a href="javascript:void(0)" onclick="login_test('XuanFu')" class="navbar-brand-img">
+                            <img src="assets/images/user.png">
                         </a></li>
+
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -75,8 +81,8 @@
 <!-- End Header -->
 
 <!-- Start Featured Slider -->
-<section id="mu-featured-slider">
-    <div class="container">
+<section id="mu-featured-slider" style="height: 60px">
+    <div class="container" style="visibility: hidden">
         <div class="row">
             <div class="col-md-12">
                 <div class="mu-featured-area row" style="padding-bottom: 50px">
@@ -89,7 +95,6 @@
                             <p>I want to <span>Program !</span></p>
                             <p>I want to <span>Paint !</span></p>
                             <p>I want to <span>Make Videos !</span></p>
-                            <p>I want to <span>Repair Computers !</span></p>
                         </div>
                         <span id="typed"></span>
                     </div>
@@ -103,118 +108,94 @@
 <!-- Start main content -->
 <main role="main">
 
-    <!-- Start news -->
-    <section id="mu-about">
+    <section id="mu-about" >
         <div class="container">
-            <div class="row">
+            <div class="row" >
                 <div class="col-md-12">
-                    <div class="mu-about-area" id="News">
+                    <div class="mu-about-area" id="News" style="padding-top: 0">
 
-                        <div class="mu-about-header">
-                            <h1 class="mu-heading-title">Latest News</h1>
-                            <span class="mu-header-dot"></span>
-                            <p>See what's <strong>FUN</strong> recently !</p>
+                        <!-- Start softwareInfo Content -->
+                        <div class="mu-about-content" style="padding-top: 0;background-color: transparent">
+                            <div class="soft-info-title">
+                                <div style="margin: 0 auto;background-color: #f2dede;border-radius: 50%">
+                                    <span>软件详情</span>
+                                </div>
+                            </div>
+                            <div class="soft-info-content">
+                                <div class="row soft-info-content-top">
+                                    <div class="col-lg-2 col-lg-offset-1 ">
+                                        <img src="assets/images/softwareinfo_icon/pr/pr_icon.png" alt="">
+                                    </div>
+                                    <!--好蠢的间隔方法-->
+                                    <div class="col-lg-6">
+                                        <p><span><strong>软件名称：</strong>&nbsp;&nbsp;</span><span>Adobe Premiere Pro</span></p>
+                                        <p><span><strong>软件大小：</strong>&nbsp;&nbsp;</span><span>659.80MB</span></p>
+                                        <p><span><strong>语言：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>简体中文</span></p>
+                                        <p><span><strong>安装环境：</strong>&nbsp;&nbsp;</span><span>Windows10/Windows7/Linux</span></p>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div>
+                                            <button class="download-btn">Download Me！</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="my-line"><hr style="border-bottom: 1px solid darksalmon"></div>
+
+                                <div class="soft-info-content-bottom">
+                                    <p>Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。</p>
+                                </div>
+                            </div>
+
                         </div>
+                        <!-- End Content -->
 
-                        <!-- Start news Content -->
-                        <div class="mu-about-content">
-                            <div class="row">
-                                <!--ranking-->
-                                <div class="col-md-2">
-                                    <div class="mu-about-content-right">
-
-                                        <!-- Start Ranking bar -->
-                                        <div class="mu-skill-progress-bar">
-                                            <h3>Ranking</h3>
-                                            <span>Turbo C++3.0</span>
-                                            <div class="mu-pro-bar mu-html5-bar">
-                                            </div>
-                                            <span>Microsoft Visual C++6.0</span>
-                                            <div class="mu-pro-bar mu-css-bar">
-                                            </div>
-                                            <span>MySQL 64位8.0.11</span>
-                                            <div class="mu-pro-bar mu-photoshop-bar">
-                                            </div>
-                                            <span>Visual Basic6.0中文版</span>
-                                            <div class="mu-pro-bar mu-wordpress-bar">
-                                            </div>
-                                            <span>PHPStudy2019</span>
-                                            <div class="mu-pro-bar mu-jquery-bar">
-                                            </div>
-                                            <span>XAMPP7.4.11</span>
-                                            <div class="mu-pro-bar mu-jquery-bar">
-                                            </div>
-                                            <span>Dev-C++5.10</span>
-                                            <div class="mu-pro-bar mu-jquery-bar">
-                                            </div>
-                                            <span>Java JDK8.0</span>
-                                            <div class="mu-pro-bar mu-jquery-bar">
-                                            </div>
-                                            <span>Eclipse4.7.0</span>
-                                            <div class="mu-pro-bar mu-jquery-bar">
-                                            </div>
-                                            <span>Microsoft SQL Server2008 SP3</span>
-                                            <div class="mu-pro-bar mu-jquery-bar">
-                                            </div>
-                                        </div>
-                                        <!-- Start Social Media -->
-                                        <!--<div class="mu-social-media">
-                                            <h3>Social</h3>
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </div>-->
-                                        <!-- Download Ressume Button -->
-                                        <!--<a href="#" class="mu-resume-btn">Download My Resume</a>-->
+                        <div class="mu-about-content install-gif" style="padding-top: 0;background-color: transparent">
+                            <img src="assets/images/安装步骤动图.gif" alt="" style="margin: 0 auto">
+                        </div>
+                        <!-- Start softwareInfo Content -->
+                        <div class="mu-about-content" style="padding-top: 0;background-color: transparent">
+                            <div class="soft-info-title">
+                                <div style="margin: 0 auto;background-color: #f2dede;border-radius: 50%">
+                                    <span>安装教程</span>
+                                </div>
+                            </div>
+                            <div class="soft-info-content">
+                                    <div class="soft-install-step">
+                                        <ol>
+                                            <li style="">鼠标右击【Premiere Pro 2020(64bit)】压缩包选择【解压到 Premiere Pro 2020(64bit)】。</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/1.png" alt="">
+                                            <li>打开解压后的文件夹，鼠标右击【Set-up】选择【以管理员身份运行】。</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/2.png" alt="">
+                                            <li>点击【继续】。</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/3.png" alt="">
+                                            <li>点击【文件夹图标】→点击【更改位置】可更改安装位置（建议不要安装在C盘，可以在D盘或其它磁盘下新建一个“Pr2020”文件夹。注：安装路径中不能有中文）；点击【继续】。</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/4.png" alt="">
+                                            <li>软件安装中（大约需要2分钟）。</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/5.png" alt="">
+                                            <li>安装完成，点击【关闭】</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/6.png" alt="">
+                                            <li>创建桌面启动快捷方式：点击桌面左下角【开始】图标，点击【所有应用】→找到并拖动【 Adobe Premiere Pro 2020 】图标到电脑桌面。</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/7.png" alt="">
+                                            <li>双击桌面【Adobe Premiere Pro 2020】图标启动软件</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/8.png" alt="">
+                                            <li>安装成功</li>
+                                            <img src="assets/images/softwareinfo_icon/pr/9.png" alt="">
+                                        </ol>
                                     </div>
                                 </div>
-                                <!--news-->
-                                <div class="col-md-10">
-
-                                    <div class="mu-about-content-left row no-gutters">
-                                        <div class="see-more">
-                                            <a href=""><h6>see more</h6></a>
-                                        </div>
-                                        <div class="col-lg-8 col-md-12">
-                                            <div class="f-top mr-lg-1 mb-1"></div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="f-top mr-lg-1 mb-1"></div>
-                                        </div>
-                                        <div class="col-lg-5 col-md-12">
-                                            <div class="f-bottom mr-lg-1 mb-md-1"></div>
-                                        </div>
-                                        <div class="col-lg-7 col-md-12">
-                                            <div class="row no-gutters">
-                                                <div class="col-lg-4">
-                                                    <div class="f-bottom mr-1"></div>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <div class="f-bottom mr-1"></div>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <div class="f-bottom"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-                        <!-- End news Content -->
+                        <!-- End Content -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End news -->
-
 
     <!--若去掉下面则会导致无法使用部分js文件-->
     <!-- Start  Software-->
-    <section id="mu-portfolio">
+    <section id="mu-portfolio"  style="visibility: hidden">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -227,7 +208,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
