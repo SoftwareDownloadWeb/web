@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>What to DOWNLOAD</title>
+    <title>专栏详情-DOWNLOAD ME!</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
@@ -42,21 +42,34 @@
 <header id="mu-header" class="" role="banner" style="background-color: #339999">
     <div class="container">
         <nav class="navbar navbar-default mu-navbar">
-            <div class="container-fluid" style="display: flex;flex-wrap: nowrap">
+            <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <!-- Text Logo -->
-                    <a class="navbar-brand" href="#">LOGO</a>
+                    <!--Text Logo-->
+                    <a class="navbar-brand" href="#">DOWNLOADME!</a>
                     <!-- Image Logo -->
                     <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                     <ul class="nav navbar-nav mu-menu navbar-right">
+                        <li>
+                            <div class="mu-featured-content" style="margin-right: 150px">
+                                <input type="search" placeholder="请输入..." class="form-control" style="margin-top: 8px;width: 100%;height: 25px"/>
+                                <button href="#mu-portfolio" class="mu-primary-btn view-my-work-btn" style="margin-top: 8px;height: 25px">Go!</button>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;">SIGN UP</button>
+                        </li>
+                        <li>
+                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;margin-left: 20px;margin-right: 20px">SIGN IN</button>
+                        </li>
                         <!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
-                        <li><a href="" class="navbar-brand-img">
-                            <img src="assets/images/test.jpg">
+                        <li><a href="javascript:void(0)" onclick="login_test('XuanFu')" class="navbar-brand-img">
+                            <img src="assets/images/user.png">
                         </a></li>
+
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
