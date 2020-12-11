@@ -33,8 +33,8 @@
 完成专栏页和专栏详情页
 
 ## 12/11 
-# 11:57 刘佳乐
+### 11:57 刘佳乐
 统一并优化了全部页面的header部分  
 引入的bootstrap.css与bootstrap.min.css有冲突（应该是版本问题），斗胆注释掉新版bootstrap的重名样式，强行使用bootstrap.min.css样式（解决冲突最好的办法就是屏蔽它。。。
-# 21:29 刘佳乐  
+### 21:29 刘佳乐  
 整出了softwareinfo.html
