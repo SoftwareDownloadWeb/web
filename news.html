@@ -218,6 +218,13 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
                     <!--Text Logo-->
                     <a class="navbar-brand" href="#">DOWNLOADME!</a>
                     <!-- Image Logo -->
@@ -227,16 +234,16 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                     <ul class="nav navbar-nav mu-menu navbar-right">
                         <li>
-                            <div class="mu-featured-content" style="margin-right: 150px">
-                                <input type="search" placeholder="请输入..." class="form-control" style="margin-top: 8px;width: 100%;height: 25px"/>
-                                <button href="#mu-portfolio" class="mu-primary-btn view-my-work-btn" style="margin-top: 8px;height: 25px">Go!</button>
+                            <div class="mu-featured-content">
+                                <input type="search" placeholder="请输入..." class="form-control"/>
+                                <button href="#mu-portfolio" class="mu-primary-btn view-my-work-btn">Go!</button>
                             </div>
                         </li>
                         <li>
-                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;">SIGN UP</button>
+                            <a href=""><button class="mu-primary-btn header-sign-btn">SIGN UP</button></a>
                         </li>
                         <li>
-                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;margin-left: 20px;margin-right: 20px">SIGN IN</button>
+                            <a href=""><button class="mu-primary-btn header-sign-btn">SIGN IN</button></a>
                         </li>
                         <!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
                         <li><a href="javascript:void(0)" onclick="login_test('XuanFu')" class="navbar-brand-img">
