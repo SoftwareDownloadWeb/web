@@ -38,3 +38,7 @@
 引入的bootstrap.css与bootstrap.min.css有冲突（应该是版本问题），斗胆注释掉新版bootstrap的重名样式，强行使用bootstrap.min.css样式（解决冲突最好的办法就是屏蔽它。。。
 ### 21:29 刘佳乐  
 整出了softwareinfo.html
+
+## 12/12
+### 16：13 刘佳乐
+开始完善页面的响应式布局，已完成header部分
