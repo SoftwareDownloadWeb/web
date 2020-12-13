@@ -30,10 +30,22 @@
     <!-- Poppins for Title -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <!--        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <!---->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!--    <script src="assets/js/jquery.min.js"></script>-->
+    <!--    <script src="assets/js/popper.min.js"></script>-->
+    <!--    <script src="assets/js/bootstrap.min.js"></script>-->
 
     <style>
         .section-title {
@@ -284,82 +296,76 @@
 </header>
 <!-- End Header -->
 
-<div class="container" style="margin: auto">
+<!--轮播-->
+<section id="mu-testimonials">
+    <div class="container" style="margin: auto">
 
-    <h1 style="text-align: center;margin-top: 7rem">特约专栏</h1>
-    <div class="carousel" data-ride="carousel" id="demo">
-        <!-- 1.轮播图片-->
-        <div class="carousel-inner container">
-            <div class="carousel-item active DivOfLunBoPic row">
-                <div class="col-md-9 col-sm-6">
-                    <a class="TextOfLunBoPic stroke">深入理解PHP+Mysql分布式事务与解决方案</a>
-                    <a href="columninfo.html"><img src="assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
+        <h1 style="text-align: center;margin-top: 7rem">特约专栏</h1>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col-md-9 col-sm-6">
+                        <a class="TextOfLunBoPic stroke">深入理解PHP+Mysql分布式事务与解决方案</a>
+                        <a href="columninfo.html"><img src="assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="background-color: white">
+                        <img src="assets/images/s2.jpg" height="200">
+                        <br>
+                        <a>本报特约评论员：</a>
+                        <h1>AAA</h1>
+                        <a>为您解读华师操场恶臭气味，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6" style="background-color: white">
-                    <img src="assets/images/s2.jpg" height="200">
-                    <br>
-                    <a>本报特约评论员：</a>
-                    <h1>AAA</h1>
-                    <a>为您解读华师操场恶臭气味，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                <div class="carousel-item">
+                    <div class="col-md-9 col-sm-6">
+                        <a class="TextOfLunBoPic stroke">你可能未曾使用的新 Java 特性</a>
+                        <a href="columninfo.html"><img src="assets/images/column/LunBo/LB-2.png" class="w-100" alt="" width="500" height="400"/></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="background-color: white">
+                        <img src="assets/images/s3.jpg" height="200">
+                        <br>
+                        <a>本报特约评论员：</a>
+                        <h1>BBB</h1>
+                        <a>为您解读华师最新美式教学，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item DivOfLunBoPic row">
-                <div class="col-md-9 col-sm-6">
-                    <a class="TextOfLunBoPic stroke">专栏标题2</a>
-                    <a href="columninfo.html"><img src="assets/images/s2.jpg" class="w-100" alt="" width="500" height="400"/></a>
-                </div>
-                <div class="col-md-3 col-sm-6" style="background-color: white">
-                    <img src="assets/images/s3.jpg" height="200">
-                    <br>
-                    <a>本报特约评论员：</a>
-                    <h1>BBB</h1>
-                    <a>为您解读华师最新美式教学，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
-                </div>
-            </div>
-            <div class="carousel-item DivOfLunBoPic row">
-                <div class="col-md-9 col-sm-6">
-                    <a class="TextOfLunBoPic stroke">专栏标题3</a>
-                    <a href="columninfo.html"><img src="assets/images/s3.jpg" class="w-100" alt="" width="500" height="400"/></a>
-                </div>
-                <div class="col-md-3 col-sm-6" style="background-color: white">
-                    <img src="assets/images/s3.jpg" height="200">
-                    <br>
-                    <a>本报特约评论员：</a>
-                    <h1>CCC</h1>
-                    <a>为您解读华师光速校园网，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
-                </div>
-            </div>
-            <div class="carousel-item DivOfLunBoPic row">
-                <div class="col-md-9 col-sm-6">
-                    <a class="TextOfLunBoPic stroke">专栏标题4</a>
-                    <a href="columninfo.html"><img src="assets/images/s3.jpg" class="w-100" alt="" width="500" height="400"/></a>
-                </div>
-                <div class="col-md-3 col-sm-6" style="background-color: white">
-                    <img src="assets/images/s1.jpg" height="200">
-                    <br>
-                    <a>本报特约评论员：</a>
-                    <h1>DDD</h1>
-                    <a>为您解读华师高科技机房，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                <div class="carousel-item">
+                    <div class="col-md-9 col-sm-6">
+                        <a class="TextOfLunBoPic stroke">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
+                        <a href="columninfo.html"><img src="assets/images/column/LunBo/LB-3.png" class="w-100" alt="" width="500" height="400"/></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="background-color: white">
+                        <img src="assets/images/s3.jpg" height="200">
+                        <br>
+                        <a>本报特约评论员：</a>
+                        <h1>CCC</h1>
+                        <a>为您解读华师光速校园网，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
         </div>
-        <!-- 2.左右箭头-->
-        <a href="#demo" data-slide="next" class="carousel-control-next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-        <a href="#demo" data-slide="prev" class="carousel-control-prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <!-- 3.轮播指示符-->
-        <ul class="carousel-indicators">
-            <li class="active"  data-slide-to="0" data-target="#demo"></li>
-            <li data-slide-to="1" data-target="#demo"></li>
-            <li data-slide-to="2" data-target="#demo"></li>
-            <li data-slide-to="3" data-target="#demo"></li>
-        </ul>
-    </div>
 
-</div>
+    </div>
+</section>
 
 <!-- latest-course start -->
 <div class="row">

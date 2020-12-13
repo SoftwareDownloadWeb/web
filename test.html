@@ -5,36 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>What to DOWNLOAD</title>
+    <title>新闻-DOWNLOAD ME!</title>
 
-<!--    &lt;!&ndash; Favicon &ndash;&gt;-->
-<!--    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>-->
-<!--    &lt;!&ndash; Font Awesome &ndash;&gt;-->
-<!--    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">-->
-<!--    &lt;!&ndash; Bootstrap &ndash;&gt;-->
-<!--    <link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
-<!--    &lt;!&ndash; Slick slider &ndash;&gt;-->
-<!--    <link href="assets/css/slick.css" rel="stylesheet">-->
-<!--    &lt;!&ndash; Gallery Lightbox &ndash;&gt;-->
-<!--    <link href="assets/css/magnific-popup.css" rel="stylesheet">-->
-<!--    &lt;!&ndash; Theme color &ndash;&gt;-->
-<!--    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Gallery Lightbox -->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
-<!--    &lt;!&ndash; Main Style &ndash;&gt;-->
-<!--    <link href="style.css" rel="stylesheet" type="text/css"/>-->
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 
-<!--    &lt;!&ndash; Fonts &ndash;&gt;-->
+    <!-- Fonts -->
 
-<!--    &lt;!&ndash; Open Sans for body font &ndash;&gt;-->
-<!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">-->
-<!--    &lt;!&ndash; Poppins for Title &ndash;&gt;-->
-<!--    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">-->
+    <!-- Open Sans for body font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Poppins for Title -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+<!--        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <!---->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
+    <!--    <script src="assets/js/jquery.min.js"></script>-->
+    <!--    <script src="assets/js/popper.min.js"></script>-->
+    <!--    <script src="assets/js/bootstrap.min.js"></script>-->
 
     <style>
         .section-title {
@@ -182,6 +194,7 @@
         .carousel-indicators .active{
             background-color: #0aa1ed;
         }
+
         .carousel-control-prev,
         .carousel-control-next{
             width: 4%;
@@ -217,21 +230,34 @@
 <header id="mu-header" class="" role="banner" style="background-color: #339999">
     <div class="container">
         <nav class="navbar navbar-default mu-navbar">
-            <div class="container-fluid" style="display: flex;flex-wrap: nowrap">
+            <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <!-- Text Logo -->
-                    <a class="navbar-brand" href="#">LOGO</a>
+                    <!--Text Logo-->
+                    <a class="navbar-brand" href="#">DOWNLOADME!</a>
                     <!-- Image Logo -->
                     <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                     <ul class="nav navbar-nav mu-menu navbar-right">
+                        <li>
+                            <div class="mu-featured-content" style="margin-right: 150px">
+                                <input type="search" placeholder="请输入..." class="form-control" style="margin-top: 8px;width: 100%;height: 25px"/>
+                                <button href="#mu-portfolio" class="mu-primary-btn view-my-work-btn" style="margin-top: 8px;height: 25px">Go!</button>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;">SIGN UP</button>
+                        </li>
+                        <li>
+                            <button class="mu-primary-btn" style="border-left: 0;border-right: 0;margin-left: 20px;margin-right: 20px">SIGN IN</button>
+                        </li>
                         <!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
-                        <li><a href="" class="navbar-brand-img">
-                            <img src="assets/images/test.jpg">
+                        <li><a href="javascript:void(0)" onclick="login_test('XuanFu')" class="navbar-brand-img">
+                            <img src="assets/images/user.png">
                         </a></li>
+
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -240,56 +266,92 @@
 </header>
 <!-- End Header -->
 
+<!--轮播-->
 <section id="mu-testimonials">
     <div class="container">
 
-        <h1 style="text-align: center;margin-top: 7rem">每日新闻精选</h1>
-        <div class="carousel" data-ride="carousel" id="demo">
-            <!-- 1.轮播图片-->
+        <p class="stroke" style="text-align: center;margin-top: 7rem;font-size:40px;font-weight: bolder">每日新闻精选</p>
+        <!--        <div class="carousel" data-ride="carousel" id="demo">-->
+        <!--            &lt;!&ndash; 1.轮播图片&ndash;&gt;-->
+        <!--            <div class="carousel-inner">-->
+        <!--                <div class="carousel-item active DivOfLunBoPic">-->
+        <!--                    <a class="TextOfLunBoPic stroke">左有京东、拼多多，右有美团，阿里组织架构大调整</a>-->
+        <!--                    <a href="newsinfo.html"><img src="assets/images/news/LunBo/LB-1.jpg" class="w-100" alt="" width="500" height="400"/></a>-->
+        <!--                </div>-->
+        <!--                <div class="carousel-item DivOfLunBoPic">-->
+        <!--                    <a class="TextOfLunBoPic stroke">新闻标题2</a>-->
+        <!--                    <a href="newsinfo.html"><img src="assets/images/s2.jpg" class="w-100" alt="" width="500" height="400"/></a>-->
+        <!--                </div>-->
+        <!--                <div class="carousel-item DivOfLunBoPic">-->
+        <!--                    <a class="TextOfLunBoPic stroke">新闻标题3</a>-->
+        <!--                    <a href="newsinfo.html"><img src="assets/images/s3.jpg" class="w-100" alt="" width="500" height="400"/></a>-->
+        <!--                </div>-->
+        <!--                <div class="carousel-item DivOfLunBoPic">-->
+        <!--                    <a class="TextOfLunBoPic stroke">新闻标题5</a>-->
+        <!--                    <a href="newsinfo.html"><img src="assets/images/s1.jpg" class="w-100" alt="" width="500" height="400"/></a>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            &lt;!&ndash; 2.左右箭头&ndash;&gt;-->
+        <!--            <a href="#demo" data-slide="next" class="carousel-control-next">-->
+        <!--                <span class="carousel-control-next-icon"></span>-->
+        <!--            </a>-->
+        <!--            <a href="#demo" data-slide="prev" class="carousel-control-prev">-->
+        <!--                <span class="carousel-control-prev-icon"></span>-->
+        <!--            </a>-->
+        <!--            &lt;!&ndash; 3.轮播指示符&ndash;&gt;-->
+        <!--            <ul class="carousel-indicators">-->
+        <!--                <li class="active"  data-slide-to="0" data-target="#demo"></li>-->
+        <!--                <li data-slide-to="1" data-target="#demo"></li>-->
+        <!--                <li data-slide-to="2" data-target="#demo"></li>-->
+        <!--                <li data-slide-to="3" data-target="#demo"></li>-->
+        <!--            </ul>-->
+        <!--        </div>-->
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
             <div class="carousel-inner">
-                <div class="carousel-item active DivOfLunBoPic">
-                    <a class="TextOfLunBoPic stroke">新闻标题1</a>
-                    <a href="newsinfo.html"><img src="assets/images/s1.jpg" class="w-100" alt="" width="500" height="400"/></a>
+                <div class="carousel-item active">
+                    <a class="TextOfLunBoPic stroke">左有京东、拼多多，右有美团，阿里组织架构大调整</a>
+                    <a href="newsinfo.html"><img src="assets/images/news/LunBo/LB-1.jpg" class="w-100" alt="" width="500" height="400"/></a>
                 </div>
-                <div class="carousel-item DivOfLunBoPic">
+                <div class="carousel-item">
                     <a class="TextOfLunBoPic stroke">新闻标题2</a>
                     <a href="newsinfo.html"><img src="assets/images/s2.jpg" class="w-100" alt="" width="500" height="400"/></a>
                 </div>
-                <div class="carousel-item DivOfLunBoPic">
+                <div class="carousel-item">
                     <a class="TextOfLunBoPic stroke">新闻标题3</a>
                     <a href="newsinfo.html"><img src="assets/images/s3.jpg" class="w-100" alt="" width="500" height="400"/></a>
                 </div>
-                <div class="carousel-item DivOfLunBoPic">
-                    <a class="TextOfLunBoPic stroke">新闻标题5</a>
-                    <a href="newsinfo.html"><img src="assets/images/s1.jpg" class="w-100" alt="" width="500" height="400"/></a>
-                </div>
             </div>
-            <!-- 2.左右箭头-->
-            <a href="#demo" data-slide="next" class="carousel-control-next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-            <a href="#demo" data-slide="prev" class="carousel-control-prev">
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
-            <!-- 3.轮播指示符-->
-            <ul class="carousel-indicators">
-                <li class="active"  data-slide-to="0" data-target="#demo"></li>
-                <li data-slide-to="1" data-target="#demo"></li>
-                <li data-slide-to="2" data-target="#demo"></li>
-                <li data-slide-to="3" data-target="#demo"></li>
-            </ul>
-        </div>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
 
+        </div>
     </div>
 </section>
 <!-- latest-course start -->
 
+<!--轮播下面的那部分-->
 <div class="row">
     <div class="col-2" style="margin: 3rem;background-color: white">
         <h1 style="background-color: #669966">热搜</h1>
         <ul>
             <li class="list-unstyled">
-                <div><img src="assets/images/categories/img-1.jpeg" style="width: 150px;height: 100px"></div>
+                <div><img src="assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></div>
                 <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
             <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
@@ -306,7 +368,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-course-inner">
                         <div class="thumb">
-                            <a href="newsinfo.html"><img src="assets/images/categories/img-1.jpeg" alt="img"></a>
+                            <a href="newsinfo.html"><img src="assets/images/news/newslist/NL-1.jpg" alt="img"></a>
                             <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
                             <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
                         </div>
@@ -321,7 +383,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5><a href="#">新闻标题1</a></h5>
+                            <h5><a href="#">科技公司纷纷搬离硅谷：甲骨文将总部迁往得州</a></h5>
                             <div class="price-inner">
                                 <div class="row">
                                     <div class="col-6">
@@ -335,7 +397,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-course-inner">
                         <div class="thumb">
-                            <a href="newsinfo.html"><img src="assets/images/categories/img-1.jpeg" alt="img"></a>
+                            <a href="newsinfo.html"><img src="assets/images/news/newslist/NL-2.jpg" alt="img"></a>
                             <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
                             <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
                         </div>
@@ -350,7 +412,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5><a href="#">新闻标题2</a></h5>
+                            <h5><a href="#">iOS 14.3 即将发布，苹果 Apple Music 将支持专辑插图动画</a></h5>
                             <div class="price-inner">
                                 <div class="row">
                                     <div class="col-6">
@@ -364,7 +426,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-course-inner">
                         <div class="thumb">
-                            <a href="newsinfo.html"><img src="assets/images/categories/img-2.jpeg" alt="img"></a>
+                            <a href="newsinfo.html"><img src="assets/images/news/newslist/NL-3.jpg" alt="img"></a>
                             <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
                             <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
                         </div>
@@ -379,7 +441,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5><a href="#">新闻标题3</a></h5>
+                            <h5><a href="#">Epic 客户端出现闪退问题：官方致歉，临时解决方法公布</a></h5>
                             <div class="price-inner">
                                 <div class="row">
                                     <div class="col-6">
@@ -393,7 +455,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-course-inner">
                         <div class="thumb">
-                            <a href="newsinfo.html"><img src="assets/images/categories/img-3.jpeg" alt="img"></a>
+                            <a href="newsinfo.html"><img src="assets/images/news/newslist/NL-4.jpg" alt="img"></a>
                             <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
                             <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
                         </div>
@@ -408,7 +470,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5><a href="#">新闻标题4</a></h5>
+                            <h5><a href="#">首单电商平台数字人民币消费在京东诞生</a></h5>
                             <div class="price-inner">
                                 <div class="row">
                                     <div class="col-6">
@@ -422,7 +484,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-course-inner">
                         <div class="thumb">
-                            <a href="newsinfo.html"><img src="assets/images/categories/img-4.jpeg" alt="img"></a>
+                            <a href="newsinfo.html"><img src="assets/images/news/newslist/NL-5.jpg" alt="img"></a>
                             <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
                             <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
                         </div>
@@ -437,7 +499,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5><a href="#">新闻标题5</a></h5>
+                            <h5><a href="#">迪士尼 160 亿美元投资 Disney + 等流媒体服务，挑战 Netflix 霸主地位</a></h5>
                             <div class="price-inner">
                                 <div class="row">
                                     <div class="col-6">
@@ -451,7 +513,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-course-inner">
                         <div class="thumb">
-                            <a href="newsinfo.html"><img src="assets/images/categories/img-5.jpeg" alt="img"></a>
+                            <a href="newsinfo.html"><img src="assets/images/news/newslist/NL-6.jpg" alt="img"></a>
                             <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
                             <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
                         </div>
@@ -466,7 +528,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5><a href="#">新闻标题6</a></h5>
+                            <h5><a href="#">专利授权费未谈妥，爱立信将三星告上法庭</a></h5>
                             <div class="price-inner">
                                 <div class="row">
                                     <div class="col-6">
@@ -481,11 +543,11 @@
         </div>
     </div>
 
-    <div class="col-1" style="margin: 5rem;background-color: white">
+    <div class="col-2" style="margin: 3rem;background-color: white">
         <h1 style="background-color: #669966">最新新闻</h1>
         <ul>
             <li class="list-unstyled">
-                <div><img src="assets/images/categories/img-1.jpeg" style="width: 150px;height: 100px"></div>
+                <div><img src="assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></div>
                 <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
             <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
@@ -523,31 +585,31 @@
 
 
 
-<!--&lt;!&ndash; jQuery library &ndash;&gt;-->
+<!-- jQuery library -->
 <!--<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
-<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt;-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
 
-<!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
 <!--<script src="assets/js/bootstrap.min.js"></script>-->
-<!--&lt;!&ndash;<script src="assets/js/bootstrap.min.js"></script>&ndash;&gt;-->
-<!--&lt;!&ndash; Slick slider &ndash;&gt;-->
-<!--<script type="text/javascript" src="assets/js/slick.min.js"></script>-->
-<!--&lt;!&ndash; Filterable Gallery js &ndash;&gt;-->
-<!--<script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>-->
-<!--&lt;!&ndash; Gallery Lightbox &ndash;&gt;-->
-<!--<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>-->
-<!--&lt;!&ndash; Ajax contact form  &ndash;&gt;-->
-<!--<script type="text/javascript" src="assets/js/app.js"></script>-->
-<!--&lt;!&ndash; Featured Slider &ndash;&gt;-->
-<!--<script type="text/javascript" src="assets/js/typed.min.js"></script>-->
-<!--&lt;!&ndash; On scroll JS  &ndash;&gt;-->
-<!--<script src="assets/js/jquery.appear.js"></script>-->
-<!--&lt;!&ndash; Progress Bar &ndash;&gt;-->
-<!--<script type="text/javascript" src="assets/js/jquery.lineProgressbar.js"></script>-->
+<!-- Slick slider -->
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<!-- Filterable Gallery js -->
+<script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
+<!-- Gallery Lightbox -->
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Ajax contact form  -->
+<script type="text/javascript" src="assets/js/app.js"></script>
+<!-- Featured Slider -->
+<script type="text/javascript" src="assets/js/typed.min.js"></script>
+<!-- On scroll JS  -->
+<script src="assets/js/jquery.appear.js"></script>
+<!-- Progress Bar -->
+<script type="text/javascript" src="assets/js/jquery.lineProgressbar.js"></script>
 
 
-<!--&lt;!&ndash; Custom js &ndash;&gt;-->
-<!--<script type="text/javascript" src="assets/js/custom.js"></script>-->
+<!-- Custom js -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
 
 
 </body>
