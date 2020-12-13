@@ -681,7 +681,7 @@ button:focus {
 }
 
 .news-tl{
-	background: url("assets/images/news/tl-bg.jpg");
+	background: url("../images/news/tl-bg.jpg");
 	background-size: cover;
 	overflow: hidden;
 }
@@ -716,13 +716,13 @@ button:focus {
 }
 
 .tl-bg {
-	background: url('assets/images/news/tl-bg.jpg');
+	background: url('../images/news/tl-bg.jpg');
 	height: 300px;
 	text-align: center;
 	line-height: 600px;
 }
 .tr-bg{
-	background: url('assets/images/news/tr-bg.jpg');
+	background: url('../images/news/tr-bg.jpg');
 	height: 300px;
 	text-align: center;
 	line-height: 600px;
@@ -744,10 +744,10 @@ button:focus {
 	text-align: center;
 }
 .b1{
-	background: url('assets/images/news/b1-bg.jpg');
+	background: url('../images/news/b1-bg.jpg');
 }
 .b2{
-	background: url('assets/images/news/b2-bg.jpg');
+	background: url('../images/news/b2-bg.jpg');
 }
 .f-top{
 	background-color: #aaaaaa;
@@ -904,7 +904,7 @@ button:focus {
 }
 
 .mu-service-content-single {
-	background: url("assets/images/test.jpg");
+	background: url("../images/test.jpg");
 	/*background-color: #f8f8f8;*/
 	display: inline;
 	float: left;
@@ -1112,7 +1112,7 @@ button:focus {
 /*--------------------*/
 
 #mu-testimonials {
-	background-image: url("assets/images/test.jpg");
+	background-image: url("../images/test.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1160,13 +1160,13 @@ button:focus {
 }
 
 .slide1{
-	background: url("assets/images/focus/firefox.jpg") no-repeat center;
+	background: url("../images/focus/firefox.jpg") no-repeat center;
 }
 .slide2{
-	background: url("assets/images/focus/moji.jpg") no-repeat center;
+	background: url("../images/focus/moji.jpg") no-repeat center;
 }
 .slide3{
-	background: url("assets/images/focus/company_wechat.jpg") no-repeat center;
+	background: url("../images/focus/company_wechat.jpg") no-repeat center;
 }
 .mu-testimonial-slide li{
 	height: 500px;
