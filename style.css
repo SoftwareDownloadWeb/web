@@ -609,6 +609,61 @@ button:focus {
 	color: #339999
 }
 
+.cover{
+	position: relative;
+	height: 250px;
+	padding: 0 0;
+}
+.news-top{
+	padding: 0 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.news-bottom{
+	padding: 0 20px;
+	font-size: 15px;
+}
+.cover::after{
+	position: absolute;
+	content: '';
+
+	margin: 0 auto;
+	padding: 0 40px;
+
+	background: linear-gradient(to top,  #C3543C, #339999 35%, transparent 95%);
+	/*
+	box-shadow: 0 -40px 50px 20px white inset;
+	*/
+}
+.cover-top::after{
+	top: 70%;
+	height: 30%;
+	width: 92%;
+}
+.cover-bottom::after{
+	top: 75%;
+	height: 25%;
+	width: 88%;
+}
+.cover img{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.cover span{
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+	font-family: Helvetica;
+	color: white;
+	padding: 0 40px 0;
+}
+.cover-top span{
+	top: 75%;
+}
+.cover-bottom span{
+	top: 80%;
+}
 .mr-lg-1,
 .mx-lg-1 {
 	margin-right: 0.25rem !important;
