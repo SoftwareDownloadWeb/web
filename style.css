@@ -622,27 +622,26 @@ button:focus {
 .news-bottom{
 	padding: 0 20px;
 	font-size: 15px;
+	margin-bottom: 20px;
 }
 .cover::after{
 	position: absolute;
 	content: '';
-
 	margin: 0 auto;
 	padding: 0 40px;
-
-	background: linear-gradient(to top,  #C3543C, #339999 35%, transparent 95%);
+	background: linear-gradient(to top,  #C3543C, #339999 20%, transparent 95%);
 	/*
 	box-shadow: 0 -40px 50px 20px white inset;
 	*/
 }
 .cover-top::after{
-	top: 70%;
-	height: 30%;
+	top: 65%;
+	height: 35%;
 	width: 92%;
 }
 .cover-bottom::after{
-	top: 75%;
-	height: 25%;
+	top: 70%;
+	height: 30%;
 	width: 88%;
 }
 .cover img{
@@ -656,7 +655,7 @@ button:focus {
 	text-align: center;
 	font-family: Helvetica;
 	color: white;
-	padding: 0 40px 0;
+	padding: 0 20px 0;
 }
 .cover-top span{
 	top: 75%;

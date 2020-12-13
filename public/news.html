@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>新闻-DOWNLOAD ME!</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="../assets/css/slick.css" rel="stylesheet">
+    <!-- Gallery Lightbox -->
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="../assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Poppins for Title -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <!--        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <!---->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
+    <!--    <script src="assets/js/jquery.min.js"></script>-->
+    <!--    <script src="assets/js/popper.min.js"></script>-->
+    <!--    <script src="assets/js/bootstrap.min.js"></script>-->
+
+    <style>
+        .section-title {
+            margin-bottom: 47px;
+            position: relative;
+        }
+        .section-title .sub-title {
+            color: var(--main-color);
+        }
+        .section-title h2 {
+            margin-bottom: 0;
+        }
+        .section-title p {
+            margin-bottom: 0;
+            margin-top: 13px;
+        }
+        .section-title a {
+            margin-top: 25px;
+        }
+
+        .btn-base {
+            color: #fff;
+            border: 0;
+            background: var(--main-color);
+        }
+        .btn-base:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #022334;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition-duration: 0.4s;
+        }
+        .btn-base:hover, .btn-base:focus {
+            color: #fff;
+        }
+        .btn-base:hover:before, .btn-base:focus:before {
+            transform: scaleX(1);
+        }
+        .course-view-details-inner .details ul.price-area .btn-base {
+            margin-right: 10px;
+        }
+
+        .single-course-inner {
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .single-course-inner .thumb {
+            overflow: hidden;
+            position: relative;
+        }
+        .single-course-inner .thumb img {
+            transition: 0.7s;
+        }
+        .single-course-inner .thumb .rating {
+            background: #f8f8f8;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 22px;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 0 6px 0 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .single-course-inner .thumb .rating i {
+            color: var(--main-color);
+        }
+        .single-course-inner .thumb .bookmark {
+            display: inline-block;
+            position: absolute;
+            right: 25px;
+            top: 20px;
+            color: #fff;
+            transition: 0.4s;
+        }
+        .single-course-inner .thumb .bookmark:hover {
+            color: var(--main-color);
+        }
+        .single-course-inner .details {
+            background: #f8f8f8;
+            padding: 25px 30px;
+            position: relative;
+        }
+        .single-course-inner .details .price {
+            height: 55px;
+            width: 55px;
+            line-height: 56px;
+            color: #fff;
+            font-weight: 500;
+            text-align: center;
+            background: var(--main-color);
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: -27px;
+            z-index: 2;
+            border-radius: 50%;
+        }
+        .single-course-inner .details .meta p {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .single-course-inner .details h5 {
+            font-size: 18px;
+            margin-top: 12px;
+            margin-bottom: 25px;
+        }
+        .single-course-inner .details .price-inner p {
+            font-weight: 600;
+            margin-bottom: 0;
+            color: var(--heading-color);
+        }
+        .single-course-inner .details .price-inner a {
+            font-weight: 600;
+            color: var(--heading-color);
+        }
+        .single-course-inner .details .price-inner a:hover {
+            color: var(--main-color);
+        }
+        .single-course-inner:hover .thumb img {
+            transform: scale(1.1);
+        }
+        .single-course-inner.style-two .details {
+            padding: 25px 15px;
+        }
+
+        .carousel-indicators li{
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            margin-left: 6px;
+            margin-right: 6px;
+            border-radius: 50%;
+        }
+        .carousel-indicators .active{
+            background-color: #0aa1ed;
+        }
+        .carousel-control-prev,
+        .carousel-control-next{
+            width: 4%;
+            height: 20%;
+            background-color: #aaaaaa;
+            top:40%;
+            border-radius: 0.25rem;
+        }
+
+        .celanbiaoti{
+            font-size: 20px;
+        }
+
+        .DivOfLunBoPic{
+            position: relative;
+        }
+        .TextOfLunBoPic{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .stroke {
+            -webkit-text-stroke: 1px white;
+        }
+    </style>
+</head>
+<body style="background-color:#F0FFFF">
+
+<!-- Start Header -->
+<header id="mu-header" class="" role="banner" style="background-color: #339999">
+    <div class="container">
+        <nav class="navbar navbar-default mu-navbar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!--Text Logo-->
+                    <a class="navbar-brand" href="#">DOWNLOADME!</a>
+                    <!-- Image Logo -->
+                    <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                    <ul class="nav navbar-nav mu-menu navbar-right">
+                        <li>
+                            <div class="mu-featured-content">
+                                <input type="search" placeholder="请输入..." class="form-control"/>
+                                <button href="#mu-portfolio" class="mu-primary-btn view-my-work-btn">Go!</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><button class="mu-primary-btn header-sign-btn">SIGN UP</button></a>
+                        </li>
+                        <li>
+                            <a href=""><button class="mu-primary-btn header-sign-btn">SIGN IN</button></a>
+                        </li>
+                        <!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
+                        <li><a href="javascript:void(0)" onclick="login_test('XuanFu')" class="navbar-brand-img">
+                            <img src="../assets/images/user.png">
+                        </a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</header>
+<!-- End Header -->
+
+<!--轮播-->
+<section id="mu-testimonials">
+    <div class="container">
+
+        <p class="stroke" style="text-align: center;margin-top: 7rem;font-size:40px;font-weight: bolder">每日新闻精选</p>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a class="TextOfLunBoPic stroke">左有京东拼多多，右有美团，阿里组织架构大调整</a>
+                    <a href="newsinfo.html"><img src="../assets/images/news/LunBo/LB-1.jpg" class="w-100" alt="" width="500" height="400"/></a>
+                </div>
+                <div class="carousel-item">
+                    <a class="TextOfLunBoPic stroke">国内垃圾佬将 14 年前处理器超频至 8.4GHz</a>
+                    <a href="newsinfo.html"><img src="../assets/images/news/LunBo/LB-2.jpg" class="w-100" alt="" width="500" height="400"/></a>
+                </div>
+                <div class="carousel-item">
+                    <a class="TextOfLunBoPic stroke">Adobe 第四季度营收创纪录：再回购 150 亿美元股票</a>
+                    <a href="newsinfo.html"><img src="../assets/images/news/LunBo/LB-3.jpg" class="w-100" alt="" width="500" height="400"/></a>
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+<!-- latest-course start -->
+
+<!--轮播下面的那部分-->
+<div class="row">
+    <div class="col-2" style="margin: 3rem;background-color: white">
+        <h1 style="background-color: #669966">热搜</h1>
+        <ul>
+            <li class="list-unstyled">
+                <div><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></div>
+                <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
+            </li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+        </ul>
+    </div>
+
+    <div class="latest-course-area pd-bottom-110 col-6" style="margin: 3rem;background:aliceblue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo.html"><img src="../assets/images/news/newslist/NL-1.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">科技公司纷纷搬离硅谷：甲骨文将总部迁往得州</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo.html"><img src="../assets/images/news/newslist/NL-2.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">iOS 14.3 即将发布，苹果 Apple Music 将支持专辑插图动画</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo.html"><img src="../assets/images/news/newslist/NL-3.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">Epic 客户端出现闪退问题：官方致歉，临时解决方法公布</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo.html"><img src="../assets/images/news/newslist/NL-4.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">首单电商平台数字人民币消费在京东诞生</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo.html"><img src="../assets/images/news/newslist/NL-5.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">迪士尼 160 亿美元投资 Disney + 等流媒体服务，挑战 Netflix 霸主地位</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo.html"><img src="../assets/images/news/newslist/NL-6.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">专利授权费未谈妥，爱立信将三星告上法庭</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-2" style="margin: 3rem;background-color: white">
+        <h1 style="background-color: #669966">最新新闻</h1>
+        <ul>
+            <li class="list-unstyled">
+                <div><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></div>
+                <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
+            </li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Start  Software-->
+<section id="mu-portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Start Software Content -->
+                <div class="mu-portfolio-content">
+                    <div class="filtr-container">
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item" data-category="7">
+                        </div>
+                    </div>
+                    <!-- End Software Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Software -->
+
+<!-- latest-course end -->
+
+
+
+
+
+
+<!-- jQuery library -->
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- Bootstrap -->
+<script src="../assets/js/bootstrap.min.js"></script>
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+<!-- Slick slider -->
+<script type="text/javascript" src="../assets/js/slick.min.js"></script>
+<!-- Filterable Gallery js -->
+<script type="text/javascript" src="../assets/js/jquery.filterizr.min.js"></script>
+<!-- Gallery Lightbox -->
+<script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Ajax contact form  -->
+<script type="text/javascript" src="../assets/js/app.js"></script>
+<!-- Featured Slider -->
+<script type="text/javascript" src="../assets/js/typed.min.js"></script>
+<!-- On scroll JS  -->
+<script src="../assets/js/jquery.appear.js"></script>
+<!-- Progress Bar -->
+<script type="text/javascript" src="../assets/js/jquery.lineProgressbar.js"></script>
+
+
+<!-- Custom js -->
+<script type="text/javascript" src="../assets/js/custom.js"></script>
+
+
+</body>
+</html>
