@@ -211,6 +211,10 @@ button:focus {
 	background-color: #fff;
 }
 
+.download-btn-box{
+	vertical-align: middle;
+}
+
 .download-btn{
 	background-color: darksalmon;
 	border-radius: 4px;
@@ -221,7 +225,7 @@ button:focus {
 	padding: 5px 15px;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
-	margin-top: 30%;
+	vertical-align: middle;
 }
 .download-btn:hover,
 .download-btn:focus{
@@ -566,7 +570,7 @@ button:focus {
 }
 
 .mu-about-header h1{
-	font-size: 50px;
+	font-size: 40px;
 }
 
 .mu-heading-title {
@@ -579,7 +583,6 @@ button:focus {
 	background-color: #fff;
 	display: inline;
 	float: left;
-	margin-top: 25px;
 	padding: 20px;
 	width: 100%;
 }
@@ -886,8 +889,8 @@ button:focus {
 	padding: 0 120px;
 	width: 100%;
 }
-.mu-service-header h2{
-	font-size: 50px;
+.mu-service-header h1{
+	font-size: 40px;
 }
 
 .mu-heading-title {
@@ -899,13 +902,12 @@ button:focus {
 .mu-service-content{
 	display: inline;
 	float: left;
-	margin-top: 10px;
 	width: 100%;
 }
 
 .mu-service-content-single {
-	background: url("../images/test.jpg");
-	/*background-color: #f8f8f8;*/
+	background-color: #f8f8f8;
+	box-shadow: 0 5px 15px 1px lightgray;
 	display: inline;
 	float: left;
 	text-align: center;
@@ -915,7 +917,7 @@ button:focus {
 	width: 100%;
 }
 
-.mu-service-icon-box {
+.column-head-box {
 	font-size: 30px;
 	margin-bottom: 20px;
 	display: inline-block;
@@ -924,12 +926,15 @@ button:focus {
 	height: 75px;
 	line-height: 75px;
 }
-.mu-service-icon-box img{
-
-	border-radius: 15%;
-
+.column-head-box img{
+	width: 100%;
+	border-radius: 50%;
 }
-
+.guanzhu{
+	font-size: 12px;
+	color: #9d9d9d;
+	margin: 20px 0;
+}
 .mu-service-content-single h4{
 	margin-bottom: 20px;
 	font-size: 20px;
@@ -1148,7 +1153,7 @@ button:focus {
 }
 
 .mu-testimonials-area h1 {
-	font-size: 50px;
+	font-size: 40px;
 	color: #fff;
 	text-align: center;
 }
