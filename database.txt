@@ -3,6 +3,51 @@ CREATE DATABASE myweb;
 
 USE `myweb`;
 
+/*Table structure for table `detailnew` */
+
+DROP TABLE IF EXISTS `detailnew`;
+
+CREATE TABLE `detailnew` (
+  `infoId` int(11) NOT NULL,
+  `para1` varchar(400) DEFAULT NULL,
+  `para2` varchar(400) DEFAULT NULL,
+  `para3` varchar(400) DEFAULT NULL,
+  `para4` varchar(400) DEFAULT NULL,
+  `imgurl` varchar(40) DEFAULT NULL,
+  `name` varchar(20) DEFAULT NULL,
+  `para5` varchar(400) DEFAULT NULL,
+  `para6` varchar(400) DEFAULT NULL,
+  PRIMARY KEY (`infoId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `detailnew` */
+
+insert  into `detailnew`(`infoId`,`para1`,`para2`,`para3`,`para4`,`imgurl`,`name`,`para5`,`para6`) values 
+
+(1,'2001年10月7日，随着终场哨声响起，中国国家男子足球队最终以1比0击败阿曼队，并首次获得世界杯决赛圈入场券。当晚，近10万名北京球迷涌向天安门广场，欢庆这一历史性胜利。 ',' 于根伟一个标杆式的入球、一个双臂高举的标志性庆祝动作以及他在五里河体育场奔跑的那一幕将永远地记入中国足球的史册，因为在这场比赛之后，中国男足第一次冲击世界杯成功。','然而，中国队的世界杯之梦能做多久？中国队的世界杯之路能走多远？最终，在2002年韩日世界杯的小组赛场上，中国队以小组赛三场未进球，失9球、积0分的成绩给了我们一个答案。',' 于根伟一个标杆式的入球、一个双臂高举的标志性庆祝动作以及他在五里河体育场奔跑的那一幕将永远地记入中国足球的史册，因为在这场比赛之后，中国男足第一次冲击世界杯成功。','assets/images/news/newslist/NL-1.jpg','国足入围世界杯决赛',' 于根伟一个标杆式的入球、一个双臂高举的标志性庆祝动作以及他在五里河体育场奔跑的那一幕将永远地记入中国足球的史册，因为在这场比赛之后，中国男足第一次冲击世界杯成功。',' 于根伟一个标杆式的入球、一个双臂高举的标志性庆祝动作以及他在五里河体育场奔跑的那一幕将永远地记入中国足球的史册，因为在这场比赛之后，中国男足第一次冲击世界杯成功。'),
+
+(2,'爱因斯坦经过多年的观察天体运动，他推测地球在2060年将加速运转。','更可怕的是，加速转动在地球周围会形成一种内吸作用，宇宙中的星球就会撞向地球。','无独有偶，2017年期间，英国一份报纸登载了一则：\"有人发现了牛顿的手稿\"消息，报道这份手稿现保存在以色列的首都耶路撒冷一家博物馆中。','不过牛顿不是通过科学手段分析出来的，牛顿虽然是个科学家，但是到了晚年他热衷于神学。','assets/images/news/newslist/NL-2.jpg','地球爆炸','牛顿后半生一头扎进了圣经研究中，手稿中说牛顿在去世前，终于破解了《圣经密码》。','仔细想一想，这些预测都出自三人的手稿，其中的可信度大打折扣。'),
+
+(3,'自人类开始行走于地球时就开始对头顶那片灿烂的星空充满着好奇与探知欲。人类数千年的文明发展史中一真没有停止过对宇宙奥妙的探索与思考。随着近代科学技术的发展让我们探索了近地空间并了解了一部分宇宙，但有关宇宙的真相到底是什么还是众说纷纭。','这些宇宙认知理论在老子的《道德经》里有着非常明确的表述：\"有物混成，先天地生。寂兮寥兮，独立而不改，周行而不殆，可以为天下母。吾不知其名，字之曰道，强为之名，曰大。大曰逝，逝曰远，远曰反。\"（《道德经》第二十五章）。','宇宙回归到奇点状态在刘慈欣的《三体》里有着更加详尽的描述，那就是宇宙的归零重启，这也是道德经中表述的\"独立而不改，周行而不殆\"的理论。老子所要表述的就是宇宙就是在一种无为状态下不断的在做着轮回。','宇宙的真相到底是什么，也许人类永远无法去探知全貌。但人类有着能超越时空的思维，可以通过智慧的思考来解决未知。','assets/images/news/newslist/NL-3.jpg','宇宙重启','2000多年前的老子就通过这种方式为我们解读了神秘宇宙的真相，人类智慧的光辉远远超越了时空局限。','所以老子把人的这种伟大放到了非常高的位置，甚至与道、天、地共称为四大：\"故道大，天大，地大，人亦大。域中有四大，而人居其一焉。\"'),
+
+(4,'近些年来，随着特朗普上台，美国重回孤立主义，鼓吹大国竞争，鼓动部分区域内国家的对立，积极打压潜在对手，这使得威胁世界和平的不稳定因素显著增加，今年年初美国爆发了反战游行，第三次世界大战成为网络热搜词，难道第三次世界大战真的要爆发？','有欧洲情报机构的研究表明，中美俄争霸或将成为引发世界大战的导火索，那么这是真的吗?二战之后，世界并未和平安定，冷战开始，几乎整个世界被分为两大阵营，其中美苏这两个首脑级国家在多个领域争霸，加上各种核武器的出现，使得整个世界都被战争的阴霾笼罩。','苏联解体之后，美国搁置了多种武器的研制计划，一超多强的局面出现，大国竞争的时代似乎已经过去，虽然美国插手中东事务，不过整体而言世界较为和平稳定。','近些年来，随着特朗普就任美国总统，美国有重回孤立主义的趋势，但尽管如此，美国仍在积极干预世界各地的事务，或者说就是惹是生非，这其中包括在欧洲与乌克兰进行联合演习，明显针对俄罗斯，而在中东，又与伊朗产生严重摩擦，甚至濒临爆发战争','assets/images/news/newslist/NL-4.jpg','第三次世界大战爆发','近些年来，随着特朗普就任美国总统，美国有重回孤立主义的趋势，但尽管如此，美国仍在积极干预世界各地的事务，或者说就是惹是生非，这其中包括在欧洲与乌克兰进行联合演习，明显针对俄罗斯，而在中东，又与伊朗产生严重摩擦，甚至濒临爆发战争','近些年来，随着特朗普就任美国总统，美国有重回孤立主义的趋势，但尽管如此，美国仍在积极干预世界各地的事务，或者说就是惹是生非，这其中包括在欧洲与乌克兰进行联合演习，明显针对俄罗斯，而在中东，又与伊朗产生严重摩擦，甚至濒临爆发战争'),
+
+(5,'先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。','诚宜开张圣听，以光先帝遗德，恢弘志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。','若有作奸犯科及为忠善者，宜付有 司论其刑赏，以昭陛下平明之理，不宜偏私，使内外异法也。','愚以为宫中之事， 事无大小，悉以咨之，然后施行，必能裨补阙漏，有所广益。将军向宠，性行淑均，晓畅军事，试用于昔日，先帝称之曰能，是以众议举宠为督。愚以为营中之事， 悉以咨之，必能使行阵和睦，优劣得所。','assets/images/news/newslist/NL-5.jpg','米哈游收购腾讯','亲贤臣，远小人，此先汉所以兴隆也;亲小人，远贤臣，此后汉所以倾颓也。先 帝在时，每与臣论此事，未尝不叹息痛恨于桓、灵也。','侍中、尚书、长史、参军，此 悉贞良死节之臣，愿陛下亲之信之， 则汉室之隆， 可计日而待也。'),
+
+(6,'臣本布衣，躬耕于南阳，苟全性命于乱世，不求闻达于诸侯。先帝不以臣卑鄙， 猥自枉屈，三顾臣于草庐之中，咨臣以当世之事，由是感激，遂许先帝以驱驰。','后值 倾覆，受任于败军之际，奉命于危难之间，尔来二十有一年矣。','先帝知臣谨慎，故临崩寄臣以大事也。受命以来，夙夜忧叹，恐托付不效，以伤先帝之明，故五月渡泸，深入不毛。今南方已定，兵甲已足，当奖率三军，北定中原， 庶竭驽钝，攘除奸凶，兴复汉室，还于旧都。','此臣所以报先帝而忠陛下之职分也。至于斟酌损益，进尽忠言，则攸之、祎、允之任也。','assets/images/news/newslist/NL-6.jpg','软院整治操场臭味','愿陛下托臣以讨贼兴复之效，不效，则治臣之罪，以告先帝之灵。若无兴德之言， 则责攸之、祎、允等之慢，以彰其咎;陛下亦宜自谋，以咨诹善道，察纳雅言。深追先帝遗诏，臣不胜受恩感激。','今当远离，临表涕零， 不知所言。'),
+
+(7,'据悉，捷克俄一架机构在情报报告中表示，美国、俄罗斯和中国争夺霸权的行为，导致世界面临新一轮世界大战的威胁，而且目前全球冲突处于初步阶段，目前复杂的世界局势中','①必能裨补阙漏：\"阙\"通\"缺\"，缺点。','宫中府中(内，里，中间，方位名词。下文\"愚以为宫中之事\"中的\"中\"同此)','然侍卫之臣不懈于内( 然而，可是， 转折连词) 然后施行(这样，指示代词)','assets/images/news/newslist/NL-1.jpg','新闻标题1','以昭陛下平明之理(严明，形容词)','有所广益(……的动词，特殊的指示代词。下文\" 此先汉所以兴隆也\"、\"此后汉所以倾颓也\"、\"此臣所以报先帝\"中\"所\"均为特殊的指示代词，具体的指代对 象可以从上下文来体会)'),
+
+(8,'据悉，捷克俄一架机构在情报报告中表示，美国、俄罗斯和中国争夺霸权的行为，导致世界面临新一轮世界大战的威胁，而且目前全球冲突处于初步阶段，目前复杂的世界局势中','①必能裨补阙漏：\"阙\"通\"缺\"，缺点。','而中道崩殂(路，途， 名词)','若有作奸犯科(有，与\"无\"相对，动词。下文\"有所广益\"中\"有\"同此)','assets/images/news/newslist/NL-2.jpg','新闻标题2','以昭陛下平明之理(严明，形容词) ','有所广益(……的动词，特殊的指示代词。下文\" 此先汉所以兴隆也\"、\"此后汉所以倾颓也\"、\"此臣所以报先帝\"中\"所\"均为特殊的指示代词，具体的指代对 象可以从上下文来体会)'),
+
+(9,'咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','assets/images/news/newslist/NL-3.jpg','新闻标题3','人择原理(anthropic principle)是一种认为物质宇宙必须与观测到它的存在意识的智慧生命相匹配的哲学理论。有些支持者提出人择原理解释了宇宙的年龄和为什么物理常数能够保证有意识生命的存活。所以他们也认为这个宇宙能给予智能生命（可观测者）存活的那么高的标准是一件正常的事情。约翰·D·巴罗和法兰克·迪普勒给出的强人择原理（SAP）指出宇宙存在的某些机能的协调性最终会导致智慧生命的涌现。','有所广益(……的动词，特殊的指示代词。下文\" 此先汉所以兴隆也\"、\"此后汉所以倾颓也\"、\"此臣所以报先帝\"中\"所\"均为特殊的指示代词，具体的指代对 象可以从上下文来体会)'),
+
+(10,'咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','assets/images/news/newslist/NL-4.jpg','新闻标题4','人择原理(anthropic principle)是一种认为物质宇宙必须与观测到它的存在意识的智慧生命相匹配的哲学理论。有些支持者提出人择原理解释了宇宙的年龄和为什么物理常数能够保证有意识生命的存活。所以他们也认为这个宇宙能给予智能生命（可观测者）存活的那么高的标准是一件正常的事情。约翰·D·巴罗和法兰克·迪普勒给出的强人择原理（SAP）指出宇宙存在的某些机能的协调性最终会导致智慧生命的涌现。','有所广益(……的动词，特殊的指示代词。下文\" 此先汉所以兴隆也\"、\"此后汉所以倾颓也\"、\"此臣所以报先帝\"中\"所\"均为特殊的指示代词，具体的指代对 象可以从上下文来体会)'),
+
+(11,'咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','assets/images/news/newslist/NL-6.jpg','新闻标题5','人择原理(anthropic principle)是一种认为物质宇宙必须与观测到它的存在意识的智慧生命相匹配的哲学理论。有些支持者提出人择原理解释了宇宙的年龄和为什么物理常数能够保证有意识生命的存活。所以他们也认为这个宇宙能给予智能生命（可观测者）存活的那么高的标准是一件正常的事情。约翰·D·巴罗和法兰克·迪普勒给出的强人择原理（SAP）指出宇宙存在的某些机能的协调性最终会导致智慧生命的涌现。','有所广益(……的动词，特殊的指示代词。下文\" 此先汉所以兴隆也\"、\"此后汉所以倾颓也\"、\"此臣所以报先帝\"中\"所\"均为特殊的指示代词，具体的指代对 象可以从上下文来体会)'),
+
+(12,'咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','咨臣以当世之事(正在……的时候， 介词。下文\"今当远离\"中\"当\"同此)','assets/images/news/newslist/NL-6.jpg','新闻标题6','人择原理(anthropic principle)是一种认为物质宇宙必须与观测到它的存在意识的智慧生命相匹配的哲学理论。有些支持者提出人择原理解释了宇宙的年龄和为什么物理常数能够保证有意识生命的存活。所以他们也认为这个宇宙能给予智能生命（可观测者）存活的那么高的标准是一件正常的事情。约翰·D·巴罗和法兰克·迪普勒给出的强人择原理（SAP）指出宇宙存在的某些机能的协调性最终会导致智慧生命的涌现。','有所广益(……的动词，特殊的指示代词。下文\" 此先汉所以兴隆也\"、\"此后汉所以倾颓也\"、\"此臣所以报先帝\"中\"所\"均为特殊的指示代词，具体的指代对 象可以从上下文来体会)');
+
 /*Table structure for table `news` */
 
 DROP TABLE IF EXISTS `news`;
@@ -16,24 +61,38 @@ CREATE TABLE `news` (
   `description` varchar(60) DEFAULT NULL,
   `imgurl` varchar(40) DEFAULT NULL,
   `length` varchar(15) DEFAULT NULL,
+  `person` varchar(10) DEFAULT NULL,
+  `infoId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 /*Data for the table `news` */
 
-insert  into `news`(`id`,`type`,`name`,`score`,`num`,`description`,`imgurl`,`length`) values 
-(1,'hot','国足入围世界杯决赛','4.9/5',6000,'aaaa','assets/images/portfolio/img-1.jpeg','01h 49m'),
-(2,'hot','地球爆炸','4.9/5',6000,'aaaa','assets/images/portfolio/img-1.jpeg','01h 49m'),
-(3,'hot','宇宙重启','4.9/5',6000,'aaaa','assets/images/portfolio/img-1.jpeg','01h 49m'),
-(4,'hot','第三次世界大战爆发','4.9/5',6000,'aaaa','assets/images/portfolio/img-1.jpeg','01h 49m'),
-(5,'hot','米哈游收购腾讯','4.9/5',6000,'aaaa','assets/images/portfolio/img-1.jpeg','01h 49m'),
-(6,'hot','软院整治操场臭味','4.9/5',6000,'aaaa','assets/images/portfolio/img-1.jpeg','01h 49m'),
-(7,'new','新闻标题1','4.9/5',6000,'bbb','assets/images/portfolio/img-1.jpeg','01h 49m'),
-(8,'new','新闻标题2','4.9/5',6000,'bbb','assets/images/portfolio/img-2.jpeg','01h 40m'),
-(9,'new','新闻标题3','4.9/5',6000,'ccc','assets/images/portfolio/img-3.jpeg','00h 49m'),
-(10,'new','新闻标题4','4.9/5',5003,'ddd','assets/images/portfolio/img-4.jpeg','01h 29m'),
-(11,'new','新闻标题5','4.9/5',4284,'sss','assets/images/portfolio/img-5.jpeg','02h 49m'),
-(12,'new','新闻标题6','4.7/5',3821,'eee','assets/images/portfolio/img-1.jpeg','01h 49m');
+insert  into `news`(`id`,`type`,`name`,`score`,`num`,`description`,`imgurl`,`length`,`person`,`infoId`) values 
+
+(1,'hot','国足入围世界杯决赛','4.9/5',6000,'aaaa','assets/images/news/newslist/NL-1.jpg','01h 49m','peter',1),
+
+(2,'hot','地球爆炸','4.9/5',6000,'aaaa','assets/images/news/newslist/NL-2.jpg','01h 49m','casoul',2),
+
+(3,'hot','宇宙重启','4.9/5',6000,'aaaa','assets/images/news/newslist/NL-3.jpg','01h 49m','yonghui',3),
+
+(4,'hot','第三次世界大战爆发','4.9/5',6000,'aaaa','assets/images/news/newslist/NL-4.jpg','01h 49m','Wangli',4),
+
+(5,'hot','米哈游收购腾讯','4.9/5',6000,'aaaa','assets/images/news/newslist/NL-5.jpg','01h 49m','Lucy',5),
+
+(6,'hot','软院整治操场臭味','4.9/5',6000,'aaaa','assets/images/news/newslist/NL-6.jpg','01h 49m','Jassica',6),
+
+(7,'new','新闻标题1','4.9/5',6000,'bbb','assets/images/news/newslist/NL-1.jpg','01h 49m','Taylor',7),
+
+(8,'new','新闻标题2','4.9/5',6000,'bbb','assets/images/news/newslist/NL-2.jpg','01h 40m','Joson',8),
+
+(9,'new','新闻标题3','4.9/5',6000,'ccc','assets/images/news/newslist/NL-3.jpg','00h 49m','John',9),
+
+(10,'new','新闻标题4','4.9/5',5003,'ddd','assets/images/news/newslist/NL-4.jpg','01h 29m','Lincuiyi',10),
+
+(11,'new','新闻标题5','4.9/5',4284,'sss','assets/images/news/newslist/NL-6.jpg','02h 49m','Zhangping',11),
+
+(12,'new','新闻标题6','4.7/5',3821,'eee','assets/images/news/newslist/NL-6.jpg','01h 49m',NULL,12);
 
 /*Table structure for table `software` */
 
@@ -47,117 +106,224 @@ CREATE TABLE `software` (
   `imgurl` varchar(60) NOT NULL,
   `category_name` varchar(20) NOT NULL,
   PRIMARY KEY (`sid`)
-) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8;
 
 /*Data for the table `software` */
 
-insert  into `software`(`sid`,`soft_name`,`category_num`,`downloadType`,`imgurl`,`category_name`) values 
-(1,'安装环境',1,'PE工具箱','/assets/images/categories/安装环境.png','电脑系统'),
-(2,'安装环境',1,'Vmware（虚拟机）','/assets/images/categories/安装环境.png','电脑系统'),
-(3,'Windows10',1,'U盘安装win10','/assets/images/categories/win10.png','电脑系统'),
-(4,'Windows10',1,'直接安装win10','/assets/images/categories/win10.png','电脑系统'),
-(5,'Windows10',1,'虚拟机安装win10','/assets/images/categories/win10.png','电脑系统'),
-(6,'Windows7',1,'U盘安装win7','/assets/images/categories/win7.png','电脑系统'),
-(7,'Windows7',1,'直接安装win7','/assets/images/categories/win7.png','电脑系统'),
-(8,'Windows7',1,'虚拟机安装win7','/assets/images/categories/win7.png','电脑系统'),
-(9,'Linux',1,'win上安装Linux','/assets/images/categories/linux.png','电脑系统'),
-(10,'Linux',1,'虚拟机安装Linux','/assets/images/categories/linux.png','电脑系统'),
-(11,'Office',2,'Office365','/assets/images/categories/office.png','办公软件'),
-(12,'Office',2,'Office2019','/assets/images/categories/office.png','办公软件'),
-(13,'Office',2,'Office2016','/assets/images/categories/office.png','办公软件'),
-(14,'Office',2,'Office2013','/assets/images/categories/office.png','办公软件'),
-(15,'Office',2,'Office2010','/assets/images/categories/office.png','办公软件'),
-(16,'Office',2,'Office2007','/assets/images/categories/office.png','办公软件'),
-(17,'Office',2,'Office2003','/assets/images/categories/office.png','办公软件'),
-(18,'WPS',2,'WPS2019','/assets/images/categories/wps.png','办公软件'),
-(19,'WPS',2,'WPS2016','/assets/images/categories/wps.png','办公软件'),
-(20,'WPS',2,'WPS2013','/assets/images/categories/wps.png','办公软件'),
-(21,'xmind',2,'xmind2020','/assets/images/categories/xmind.png','办公软件'),
-(22,'xmind',2,'xmind2019','/assets/images/categories/xmind.png','办公软件'),
-(23,'xmind',2,'xmind2018','/assets/images/categories/xmind.png','办公软件'),
-(24,'Visio',2,'Visio','/assets/images/categories/visio.png','办公软件'),
-(25,'文献工具',2,'论文查重','/assets/images/categories/文献工具.png','办公软件'),
-(26,'文献工具',2,'EndNote X9.1','/assets/images/categories/文献工具.png','办公软件'),
-(27,'Photoshop(ps)',3,'Ps2020','/assets/images/categories/ps.png','图像处理'),
-(28,'Photoshop(ps)',3,'Ps2019','/assets/images/categories/ps.png','图像处理'),
-(29,'Photoshop(ps)',3,'Ps2018','/assets/images/categories/ps.png','图像处理'),
-(30,'Photoshop(ps)',3,'Ps2017','/assets/images/categories/ps.png','图像处理'),
-(31,'Photoshop(ps)',3,'Ps cs6','/assets/images/categories/ps.png','图像处理'),
-(32,'Photoshop(ps)',3,'Ps cs5','/assets/images/categories/ps.png','图像处理'),
-(33,'illustrator(AI)',3,'Ai cc2020','/assets/images/categories/ai.png','图像处理'),
-(34,'illustrator(AI)',3,'Ai cc2019','/assets/images/categories/ai.png','图像处理'),
-(35,'illustrator(AI)',3,'Ai cc2018','/assets/images/categories/ai.png','图像处理'),
-(36,'illustrator(AI)',3,'Ai cs6','/assets/images/categories/ai.png','图像处理'),
-(37,'illustrator(AI)',3,'Ai cs5','/assets/images/categories/ai.png','图像处理'),
-(38,'InDesign(ID)',3,'id 2021','/assets/images/categories/indesign.png','图像处理'),
-(39,'Lightroom(lr)',3,'id cc2020','/assets/images/categories/indesign.png','图像处理'),
-(40,'SketchBook',3,'SketchBook2020','/assets/images/categories/sketchbook.png','图像处理'),
-(41,'Maya',4,'Maya2020','/assets/images/categories/maya.png','影视动画'),
-(42,'Maya',4,'Maya2019','/assets/images/categories/maya.png','影视动画'),
-(43,'Maya',4,'Maya2018','/assets/images/categories/maya.png','影视动画'),
-(44,'Maya',4,'Maya2017','/assets/images/categories/maya.png','影视动画'),
-(45,'Maya',4,'Maya2016','/assets/images/categories/maya.png','影视动画'),
-(46,'Maya',4,'Maya2015','/assets/images/categories/maya.png','影视动画'),
-(47,'屏幕录像工具',4,'班迪录屏4.3','/assets/images/categories/屏幕录像工具.png','影视动画'),
-(48,'屏幕录像工具',4,'班迪录屏3.2','/assets/images/categories/屏幕录像工具.png','影视动画'),
-(49,'屏幕录像工具',4,'屏幕录像专家','/assets/images/categories/屏幕录像工具.png','影视动画'),
-(50,'Audition(Au)',4,'Au 2020','/assets/images/categories/au.png','影视动画'),
-(51,'Audition(Au)',4,'Au 2019','/assets/images/categories/au.png','影视动画'),
-(52,'Audition(Au)',4,'Au 2018','/assets/images/categories/au.png','影视动画'),
-(53,'Media Encode(ME)',4,'ME cc2020','/assets/images/categories/me.png','影视动画'),
-(54,'After Effects(AE)',4,'Ae cc2020','/assets/images/categories/ae.png','影视动画'),
-(55,'After Effects(AE)',4,'Ae cc2019','/assets/images/categories/ae.png','影视动画'),
-(56,'After Effects(AE)',4,'Ae cc2018','/assets/images/categories/ae.png','影视动画'),
-(57,'After Effects(AE)',4,'Ae cc2017','/assets/images/categories/ae.png','影视动画'),
-(58,'After Effects(AE)',4,'Ae cc2015','/assets/images/categories/ae.png','影视动画'),
-(59,'Premier(pr)',4,'Pr cc2020','/assets/images/categories/pr.png','影视动画'),
-(60,'Premier(pr)',4,'Pr cc2019','/assets/images/categories/pr.png','影视动画'),
-(61,'Premier(pr)',4,'Pr cc2018','/assets/images/categories/pr.png','影视动画'),
-(62,'Premier(pr)',4,'Pr cc2017','/assets/images/categories/pr.png','影视动画'),
-(63,'Premier(pr)',4,'Pr cc2015','/assets/images/categories/pr.png','影视动画'),
-(65,'CAD',5,'CAD2021','/assets/images/categories/cad.png','AutoCAD'),
-(66,'CAD',5,'CAD2020','/assets/images/categories/cad.png','AutoCAD'),
-(67,'CAD电气版',5,'CAD电气2021','/assets/images/categories/cad电气版.png','AutoCAD'),
-(68,'CAD电气版',5,'CAD电气2020','/assets/images/categories/cad电气版.png','AutoCAD'),
-(69,'CAD电气版',5,'CAD电气2019','/assets/images/categories/cad电气版.png','AutoCAD'),
-(70,'CAD机械版',5,'CAD机械2021','/assets/images/categories/cad机械版.png','AutoCAD'),
-(71,'CAD机械版',5,'CAD机械2020','/assets/images/categories/cad机械版.png','AutoCAD'),
-(72,'CAD机械版',5,'CAD机械2019','/assets/images/categories/cad机械版.png','AutoCAD'),
-(73,'CAD机械版',5,'CAD机械2018','/assets/images/categories/cad机械版.png','AutoCAD'),
-(74,'CAD建筑版',5,'CAD建筑2021','/assets/images/categories/cad建筑版.png','AutoCAD'),
-(75,'CAD建筑版',5,'CAD建筑2020','/assets/images/categories/cad建筑版.png','AutoCAD'),
-(76,'CAD建筑版',5,'CAD建筑2016','/assets/images/categories/cad建筑版.png','AutoCAD'),
-(77,'CAD建筑版',5,'CAD建筑2014','/assets/images/categories/cad建筑版.png','AutoCAD'),
-(78,'3ds Max',6,'3ds Max2020','/assets/images/categories/3dsmax.png','3D设计'),
-(79,'3ds Max',6,'3ds Max2019','/assets/images/categories/3dsmax.png','3D设计'),
-(80,'3ds Max',6,'3ds Max2018','/assets/images/categories/3dsmax.png','3D设计'),
-(81,'3ds Max',6,'3ds Max2017','/assets/images/categories/3dsmax.png','3D设计'),
-(82,'SketchUp',6,'SketchUp(草图大师)','/assets/images/categories/sketchup.png','3D设计'),
-(83,'V-Ray',7,'V-Ray','/assets/images/categories/vray.png','机械设计'),
-(84,'Solidworks',7,'Solidworks','/assets/images/categories/solidworks.png','机械设计'),
-(85,'MATLAB',7,'MATLAB 2019a','/assets/images/categories/matlab.png','机械设计'),
-(86,'MATLAB',7,'MATLAB 2019b','/assets/images/categories/matlab.png','机械设计'),
-(87,'MATLAB',7,'MATLAB 2020','/assets/images/categories/matlab.png','机械设计'),
-(88,'Creo',7,'Creo6.0','/assets/images/categories/creo.png','机械设计'),
-(89,'Creo',7,'Creo5.0','/assets/images/categories/creo.png','机械设计'),
-(90,'Abaqus',7,'Abaqus6.12','/assets/images/categories/abaqus.png','机械设计'),
-(91,'Inventor',7,'Inventor','/assets/images/categories/abaqus.png','机械设计'),
-(92,'Revit(BIM)',8,'Revit2020','/assets/images/categories/revit.png','建筑设计'),
-(93,'Civil3D',8,'Civil3D 2020','/assets/images/categories/civil3d.png','建筑设计'),
-(94,'Navisworks',8,'Civil3D 2019','/assets/images/categories/civil3d.png','建筑设计'),
-(95,'Dreamweaver',9,'FLash cs6','/assets/images/categories/flash.png','网页设计'),
-(96,'Flash',9,'FLash cs5.5','/assets/images/categories/flash.png','网页设计'),
-(97,'Axure RP',9,'Axure RP8','/assets/images/categories/axure.png','网页设计'),
-(98,'Axure RP',9,'Axure RP9','/assets/images/categories/axure.png','网页设计'),
-(99,'VB6.0',10,'VB6.0','/assets/images/categories/小型编程软件.png','开发编程'),
-(100,'VC++6.0',10,'VC++6.0','/assets/images/categories/小型编程软件.png','开发编程'),
-(101,'eclipse',10,'Dev C++','/assets/images/categories/小型编程软件.png','开发编程'),
-(102,'Python',10,'CodeBlock','/assets/images/categories/小型编程软件.png','开发编程'),
-(103,'Visual Studio',10,'Visual Studio2020','/assets/images/categories/vs.png','开发编程'),
-(104,'Visual Studio',10,'Visual Studio2018','/assets/images/categories/vs.png','开发编程'),
-(105,'Visual Studio',10,'Visual Studio2017','/assets/images/categories/vs.png','开发编程'),
-(106,'Unity3D',10,'Unity3D 4.5','/assets/images/categories/unity.png','开发编程'),
-(107,'Python',10,'Python 3.7.0','/assets/images/categories/python.png','开发编程'),
+insert  into `software`(`sid`,`soft_name`,`category_num`,`downloadType`,`imgurl`,`category_name`) values 
+
+(1,'安装环境',1,'PE工具箱','/assets/images/categories/安装环境.png','电脑系统'),
+
+(2,'安装环境',1,'Vmware（虚拟机）','/assets/images/categories/安装环境.png','电脑系统'),
+
+(3,'Windows10',1,'U盘安装win10','/assets/images/categories/win10.png','电脑系统'),
+
+(4,'Windows10',1,'直接安装win10','/assets/images/categories/win10.png','电脑系统'),
+
+(5,'Windows10',1,'虚拟机安装win10','/assets/images/categories/win10.png','电脑系统'),
+
+(6,'Windows7',1,'U盘安装win7','/assets/images/categories/win7.png','电脑系统'),
+
+(7,'Windows7',1,'直接安装win7','/assets/images/categories/win7.png','电脑系统'),
+
+(8,'Windows7',1,'虚拟机安装win7','/assets/images/categories/win7.png','电脑系统'),
+
+(9,'Linux',1,'win上安装Linux','/assets/images/categories/linux.png','电脑系统'),
+
+(10,'Linux',1,'虚拟机安装Linux','/assets/images/categories/linux.png','电脑系统'),
+
+(11,'Office',2,'Office365','/assets/images/categories/office.png','办公软件'),
+
+(12,'Office',2,'Office2019','/assets/images/categories/office.png','办公软件'),
+
+(13,'Office',2,'Office2016','/assets/images/categories/office.png','办公软件'),
+
+(14,'Office',2,'Office2013','/assets/images/categories/office.png','办公软件'),
+
+(15,'Office',2,'Office2010','/assets/images/categories/office.png','办公软件'),
+
+(16,'Office',2,'Office2007','/assets/images/categories/office.png','办公软件'),
+
+(17,'Office',2,'Office2003','/assets/images/categories/office.png','办公软件'),
+
+(18,'WPS',2,'WPS2019','/assets/images/categories/wps.png','办公软件'),
+
+(19,'WPS',2,'WPS2016','/assets/images/categories/wps.png','办公软件'),
+
+(20,'WPS',2,'WPS2013','/assets/images/categories/wps.png','办公软件'),
+
+(21,'xmind',2,'xmind2020','/assets/images/categories/xmind.png','办公软件'),
+
+(22,'xmind',2,'xmind2019','/assets/images/categories/xmind.png','办公软件'),
+
+(23,'xmind',2,'xmind2018','/assets/images/categories/xmind.png','办公软件'),
+
+(24,'Visio',2,'Visio','/assets/images/categories/visio.png','办公软件'),
+
+(25,'文献工具',2,'论文查重','/assets/images/categories/文献工具.png','办公软件'),
+
+(26,'文献工具',2,'EndNote X9.1','/assets/images/categories/文献工具.png','办公软件'),
+
+(27,'Photoshop(ps)',3,'Ps2020','/assets/images/categories/ps.png','图像处理'),
+
+(28,'Photoshop(ps)',3,'Ps2019','/assets/images/categories/ps.png','图像处理'),
+
+(29,'Photoshop(ps)',3,'Ps2018','/assets/images/categories/ps.png','图像处理'),
+
+(30,'Photoshop(ps)',3,'Ps2017','/assets/images/categories/ps.png','图像处理'),
+
+(31,'Photoshop(ps)',3,'Ps cs6','/assets/images/categories/ps.png','图像处理'),
+
+(32,'Photoshop(ps)',3,'Ps cs5','/assets/images/categories/ps.png','图像处理'),
+
+(33,'illustrator(AI)',3,'Ai cc2020','/assets/images/categories/ai.png','图像处理'),
+
+(34,'illustrator(AI)',3,'Ai cc2019','/assets/images/categories/ai.png','图像处理'),
+
+(35,'illustrator(AI)',3,'Ai cc2018','/assets/images/categories/ai.png','图像处理'),
+
+(36,'illustrator(AI)',3,'Ai cs6','/assets/images/categories/ai.png','图像处理'),
+
+(37,'illustrator(AI)',3,'Ai cs5','/assets/images/categories/ai.png','图像处理'),
+
+(38,'InDesign(ID)',3,'id 2021','/assets/images/categories/indesign.png','图像处理'),
+
+(39,'Lightroom(lr)',3,'id cc2020','/assets/images/categories/indesign.png','图像处理'),
+
+(40,'SketchBook',3,'SketchBook2020','/assets/images/categories/sketchbook.png','图像处理'),
+
+(41,'Maya',4,'Maya2020','/assets/images/categories/maya.png','影视动画'),
+
+(42,'Maya',4,'Maya2019','/assets/images/categories/maya.png','影视动画'),
+
+(43,'Maya',4,'Maya2018','/assets/images/categories/maya.png','影视动画'),
+
+(44,'Maya',4,'Maya2017','/assets/images/categories/maya.png','影视动画'),
+
+(45,'Maya',4,'Maya2016','/assets/images/categories/maya.png','影视动画'),
+
+(46,'Maya',4,'Maya2015','/assets/images/categories/maya.png','影视动画'),
+
+(47,'屏幕录像工具',4,'班迪录屏4.3','/assets/images/categories/屏幕录像工具.png','影视动画'),
+
+(48,'屏幕录像工具',4,'班迪录屏3.2','/assets/images/categories/屏幕录像工具.png','影视动画'),
+
+(49,'屏幕录像工具',4,'屏幕录像专家','/assets/images/categories/屏幕录像工具.png','影视动画'),
+
+(50,'Audition(Au)',4,'Au 2020','/assets/images/categories/au.png','影视动画'),
+
+(51,'Audition(Au)',4,'Au 2019','/assets/images/categories/au.png','影视动画'),
+
+(52,'Audition(Au)',4,'Au 2018','/assets/images/categories/au.png','影视动画'),
+
+(53,'Media Encode(ME)',4,'ME cc2020','/assets/images/categories/me.png','影视动画'),
+
+(54,'After Effects(AE)',4,'Ae cc2020','/assets/images/categories/ae.png','影视动画'),
+
+(55,'After Effects(AE)',4,'Ae cc2019','/assets/images/categories/ae.png','影视动画'),
+
+(56,'After Effects(AE)',4,'Ae cc2018','/assets/images/categories/ae.png','影视动画'),
+
+(57,'After Effects(AE)',4,'Ae cc2017','/assets/images/categories/ae.png','影视动画'),
+
+(58,'After Effects(AE)',4,'Ae cc2015','/assets/images/categories/ae.png','影视动画'),
+
+(59,'Premier(pr)',4,'Pr cc2020','/assets/images/categories/pr.png','影视动画'),
+
+(60,'Premier(pr)',4,'Pr cc2019','/assets/images/categories/pr.png','影视动画'),
+
+(61,'Premier(pr)',4,'Pr cc2018','/assets/images/categories/pr.png','影视动画'),
+
+(62,'Premier(pr)',4,'Pr cc2017','/assets/images/categories/pr.png','影视动画'),
+
+(63,'Premier(pr)',4,'Pr cc2015','/assets/images/categories/pr.png','影视动画'),
+
+(65,'CAD',5,'CAD2021','/assets/images/categories/cad.png','AutoCAD'),
+
+(66,'CAD',5,'CAD2020','/assets/images/categories/cad.png','AutoCAD'),
+
+(67,'CAD电气版',5,'CAD电气2021','/assets/images/categories/cad电气版.png','AutoCAD'),
+
+(68,'CAD电气版',5,'CAD电气2020','/assets/images/categories/cad电气版.png','AutoCAD'),
+
+(69,'CAD电气版',5,'CAD电气2019','/assets/images/categories/cad电气版.png','AutoCAD'),
+
+(70,'CAD机械版',5,'CAD机械2021','/assets/images/categories/cad机械版.png','AutoCAD'),
+
+(71,'CAD机械版',5,'CAD机械2020','/assets/images/categories/cad机械版.png','AutoCAD'),
+
+(72,'CAD机械版',5,'CAD机械2019','/assets/images/categories/cad机械版.png','AutoCAD'),
+
+(73,'CAD机械版',5,'CAD机械2018','/assets/images/categories/cad机械版.png','AutoCAD'),
+
+(74,'CAD建筑版',5,'CAD建筑2021','/assets/images/categories/cad建筑版.png','AutoCAD'),
+
+(75,'CAD建筑版',5,'CAD建筑2020','/assets/images/categories/cad建筑版.png','AutoCAD'),
+
+(76,'CAD建筑版',5,'CAD建筑2016','/assets/images/categories/cad建筑版.png','AutoCAD'),
+
+(77,'CAD建筑版',5,'CAD建筑2014','/assets/images/categories/cad建筑版.png','AutoCAD'),
+
+(78,'3ds Max',6,'3ds Max2020','/assets/images/categories/3dsmax.png','3D设计'),
+
+(79,'3ds Max',6,'3ds Max2019','/assets/images/categories/3dsmax.png','3D设计'),
+
+(80,'3ds Max',6,'3ds Max2018','/assets/images/categories/3dsmax.png','3D设计'),
+
+(81,'3ds Max',6,'3ds Max2017','/assets/images/categories/3dsmax.png','3D设计'),
+
+(82,'SketchUp',6,'SketchUp(草图大师)','/assets/images/categories/sketchup.png','3D设计'),
+
+(83,'V-Ray',7,'V-Ray','/assets/images/categories/vray.png','机械设计'),
+
+(84,'Solidworks',7,'Solidworks','/assets/images/categories/solidworks.png','机械设计'),
+
+(85,'MATLAB',7,'MATLAB 2019a','/assets/images/categories/matlab.png','机械设计'),
+
+(86,'MATLAB',7,'MATLAB 2019b','/assets/images/categories/matlab.png','机械设计'),
+
+(87,'MATLAB',7,'MATLAB 2020','/assets/images/categories/matlab.png','机械设计'),
+
+(88,'Creo',7,'Creo6.0','/assets/images/categories/creo.png','机械设计'),
+
+(89,'Creo',7,'Creo5.0','/assets/images/categories/creo.png','机械设计'),
+
+(90,'Abaqus',7,'Abaqus6.12','/assets/images/categories/abaqus.png','机械设计'),
+
+(91,'Inventor',7,'Inventor','/assets/images/categories/abaqus.png','机械设计'),
+
+(92,'Revit(BIM)',8,'Revit2020','/assets/images/categories/revit.png','建筑设计'),
+
+(93,'Civil3D',8,'Civil3D 2020','/assets/images/categories/civil3d.png','建筑设计'),
+
+(94,'Navisworks',8,'Civil3D 2019','/assets/images/categories/civil3d.png','建筑设计'),
+
+(95,'Dreamweaver',9,'FLash cs6','/assets/images/categories/flash.png','网页设计'),
+
+(96,'Flash',9,'FLash cs5.5','/assets/images/categories/flash.png','网页设计'),
+
+(97,'Axure RP',9,'Axure RP8','/assets/images/categories/axure.png','网页设计'),
+
+(98,'Axure RP',9,'Axure RP9','/assets/images/categories/axure.png','网页设计'),
+
+(99,'VB6.0',10,'VB6.0','/assets/images/categories/小型编程软件.png','开发编程'),
+
+(100,'VC++6.0',10,'VC++6.0','/assets/images/categories/小型编程软件.png','开发编程'),
+
+(101,'eclipse',10,'Dev C++','/assets/images/categories/小型编程软件.png','开发编程'),
+
+(102,'Python',10,'CodeBlock','/assets/images/categories/小型编程软件.png','开发编程'),
+
+(103,'Visual Studio',10,'Visual Studio2020','/assets/images/categories/vs.png','开发编程'),
+
+(104,'Visual Studio',10,'Visual Studio2018','/assets/images/categories/vs.png','开发编程'),
+
+(105,'Visual Studio',10,'Visual Studio2017','/assets/images/categories/vs.png','开发编程'),
+
+(106,'Unity3D',10,'Unity3D 4.5','/assets/images/categories/unity.png','开发编程'),
+
+(107,'Python',10,'Python 3.7.0','/assets/images/categories/python.png','开发编程'),
+
 (108,'Keil',10,'Keil2','/assets/images/categories/keil.png','开发编程');
 
 /*Table structure for table `software_info` */
@@ -168,122 +334,230 @@ CREATE TABLE `software_info` (
   `sid` int(11) NOT NULL AUTO_INCREMENT,
   `soft_name` varchar(40) NOT NULL,
   `downloadType` varchar(40) NOT NULL,
-  `soft_icon` varchar(40) NOT NULL,
-  `soft_size` int(11) NOT NULL,
+  `soft_icon` varchar(60) NOT NULL,
+  `soft_size` varchar(20) NOT NULL,
   `environment` varchar(40) NOT NULL,
+  `soft_describe` varchar(300) NOT NULL,
   PRIMARY KEY (`sid`)
-) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8;
 
 /*Data for the table `software_info` */
 
-insert  into `software_info`(`sid`,`soft_name`,`downloadType`,`soft_icon`,`soft_size`,`environment`) values 
-(1,'安装环境','PE工具箱','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(2,'安装环境','Vmware（虚拟机）','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(3,'Windows10','U盘安装win10','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(4,'Windows10','直接安装win10','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(5,'Windows10','虚拟机安装win10','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(6,'Windows7','U盘安装win7','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(7,'Windows7','直接安装win7','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(8,'Windows7','虚拟机安装win7','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(9,'Linux','win上安装Linux','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(10,'Linux','虚拟机安装Linux','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(11,'Office','Office365','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(12,'Office','Office2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(13,'Office','Office2016','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(14,'Office','Office2013','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(15,'Office','Office2010','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(16,'Office','Office2007','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(17,'Office','Office2003','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(18,'WPS','WPS2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(19,'WPS','WPS2016','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(20,'WPS','WPS2013','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(21,'xmind','xmind2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(22,'xmind','xmind2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(23,'xmind','xmind2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(24,'Visio','Visio','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(25,'文献工具','论文查重','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(26,'文献工具','EndNote X9.1','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(27,'Photoshop(ps)','Ps2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(28,'Photoshop(ps)','Ps2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(29,'Photoshop(ps)','Ps2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(30,'Photoshop(ps)','Ps2017','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(31,'Photoshop(ps)','Ps cs6','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(32,'Photoshop(ps)','Ps cs5','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(33,'illustrator(AI)','Ai cc2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(34,'illustrator(AI)','Ai cc2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(35,'illustrator(AI)','Ai cc2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(36,'illustrator(AI)','Ai cs6','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(37,'illustrator(AI)','Ai cs5','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(38,'InDesign(ID)','id 2021','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(39,'Lightroom(lr)','id cc2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(40,'SketchBook','SketchBook2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(41,'Maya','Maya2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(42,'Maya','Maya2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(43,'Maya','Maya2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(44,'Maya','Maya2017','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(45,'Maya','Maya2016','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(46,'Maya','Maya2015','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(47,'屏幕录像工具','班迪录屏4.3','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(48,'屏幕录像工具','班迪录屏3.2','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(49,'屏幕录像工具','屏幕录像专家','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(50,'Audition(Au)','Au 2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(51,'Audition(Au)','Au 2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(52,'Audition(Au)','Au 2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(53,'Media Encode(ME)','ME cc2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(54,'After Effects(AE)','Ae cc2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(55,'After Effects(AE)','Ae cc2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(56,'After Effects(AE)','Ae cc2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(57,'After Effects(AE)','Ae cc2017','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(58,'After Effects(AE)','Ae cc2015','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(59,'Premier(pr)','Pr cc2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(60,'Premier(pr)','Pr cc2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(61,'Premier(pr)','Pr cc2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(62,'Premier(pr)','Pr cc2017','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(63,'Premier(pr)','Pr cc2015','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(65,'CAD','CAD2021','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(66,'CAD','CAD2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(67,'CAD电气版','CAD电气2021','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(68,'CAD电气版','CAD电气2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(69,'CAD电气版','CAD电气2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(70,'CAD机械版','CAD机械2021','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(71,'CAD机械版','CAD机械2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(72,'CAD机械版','CAD机械2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(73,'CAD机械版','CAD机械2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(74,'CAD建筑版','CAD建筑2021','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(75,'CAD建筑版','CAD建筑2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(76,'CAD建筑版','CAD建筑2016','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(77,'CAD建筑版','CAD建筑2014','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(78,'3ds Max','3ds Max2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(79,'3ds Max','3ds Max2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(80,'3ds Max','3ds Max2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(81,'3ds Max','3ds Max2017','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(82,'SketchUp','SketchUp(草图大师)','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(83,'V-Ray','V-Ray','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(84,'Solidworks','Solidworks','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(85,'MATLAB','MATLAB 2019a','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(86,'MATLAB','MATLAB 2019b','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(87,'MATLAB','MATLAB 2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(88,'Creo','Creo6.0','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(89,'Creo','Creo5.0','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(90,'Abaqus','Abaqus6.12','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(91,'Inventor','Inventor','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(92,'Revit(BIM)','Revit2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(93,'Civil3D','Civil3D 2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(94,'Navisworks','Civil3D 2019','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(95,'Dreamweaver','FLash cs6','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(96,'Flash','FLash cs5.5','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(97,'Axure RP','Axure RP8','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(98,'Axure RP','Axure RP9','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(99,'VB6.0','VB6.0','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(100,'VC++6.0','VC++6.0','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(101,'eclipse','Dev C++','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(102,'Python','CodeBlock','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(103,'Visual Studio','Visual Studio2020','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(104,'Visual Studio','Visual Studio2018','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(105,'Visual Studio','Visual Studio2017','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(106,'Unity3D','Unity3D 4.5','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(107,'Python','Python 3.7.0','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux'),
-(108,'Keil','Keil2','/assets/images/softwareinfo_icon/pr/pr_i',660,'Windows10/Windows7/Linux');
+insert  into `software_info`(`sid`,`soft_name`,`downloadType`,`soft_icon`,`soft_size`,`environment`,`soft_describe`) values 
+
+(1,'安装环境','PE工具箱','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(2,'安装环境','Vmware（虚拟机）','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(3,'Windows10','U盘安装win10','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(4,'Windows10','直接安装win10','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(5,'Windows10','虚拟机安装win10','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(6,'Windows7','U盘安装win7','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(7,'Windows7','直接安装win7','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(8,'Windows7','虚拟机安装win7','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(9,'Linux','win上安装Linux','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(10,'Linux','虚拟机安装Linux','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(11,'Office','Office365','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(12,'Office','Office2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(13,'Office','Office2016','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(14,'Office','Office2013','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(15,'Office','Office2010','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(16,'Office','Office2007','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(17,'Office','Office2003','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(18,'WPS','WPS2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(19,'WPS','WPS2016','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(20,'WPS','WPS2013','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(21,'xmind','xmind2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(22,'xmind','xmind2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(23,'xmind','xmind2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(24,'Visio','Visio','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(25,'文献工具','论文查重','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(26,'文献工具','EndNote X9.1','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(27,'Photoshop(ps)','Ps2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(28,'Photoshop(ps)','Ps2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(29,'Photoshop(ps)','Ps2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(30,'Photoshop(ps)','Ps2017','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(31,'Photoshop(ps)','Ps cs6','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(32,'Photoshop(ps)','Ps cs5','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(33,'illustrator(AI)','Ai cc2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(34,'illustrator(AI)','Ai cc2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(35,'illustrator(AI)','Ai cc2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(36,'illustrator(AI)','Ai cs6','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(37,'illustrator(AI)','Ai cs5','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(38,'InDesign(ID)','id 2021','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(39,'Lightroom(lr)','id cc2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(40,'SketchBook','SketchBook2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(41,'Maya','Maya2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(42,'Maya','Maya2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(43,'Maya','Maya2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(44,'Maya','Maya2017','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(45,'Maya','Maya2016','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(46,'Maya','Maya2015','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(47,'屏幕录像工具','班迪录屏4.3','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(48,'屏幕录像工具','班迪录屏3.2','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(49,'屏幕录像工具','屏幕录像专家','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(50,'Audition(Au)','Au 2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(51,'Audition(Au)','Au 2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(52,'Audition(Au)','Au 2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(53,'Media Encode(ME)','ME cc2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(54,'After Effects(AE)','Ae cc2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(55,'After Effects(AE)','Ae cc2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(56,'After Effects(AE)','Ae cc2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(57,'After Effects(AE)','Ae cc2017','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(58,'After Effects(AE)','Ae cc2015','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(59,'Premier(pr)','Pr cc2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(60,'Premier(pr)','Pr cc2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(61,'Premier(pr)','Pr cc2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(62,'Premier(pr)','Pr cc2017','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(63,'Premier(pr)','Pr cc2015','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(65,'CAD','CAD2021','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(66,'CAD','CAD2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(67,'CAD电气版','CAD电气2021','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(68,'CAD电气版','CAD电气2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(69,'CAD电气版','CAD电气2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(70,'CAD机械版','CAD机械2021','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(71,'CAD机械版','CAD机械2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(72,'CAD机械版','CAD机械2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(73,'CAD机械版','CAD机械2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(74,'CAD建筑版','CAD建筑2021','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(75,'CAD建筑版','CAD建筑2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(76,'CAD建筑版','CAD建筑2016','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(77,'CAD建筑版','CAD建筑2014','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(78,'3ds Max','3ds Max2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(79,'3ds Max','3ds Max2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(80,'3ds Max','3ds Max2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(81,'3ds Max','3ds Max2017','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(82,'SketchUp','SketchUp(草图大师)','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(83,'V-Ray','V-Ray','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(84,'Solidworks','Solidworks','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(85,'MATLAB','MATLAB 2019a','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(86,'MATLAB','MATLAB 2019b','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(87,'MATLAB','MATLAB 2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(88,'Creo','Creo6.0','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(89,'Creo','Creo5.0','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(90,'Abaqus','Abaqus6.12','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(91,'Inventor','Inventor','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(92,'Revit(BIM)','Revit2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(93,'Civil3D','Civil3D 2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(94,'Navisworks','Civil3D 2019','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(95,'Dreamweaver','FLash cs6','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(96,'Flash','FLash cs5.5','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(97,'Axure RP','Axure RP8','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(98,'Axure RP','Axure RP9','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(99,'VB6.0','VB6.0','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(100,'VC++6.0','VC++6.0','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(101,'eclipse','Dev C++','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(102,'Python','CodeBlock','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(103,'Visual Studio','Visual Studio2020','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(104,'Visual Studio','Visual Studio2018','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(105,'Visual Studio','Visual Studio2017','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(106,'Unity3D','Unity3D 4.5','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(107,'Python','Python 3.7.0','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。'),
+
+(108,'Keil','Keil2','/assets/images/softwareinfo_icon/pr/pr_icon.png','659.80MB','Windows10/Windows7/Linux','Pr，是 Premiere的简称，由Adobe公司开发是一款常用的视频编辑软件，由Adobe公司推出。现在常用的版本有CS4、CS5、CS6、CC 2014、CC 2015、CC 2017、CC 2018、CC 2019以及2020版本。Adobe Premiere是一款编辑画面质量比较好的软件，有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作。目前这款软件广泛应用于广告制作和电视节目制作中。 其最新版本为Adobe Premiere Pro 2020。');
 
 /*Table structure for table `user` */
 
@@ -299,7 +573,10 @@ CREATE TABLE `user` (
 
 /*Data for the table `user` */
 
-insert  into `user`(`id`,`name`,`password`,`email`) values 
-(1,'aa','123','aa@123.com'),
-(2,'bb','123','bb@123.com'),
+insert  into `user`(`id`,`name`,`password`,`email`) values 
+
+(1,'aa','123','aa@123.com'),
+
+(2,'bb','123','bb@123.com'),
+
 (3,'cc','123','cc@123.com');
