@@ -585,15 +585,17 @@
 
 
 <div class="a_XuanFu" id="XuanFu" onclick="login_test('XuanFu')">
-	<div class="a_login" id="login" onclick="login_cancelBubble()">
-		<p align="center">注册登录</p>
-		<form>
-			<input class="a_input" type="text" name="fname"  placeholder="账户或者邮箱"/><br/>
-			<input class="a_input" type="text" name="pwd"  placeholder="密码"><br/>
-			<input class="a_submit" id="submit" type="button"  value="Submit"/>
-		</form>
+	<div class="a_login"  onclick="login_cancelBubble()">
+		<div class="a_top">
+			<div id="a_login" class="a1_top" onclick="login('login')">
+				<p class="p_top" >登录</p>
+			</div>
+			<div id="a_register" class="a2_top" onclick="login('register')">
+				<p class="p_top">注册</p>
+			</div>
+		</div>
+		<iframe class="a_iframe" id="a_iframe" src="login/login.html"></iframe>
 	</div>
 </div>
-
 </body>
 </html>
