@@ -60,3 +60,14 @@
 改善了news和newsinfo的布局和部分样式
 ### 19:45 刘佳乐
 index整体已优化完成，除替换图片外不会再有任何改动
+### 0:07 陈丽莎
+完成软件详情页数据库操作
+### 0:07 张婉淳
+解决了服务器下页面跳转问题（前端人员留意服务器挂载目录，根据服务器的目录在html写链接）  
+/index.html  
+/new/news.html  
+/new/newsinfo.html  
+/public/column.html  
+/public/columninfo.html  
+/soft/software.html
+/soft/softwareinfo.html
