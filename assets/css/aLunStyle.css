@@ -156,6 +156,17 @@
     font-size: 20px;
 }
 
+.news-list-item{
+    padding: 0;
+}
+.news-list-item-dot{
+    height: 2px;
+    border-radius: 100%;
+    width: 80%;
+    display: inline-block;
+    background-color: #339999;
+}
+
 .DivOfLunBoPic{
     position: relative;
 }

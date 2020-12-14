@@ -47,180 +47,8 @@
     <!--    <script src="assets/js/popper.min.js"></script>-->
     <!--    <script src="assets/js/bootstrap.min.js"></script>-->
 
-    <style>
-        .section-title {
-            margin-bottom: 47px;
-            position: relative;
-        }
-        .section-title .sub-title {
-            color: var(--main-color);
-        }
-        .section-title h2 {
-            margin-bottom: 0;
-        }
-        .section-title p {
-            margin-bottom: 0;
-            margin-top: 13px;
-        }
-        .section-title a {
-            margin-top: 25px;
-        }
 
-        .btn-base {
-            color: #fff;
-            border: 0;
-            background: var(--main-color);
-        }
-        .btn-base:before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: #022334;
-            transform: scaleX(0);
-            transform-origin: 0 50%;
-            transition-duration: 0.4s;
-        }
-        .btn-base:hover, .btn-base:focus {
-            color: #fff;
-        }
-        .btn-base:hover:before, .btn-base:focus:before {
-            transform: scaleX(1);
-        }
-        .course-view-details-inner .details ul.price-area .btn-base {
-            margin-right: 10px;
-        }
-
-        .single-course-inner {
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 30px;
-        }
-        .single-course-inner .thumb {
-            overflow: hidden;
-            position: relative;
-        }
-        .single-course-inner .thumb img {
-            transition: 0.7s;
-        }
-        .single-course-inner .thumb .rating {
-            background: #f8f8f8;
-            height: 36px;
-            line-height: 36px;
-            padding: 0 22px;
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            border-radius: 0 6px 0 0;
-            font-size: 14px;
-            font-weight: 600;
-        }
-        .single-course-inner .thumb .rating i {
-            color: var(--main-color);
-        }
-        .single-course-inner .thumb .bookmark {
-            display: inline-block;
-            position: absolute;
-            right: 25px;
-            top: 20px;
-            color: #fff;
-            transition: 0.4s;
-        }
-        .single-course-inner .thumb .bookmark:hover {
-            color: var(--main-color);
-        }
-        .single-course-inner .details {
-            background: #f8f8f8;
-            padding: 25px 30px;
-            position: relative;
-        }
-        .single-course-inner .details .price {
-            height: 55px;
-            width: 55px;
-            line-height: 56px;
-            color: #fff;
-            font-weight: 500;
-            text-align: center;
-            background: var(--main-color);
-            display: inline-block;
-            position: absolute;
-            right: 20px;
-            top: -27px;
-            z-index: 2;
-            border-radius: 50%;
-        }
-        .single-course-inner .details .meta p {
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 0;
-        }
-        .single-course-inner .details h5 {
-            font-size: 18px;
-            margin-top: 12px;
-            margin-bottom: 25px;
-        }
-        .single-course-inner .details .price-inner p {
-            font-weight: 600;
-            margin-bottom: 0;
-            color: var(--heading-color);
-        }
-        .single-course-inner .details .price-inner a {
-            font-weight: 600;
-            color: var(--heading-color);
-        }
-        .single-course-inner .details .price-inner a:hover {
-            color: var(--main-color);
-        }
-        .single-course-inner:hover .thumb img {
-            transform: scale(1.1);
-        }
-        .single-course-inner.style-two .details {
-            padding: 25px 15px;
-        }
-
-        .carousel-indicators li{
-            width: 12px;
-            height: 12px;
-            background-color: #fff;
-            margin-left: 6px;
-            margin-right: 6px;
-            border-radius: 50%;
-        }
-        .carousel-indicators .active{
-            background-color: #0aa1ed;
-        }
-        .carousel-control-prev,
-        .carousel-control-next{
-            width: 4%;
-            height: 20%;
-            background-color: #aaaaaa;
-            top:40%;
-            border-radius: 0.25rem;
-        }
-
-        .celanbiaoti{
-            font-size: 20px;
-        }
-
-        .DivOfLunBoPic{
-            position: relative;
-        }
-        .TextOfLunBoPic{
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .stroke {
-            -webkit-text-stroke: 1px white;
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/aLunStyle.css">
 </head>
 <body style="background-color:#F0FFFF">
 
@@ -316,23 +144,29 @@
 <!-- latest-course start -->
 
 <!--轮播下面的那部分-->
-<div class="row">
-    <div class="col-2" style="margin: 3rem;background-color: white">
+<div class="row" style="padding: 50px 150px;">
+    <div class="col-2" style="background-color: white;text-align: center">
         <h1 style="background-color: #669966">热搜</h1>
         <ul>
-            <li class="list-unstyled">
-                <div><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></div>
+            <li class="list-unstyled news-list-item">
+                <div><a href=""><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></a></div>
                 <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+            <span class="news-list-item-dot"></span>
         </ul>
     </div>
 
-    <div class="latest-course-area pd-bottom-110 col-6" style="margin: 3rem;background:aliceblue">
+    <div class="latest-course-area pd-bottom-110 col-8" style="background:aliceblue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -513,18 +347,24 @@
         </div>
     </div>
 
-    <div class="col-2" style="margin: 3rem;background-color: white">
+    <div class="col-2" style="background-color: white;text-align: center;">
         <h1 style="background-color: #669966">最新新闻</h1>
         <ul>
-            <li class="list-unstyled">
-                <div><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></div>
+            <li class="list-unstyled news-list-item">
+                <div><a href=""><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></a></div>
                 <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+            <span class="news-list-item-dot"></span>
         </ul>
     </div>
 </div>
