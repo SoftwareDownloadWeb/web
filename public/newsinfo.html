@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>新闻详情-DOWNLOAD ME!</title>
-    <base href="/">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Slick slider -->
-    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="../assets/css/slick.css" rel="stylesheet">
     <!-- Gallery Lightbox -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+    <link id="switcher" href="../assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main Style -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
 
     <!-- Fonts -->
 
@@ -29,15 +29,14 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
     <!-- Poppins for Title -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-<!--    art-template-->
-    <script src="node_modules/art-template/lib/template-web.js"></script>
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
 
-    <link rel="stylesheet" href="assets/css/aLunStyle.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/aLunStyle.css">
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 
 </head>
 <body style="background-color:#F0FFFF">
@@ -59,7 +58,7 @@
                     <!--Text Logo-->
                     <a class="navbar-brand" href="/">DOWNLOADME!</a>
                     <!-- Image Logo -->
-                    <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.jpeg"></a> -->
+                    <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
@@ -88,99 +87,105 @@
     </div>
 </header>
 <!-- End Header -->
-<!--新闻正体-->
-<div class="row" style="margin-top: 7rem;margin-left: 10rem;text-align: center">
-    <div class="col-1"></div>
 
-    <div class="col-8" style="display: flex;justify-content: center;" id="cont">
-        <script type="text/html" id="tcp">
+<!--新闻正体-->
+<div class="row" style="margin-top: 7rem;margin-left: 10rem;text-align: center;">
+    <div class="col-1"></div>
+    <!--    style="display: flex;justify-content: center;align-items: center;"-->
+    <div class="col-8" style="display: flex;justify-content: center;">
+
+        <div style="margin-top: 3rem;width: 1000px">
             <hr>
-            <h1 style="position: center;text-align: left;font-size: 40px;font-weight: bold">{{data.name}}</h1>
+            <h1 style="position: center;text-align: left;font-size: 40px;font-weight: bold">左有京东、拼多多，右有美团，阿里组织架构大调整</h1>
             <hr>
             <div style="margin-left: 3rem;margin-right: 3rem;margin-top: 3rem;background-color: white;">
-                    <p align="left" style="font-size: 20px">
-                       {{data.para1}}<br><br>
-                    </p>
-                    <img src="{{data.imgurl}}" style="width: 800px;height: 400px"/><br><br>
-                    <p align="left" style="font-size: 20px">
-                       {{data.para2}}<br><br>
-                        {{data.para3}}<br><br>
-                        {{data.para4}}<br><br>
-                    </p>
-                    <img src="{{data.imgurl}}" style="width: 800px;height: 400px"/><br><br>
-                    <p align="left" style="font-size: 20px">
-                        {{data.para5}}<br><br>
-                        {{data.para6}}<br><br>
-                    </p>
+                <img src="../assets/images/news/newsinfo/NI-1.jpg" style="width: 800px;height: 400px"/><br><br>
+                <p align="left" style="font-size: 20px">
+                    双 11 结束一个月后，阿里淘宝系完成了新一轮组织升级。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    12 月 11 日，阿里淘宝天猫总裁蒋凡发出全员公开信，宣布已对针对核心 “电商业务”进行了新一轮组织架构调整。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    此次调整十分全面，涉及淘系电商的各个 BU 和核心高管，如下：<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    汤兴（平畴）将全面负责淘系用户产品与技术。搜索推荐事业部、天猫-消费者平台产品团队、淘系消费者运营事业部向平畴汇报。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    杨光（吹雪）全面负责天猫商家和行业的运营工作。天猫服饰风尚事业部、天猫快速消费品事业部、阿里汽车事业部、聚划算事业部、天猫活动营销中心、天猫商家策略部向吹雪汇报。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    刘博（家洛）全面负责平台商业化体系的建设和发展。阿里妈妈事业群、天猫商家营销中心（含原天猫品牌营销中心和部分商业化团队）之后向家洛汇报。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    据此前报道，汤兴、杨光、刘博、周靖人、古迈是阿里电商业务的关键人物。目前只有周靖人和古迈暂未确定，其中前者已确认离开淘系，后者据 36 氪透露，因 “涉嫌贪腐”已于近期被带走调查。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    此外公开信还透露，天猫服饰风尚事业部下的奢品运营中心和魅力惠业务将会进入天猫进出口事业群，向刘鹏（奥文）汇报；天猫品牌市场部向集团 CMO 董本洪（张无忌）汇报；淘宝商家与行业线继续由张凯夫（凯芙）负责。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    在本次组织调整中，除了多位高管的职位变动外，也可以看到阿里组织调整的谨慎、蒋凡职权的变化以及职权扩张等信息。<br><br>
+                </p>
+
+                <p align="left" style="font-size: 25px;font-weight: bold">
+                    『本地业务』组织调整<br><br><hr>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    值得注意的是，阿里本地生活服务公司进行了新一轮组织架构调整。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    调整内容为：阿里集团新零售技术事业群总裁吴泽明将兼任阿里本地生活首席技术官（CTO），向阿里集团 CTO 程立和王磊双实线汇报。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    此外，现蚂蚁智能引擎技术事业部负责人王志荣和现新零售搜索推荐事业部应用工程技术负责人李天民加入本地业务，并向吴泽明汇报。为此，阿里本地生活服务公司总裁王磊在内部信中表示，“感谢集团给本地生活带来更为强大的技术支撑和投入。”<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    知情人士称，本地生活公司组织架构调整后，事业群和事业部调整后都有一号位，打法更会聚焦。此外，本年度阿里本地生活也会与支付宝有更强的联合，利用流量变现。<br><br>
+                </p>
+
+                <p align="left" style="font-size: 25px;font-weight: bold">
+                    阿里在电商和本地生活领域面临激烈竞争<br><br><hr>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    无论是在电商领域，还是本地生活领域，2020 年都让阿里感受到了不小的压力。<br><br>
+                </p>
+                <p align="left" style="font-size: 20px">
+                    其中最直观的体现是股价的变化，今年拼多多股价翻了近 4 倍，京东也翻了一倍。<br><br>
+                </p>
+                <img src="../assets/images/news/newsinfo/NI-2.jpg" style="width: 800px;height: 400px"/><br><br>
+                <p align="left" style="font-size: 20px">
+                    在本地业务领域，美团的股价翻了 3 倍，而阿里今年至今只涨了 20%。<br><br>
+                </p>
+                <img src="../assets/images/news/newsinfo/NI-3.jpg" style="width: 800px;height: 400px"/><br><br>
+                <p align="left" style="font-size: 20px">
+                    可以看出，阿里通过架构调整，以加强应对这些挑战的意味很明显。<br><br>
+                </p>
+
+
             </div>
-        </script>
-        <script type="text/javascript">
-            $(function () {
-                //num:得到本地cookie存的新闻id
-                    let num = document.cookie.split("=");
-                    $.ajax({
-                        type: "get",
-                        dataType: "json",
-                        url: "http://127.0.0.1:8888/new/pageinfo?num=" + num[1],
-                        success: function (result) {
-                            console.log(result);
-                            let contM = document.querySelector('#cont');
-                            let html = template('tcp', {data: result[0]});
-                            contM.innerHTML = html;
-                        }
-                    })
-                })
-        </script>
+        </div>
     </div>
 
     <div class="col-2" style="background-color: white;text-align: center;">
-        <h1 style="background-color: #669966">热搜</h1>
-        <ul id="contLeft">
-        </ul>
-        <script type="text/html" id="tcpLeft">
-            {{each data2 as value i}}
-            {{if value.type==="hot"}}
-            {{if value.id==1}}
+        <h1 style="background-color: #669966">最新新闻</h1>
+        <ul>
             <li class="list-unstyled news-list-item">
-                <div><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})"><img src="{{value.imgurl}}" style="width: 150px;height: 100px"></a></div>
-                <div><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})">{{value.name}}</a></div>
-                <span class="news-list-item-dot"></span>
+                <div><a href=""><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></a></div>
+                <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
-            {{else}}
-            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})">{{value.name}}</a></li>
             <span class="news-list-item-dot"></span>
-            {{/if}}
-            {{/if}}
-            {{/each}}
-        </script>
-        <script type="text/javascript">
-            $(function () {
-                // let html="";
-                $.ajax({
-                    type:"get",
-                    dataType:"json",
-                    url:"http://127.0.0.1:8888/new/hotnew?",
-                    success:function (result) {
-                        let html2=template('tcpLeft',{data2:result});
-                        let contL=document.querySelector('#contLeft');
-                        contL.innerHTML=html2;
-                    }
-                });
-            })
-            function detailInfo(num) {
-                console.log("click");
-                $.ajax({
-                    type:"get",
-                    dataType:"json",
-                    url:"http://127.0.0.1:8888/new/columninfo?num="+num,
-                    success:function (result) {
-                        document.cookie="infoId="+result[0].infoId+";path=/;httpOnlyCookies=false";
-                        //重新加载本页面
-                        location.reload();
-                    }
-                });
-            }
-        </script>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+            <span class="news-list-item-dot"></span>
+        </ul>
     </div>
 </div>
 
@@ -191,23 +196,23 @@
 <!-- Bootstrap -->
 <!--<script src="assets/js/bootstrap.min.js"></script>-->
 <!-- Slick slider -->
-<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="../assets/js/slick.min.js"></script>
 <!-- Filterable Gallery js -->
-<script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.filterizr.min.js"></script>
 <!-- Gallery Lightbox -->
-<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>
 <!-- Ajax contact form  -->
-<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="../assets/js/app.js"></script>
 <!-- Featured Slider -->
-<script type="text/javascript" src="assets/js/typed.min.js"></script>
+<script type="text/javascript" src="../assets/js/typed.min.js"></script>
 <!-- On scroll JS  -->
-<script src="assets/js/jquery.appear.js"></script>
+<script src="../assets/js/jquery.appear.js"></script>
 <!-- Progress Bar -->
-<script type="text/javascript" src="assets/js/jquery.lineProgressbar.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.lineProgressbar.js"></script>
 
 
 <!-- Custom js -->
-<!--<script type="text/javascript" src="assets/js/custom.js"></script>-->
+<script type="text/javascript" src="../assets/js/custom.js"></script>
 
 
 </body>
