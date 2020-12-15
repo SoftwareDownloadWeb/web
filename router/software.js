@@ -59,7 +59,7 @@ r.get('/softwareinfo',(req,res)=>{
 r.post('/infolist',(req,res)=>{
     let softname=req.body.softname;
     let downloadType=req.body.downloadType;
-    pool.query("SELECT soft_name,downloadType,soft_icon,soft_size,environment,soft_describe FROM software_info WHERE soft_name=? and downloadType=?",[softname,downloadType],(err,resulst)=>{
+    pool.query("SELECT soft_name,downloadType,soft_icon,soft_size,environment,soft_describe,soft_install FROM software_info WHERE soft_name=? and downloadType=?",[softname,downloadType],(err,resulst)=>{
         if(err) throw err;
         else{
             let data = JSON.parse(JSON.stringify(resulst[0]));
