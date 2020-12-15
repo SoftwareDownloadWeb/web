@@ -71,3 +71,7 @@ index整体已优化完成，除替换图片外不会再有任何改动
 /public/columninfo.html  
 /soft/software.html  
 /soft/softwareinfo.html
+
+## 12/15
+### 22:49 张婉淳
+更新了software.js,software_info.html,database.txt（运行需重新导入数据库），安装教程从数据库读取
