@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>新闻-DOWNLOAD ME!</title>
-    <base href="/">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Slick slider -->
-    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="../assets/css/slick.css" rel="stylesheet">
     <!-- Gallery Lightbox -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+    <link id="switcher" href="../assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main Style -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-<!--    art-template-->
-    <script src="node_modules/art-template/lib/template-web.js"></script>
-<!--    <script src="assets/js/"></script>-->
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+
     <!-- Fonts -->
 
     <!-- Open Sans for body font -->
@@ -44,8 +42,13 @@
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="assets/css/aLunStyle.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
+    <!--    <script src="assets/js/jquery.min.js"></script>-->
+    <!--    <script src="assets/js/popper.min.js"></script>-->
+    <!--    <script src="assets/js/bootstrap.min.js"></script>-->
+
+
+    <link rel="stylesheet" href="../assets/css/aLunStyle.css">
 </head>
 <body style="background-color:#F0FFFF">
 
@@ -85,7 +88,7 @@
                         </li>
                         <!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
                         <li><a href="javascript:void(0)" onclick="login_test('XuanFu')" class="navbar-brand-img">
-                            <img src="assets/images/user.png">
+                            <img src="../assets/images/user.png">
                         </a></li>
 
                     </ul>
@@ -95,7 +98,6 @@
     </div>
 </header>
 <!-- End Header -->
-
 
 <!--轮播-->
 <section id="mu-testimonials">
@@ -115,15 +117,15 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a class="TextOfLunBoPic stroke">左有京东拼多多，右有美团，阿里组织架构大调整</a>
-                    <a href="newsinfo"><img src="assets/images/news/LunBo/LB-1.jpg" class="w-100" alt="" width="500" height="400"/></a>
+                    <a href="newsinfo"><img src="../assets/images/news/LunBo/LB-1.jpg" class="w-100" alt="" width="500" height="400"/></a>
                 </div>
                 <div class="carousel-item">
                     <a class="TextOfLunBoPic stroke">国内垃圾佬将 14 年前处理器超频至 8.4GHz</a>
-                    <a href="newsinfo"><img src="assets/images/news/LunBo/LB-2.jpg" class="w-100" alt="" width="500" height="400"/></a>
+                    <a href="newsinfo"><img src="../assets/images/news/LunBo/LB-2.jpg" class="w-100" alt="" width="500" height="400"/></a>
                 </div>
                 <div class="carousel-item">
                     <a class="TextOfLunBoPic stroke">Adobe 第四季度营收创纪录：再回购 150 亿美元股票</a>
-                    <a href="newsinfo"><img src="assets/images/news/LunBo/LB-3.jpg" class="w-100" alt="" width="500" height="400"/></a>
+                    <a href="newsinfo"><img src="../assets/images/news/LunBo/LB-3.jpg" class="w-100" alt="" width="500" height="400"/></a>
                 </div>
             </div>
 
@@ -141,141 +143,229 @@
 </section>
 <!-- latest-course start -->
 
-<!--轮播下面部分-->
+<!--轮播下面的那部分-->
 <div class="row" style="padding: 50px 150px;">
-    <!-- 左边：热搜 -->
     <div class="col-2" style="background-color: white;text-align: center">
         <h1 style="background-color: #669966">热搜</h1>
-        <ul id="contLeft">
+        <ul>
+            <li class="list-unstyled news-list-item">
+                <div><a href=""><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></a></div>
+                <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
+            </li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">地球爆炸</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">宇宙重启</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">第三次世界大战爆发</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">米哈游收购腾讯</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">软院整治操场臭味</a></li>
+            <span class="news-list-item-dot"></span>
         </ul>
-        <script type="text/html" id="tcpLeft">
-            {{each data2 as value i}}
-             {{if value.type==="hot"}}
-                {{if value.id==1}}
-                    <li class="list-unstyled news-list-item">
-                        <div><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})"><img src="{{value.imgurl}}" style="width: 150px;height: 100px"></a></div>
-                    <div><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})">{{value.name}}</a></div>
-                    </li>
-                    <span class="news-list-item-dot"></span>
-                {{else}}
-                    <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})">{{value.name}}</a></li>
-                    <span class="news-list-item-dot"></span>
-            {{/if}}
-             {{/if}}
-            {{/each}}
-        </script>
     </div>
 
-    <!-- 中间，推荐新闻-->
     <div class="latest-course-area pd-bottom-110 col-8" style="background:aliceblue">
-        <div class="container" >
-            <div class="row" id="contMiddle">
-                <script type="text/html" id="tcpMiddle">
-                    {{each data as value i}}
-                    {{if value.type==='new'}}
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-course-inner">
-                            <div class="thumb">
-                                <a href="/new/newsinfo"><img src="{{value.imgurl}}" alt="img"></a>
-                                <div class="rating">{{value.score}}<i class="fa fa-star"></i></div>
-                                <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
-                            </div>
-                            <div class="details">
-                                <div class="meta">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p>{{value.num}}次观看</p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <p>{{value.length}}</p>
-                                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo"><img src="../assets/images/news/newslist/NL-1.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
                                     </div>
                                 </div>
-                                <h5><a href="/new/newsinfo">{{value.name}}</a></h5>
-                                <div class="price-inner">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p>{{value.description}}</p>
-                                        </div>
+                            </div>
+                            <h5><a href="#">科技公司纷纷搬离硅谷：甲骨文将总部迁往得州</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{/if}}
-                    {{/each}}
-                </script>
-                <script type="text/javascript">
-                    $(function () {
-                            // let html="";
-                            $.ajax({
-                                type:"get",
-                                dataType:"json",
-                                url:"http://127.0.0.1:8888/new/hotnew?",
-                                success:function (result) {
-                                    console.log(result);
-                                    let html=template('tcpMiddle',{data:result});
-                                    let html2=template('tcpLeft',{data2:result});
-                                    let html3=template('tcpRight',{data3:result});
-                                    let contM=document.querySelector('#contMiddle');
-                                    let contL=document.querySelector('#contLeft');
-                                    let contR=document.querySelector('#contRight');
-                                    // for(let i=0;i<result.length;i++){
-                                        // if(result[i]['type']=="hot"){
-                                        //     html2+=;
-                                        // }else{
-                                        //     html+=template('tcpMiddle',{data:result[i]});
-                                        // }
-                                    // }
-                                    contM.innerHTML=html;
-                                    contL.innerHTML=html2;
-                                    contR.innerHTML=html3;
-                                    // $("#bro").append(html);
-
-                                }
-                            });
-                            // document.getElementById("hotNews").innerText=(html);
-                        })
-                        function detailInfo(num) {
-                            $.ajax({
-                                type:"get",
-                                dataType:"json",
-                                url:"http://127.0.0.1:8888/new/columninfo?num="+num,
-                                success:function (result) {
-                                        //console.log(result);
-                                        document.cookie="infoId="+result[0].infoId+";path=/;httpOnlyCookies=false";
-                                        // $JSONCookie("pageinfo",cooki_val,{path:'/',expires:7});
-                                       window.location.href="/new/newsinfo";
-                                    // }
-                                }
-                            });
-                        }
-                </script>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo"><img src="../assets/images/news/newslist/NL-2.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">iOS 14.3 即将发布，苹果 Apple Music 将支持专辑插图动画</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo"><img src="../assets/images/news/newslist/NL-3.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">Epic 客户端出现闪退问题：官方致歉，临时解决方法公布</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo"><img src="../assets/images/news/newslist/NL-4.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">首单电商平台数字人民币消费在京东诞生</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo"><img src="../assets/images/news/newslist/NL-5.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">迪士尼 160 亿美元投资 Disney + 等流媒体服务，挑战 Netflix 霸主地位</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-inner">
+                        <div class="thumb">
+                            <a href="newsinfo"><img src="../assets/images/news/newslist/NL-6.jpg" alt="img"></a>
+                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
+                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
+                        </div>
+                        <div class="details">
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>5,957次观看</p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p>01h 49m</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5><a href="#">专利授权费未谈妥，爱立信将三星告上法庭</a></h5>
+                            <div class="price-inner">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>新闻简介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- 最新新闻-->
     <div class="col-2" style="background-color: white;text-align: center;">
         <h1 style="background-color: #669966">最新新闻</h1>
-        <ul id="contRight">
-        </ul>
-        <script type="text/html" id="tcpRight">
-            {{each data3 as value i}}
-            {{if value.type==="hot"}}
-            {{if value.id==1}}
+        <ul>
             <li class="list-unstyled news-list-item">
-                <div><a href="javascript:void(0)" onclick="detailInfo({{value.infoId}})"><img src="{{value.imgurl}}" style="width: 150px;height: 100px"></a></div>
-                <div><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})">{{value.name}}</a></div>
-                <span class="news-list-item-dot"></span>
+                <div><a href=""><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></a></div>
+                <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
             </li>
-            {{else}}
-            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}})">{{value.name}}</a></li>
             <span class="news-list-item-dot"></span>
-            {{/if}}
-            {{/if}}
-            {{/each}}
-        </script>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">地球爆炸</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">宇宙重启</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">第三次世界大战爆发</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">米哈游收购腾讯</a></li>
+            <span class="news-list-item-dot"></span>
+            <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo">软院整治操场臭味</a></li>
+            <span class="news-list-item-dot"></span>
+        </ul>
     </div>
 </div>
 
@@ -300,6 +390,11 @@
 
 <!-- latest-course end -->
 
+
+
+
+
+
 <!-- jQuery library -->
 <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -308,23 +403,23 @@
 <script src="../assets/js/bootstrap.min.js"></script>
 <!--<script src="assets/js/bootstrap.min.js"></script>-->
 <!-- Slick slider -->
-<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="../assets/js/slick.min.js"></script>
 <!-- Filterable Gallery js -->
-<script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.filterizr.min.js"></script>
 <!-- Gallery Lightbox -->
-<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>
 <!-- Ajax contact form  -->
-<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="../assets/js/app.js"></script>
 <!-- Featured Slider -->
-<script type="text/javascript" src="assets/js/typed.min.js"></script>
+<script type="text/javascript" src="../assets/js/typed.min.js"></script>
 <!-- On scroll JS  -->
-<script src="assets/js/jquery.appear.js"></script>
+<script src="../assets/js/jquery.appear.js"></script>
 <!-- Progress Bar -->
-<script type="text/javascript" src="assets/js/jquery.lineProgressbar.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.lineProgressbar.js"></script>
 
 
 <!-- Custom js -->
-<!--<script type="text/javascript" src="../assets/js/custom.js"></script>-->
+<script type="text/javascript" src="../assets/js/custom.js"></script>
 
 
 </body>
