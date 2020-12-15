@@ -8,6 +8,7 @@
     <title>软件详情_What to DOWNLOAD</title>
     <!-- Favicon -->
     <base href="/">
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -81,7 +82,7 @@
                     <!--Text Logo-->
                     <a class="navbar-brand" href="#">DOWNLOADME!</a>
                     <!-- Image Logo -->
-                    <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.jpeg"></a> -->
+                    <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
@@ -143,16 +144,16 @@
         <div class="container">
             <div class="row" >
                 <div class="col-md-12">
-                    <div class="mu-about-area" id="News">
 
-                        <!-- Start softwareInfo Content -->
-                        <!--div_infolist-->
-                        <div class="mu-about-content" style="padding-top: 0;background-color: transparent" id="div_infolist">
+                    <!--div_infolist-->
+                    <div class="mu-about-area" id="div_infolist" style="padding-top: 0"></div>
 
-                        </div>
+                    <!-- Start softwareInfo Content -->
 
-                        <!--template_infolist-->
-                        <script type="text/html" id="tpinfolist">
+                    <!--template_infolist-->
+                    <script type="text/html" id="tpinfolist">
+                        <div class="mu-about-content" style="padding-top: 0;background-color: transparent">
+
 
                             <div class="soft-info-title">
                                 <div style="margin: 0 auto;background-color: #f2dede;border-radius: 50%">
@@ -185,7 +186,8 @@
                                 </div>
                             </div>
 
-                        </script>
+
+                        </div>
 
                         <!-- End Content -->
 
@@ -201,35 +203,36 @@
                             </div>
                             <div class="soft-info-content">
                                 <div class="soft-install-step">
-                                    <img src="assets/images/softwareinfo_icon/office/365/install.jpeg" alt="">
-                                    <!--
-                                    <ol>
-                                        <li>鼠标右击【Premiere Pro 2020(64bit)】压缩包选择【解压到 Premiere Pro 2020(64bit)】。</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/1.png" alt="">
-                                        <li>打开解压后的文件夹，鼠标右击【Set-up】选择【以管理员身份运行】。</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/2.png" alt="">
-                                        <li>点击【继续】。</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/3.png" alt="">
-                                        <li>点击【文件夹图标】→点击【更改位置】可更改安装位置（建议不要安装在C盘，可以在D盘或其它磁盘下新建一个“Pr2020”文件夹。注：安装路径中不能有中文）；点击【继续】。</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/4.png" alt="">
-                                        <li>软件安装中（大约需要2分钟）。</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/5.png" alt="">
-                                        <li>安装完成，点击【关闭】</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/6.png" alt="">
-                                        <li>创建桌面启动快捷方式：点击桌面左下角【开始】图标，点击【所有应用】→找到并拖动【 Adobe Premiere Pro 2020 】图标到电脑桌面。</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/7.png" alt="">
-                                        <li>双击桌面【Adobe Premiere Pro 2020】图标启动软件</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/8.png" alt="">
-                                        <li>安装成功</li>
-                                        <img src="assets/images/softwareinfo_icon/pr/9.png" alt="">
-                                    </ol>
--->
+                                    <img src="{{infolist.soft_install}}" alt="">
+<!--                                    <ol>-->
+<!--                                        <li style="">鼠标右击【Premiere Pro 2020(64bit)】压缩包选择【解压到 Premiere Pro 2020(64bit)】。</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/1.png" alt="">-->
+<!--                                        <li>打开解压后的文件夹，鼠标右击【Set-up】选择【以管理员身份运行】。</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/2.png" alt="">-->
+<!--                                        <li>点击【继续】。</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/3.png" alt="">-->
+<!--                                        <li>点击【文件夹图标】→点击【更改位置】可更改安装位置（建议不要安装在C盘，可以在D盘或其它磁盘下新建一个“Pr2020”文件夹。注：安装路径中不能有中文）；点击【继续】。</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/4.png" alt="">-->
+<!--                                        <li>软件安装中（大约需要2分钟）。</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/5.png" alt="">-->
+<!--                                        <li>安装完成，点击【关闭】</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/6.png" alt="">-->
+<!--                                        <li>创建桌面启动快捷方式：点击桌面左下角【开始】图标，点击【所有应用】→找到并拖动【 Adobe Premiere Pro 2020 】图标到电脑桌面。</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/7.png" alt="">-->
+<!--                                        <li>双击桌面【Adobe Premiere Pro 2020】图标启动软件</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/8.png" alt="">-->
+<!--                                        <li>安装成功</li>-->
+<!--                                        <img src="assets/images/softwareinfo_icon/pr/9.png" alt="">-->
+<!--                                    </ol>-->
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </script>
+
                     <!-- End Content -->
                 </div>
+
+
             </div>
         </div>
 
