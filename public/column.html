@@ -42,6 +42,8 @@
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="../assets/css/aLunStyle.css">
+
     <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
     <!--    <script src="assets/js/jquery.min.js"></script>-->
     <!--    <script src="assets/js/popper.min.js"></script>-->
@@ -245,6 +247,34 @@
             background: -o-linear-gradient(top, #033360, #006495);
             /*Opera 11.10+*/
         }
+
+        .YongHuTouXiang {
+            width:30px;
+            height:30px;
+            border-radius:100%;
+            overflow:hidden;
+        }
+
+        .YongHuTouXiang-CeLan {
+            width:50px;
+            height:50px;
+            border-radius:100%;
+            overflow:hidden;
+        }
+
+        .LieBiaoBiaoTi {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .ReMenZuoZhe {
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom:solid 1px #2f2f2f;
+        }
+
     </style>
 </head>
 <body style="background-color:#F0FFFF">
@@ -296,292 +326,295 @@
 </header>
 <!-- End Header -->
 
-<!--轮播-->
-<section id="mu-testimonials">
-    <div class="container" style="margin: auto">
-
-        <h1 style="text-align: center;margin-top: 7rem">特约专栏</h1>
-
-        <div id="demo" class="carousel slide" data-ride="carousel">
-
-            <!-- 指示符 -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-
-            <!-- 轮播图片 -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="col-md-9 col-sm-6">
-                        <a class="TextOfLunBoPic stroke">深入理解PHP+Mysql分布式事务与解决方案</a>
-                        <a href="/public/columninfo.html"><img src="../assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6" style="background-color: white">
-                        <img src="../assets/images/s2.jpg" height="200">
-                        <br>
-                        <a>本报特约评论员：</a>
-                        <h1>AAA</h1>
-                        <a>为您解读华师操场恶臭气味，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-9 col-sm-6">
-                        <a class="TextOfLunBoPic stroke">你可能未曾使用的新 Java 特性</a>
-                        <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-2.png" class="w-100" alt="" width="500" height="400"/></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6" style="background-color: white">
-                        <img src="../assets/images/s3.jpg" height="200">
-                        <br>
-                        <a>本报特约评论员：</a>
-                        <h1>BBB</h1>
-                        <a>为您解读华师最新美式教学，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-9 col-sm-6">
-                        <a class="TextOfLunBoPic stroke">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
-                        <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-3.png" class="w-100" alt="" width="500" height="400"/></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6" style="background-color: white">
-                        <img src="../assets/images/s3.jpg" height="200">
-                        <br>
-                        <a>本报特约评论员：</a>
-                        <h1>CCC</h1>
-                        <a>为您解读华师光速校园网，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 左右切换按钮 -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- latest-course start -->
 <div class="row">
-    <div class="col-2" style="background-color: white">
-        <h1 style="background-color: #669966">热门专栏</h1>
-        <ul class="list-unstyled">
-            <li>
-                <div><img src="../assets/images/column/ReSou.jpg" style="width: 150px;height: 100px"></div>
-                <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
-            </li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">地球爆炸</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">宇宙重启</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">第三次世界大战爆发</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">米哈游收购腾讯</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">软院整治操场臭味</a></li>
-        </ul>
-    </div>
+    <div class="col-1"></div>
 
-    <div class="latest-course-area pd-bottom-110 col-8" style="background:aliceblue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-course-inner">
-                        <div class="thumb">
-                            <a href="columninfo.html"><img src="../assets/images/column/columnlist/CL-1.png" alt="img"></a>
-                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
-                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
-                        </div>
-                        <div class="details">
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>特约评论员：AAA</p>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p>01h 49m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><a href="#">一文了解 AlphaFold 2 背后的 PDB 蛋白质结构数据集</a></h5>
-                            <div class="price-inner">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>新闻简介</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-course-inner">
-                        <div class="thumb">
-                            <a href="columninfo.html"><img src="../assets/images/column/columnlist/CL-2.png" alt="img"></a>
-                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
-                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
-                        </div>
-                        <div class="details">
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>特约评论员：AAA</p>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p>01h 49m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><a href="#">如何开启MySQL远程连接</a></h5>
-                            <div class="price-inner">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>新闻简介</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-course-inner">
-                        <div class="thumb">
-                            <a href="columninfo.html"><img src="../assets/images/column/columnlist/CL-3.png" alt="img"></a>
-                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
-                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
-                        </div>
-                        <div class="details">
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>特约评论员：AAA</p>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p>01h 49m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><a href="#">M1 暴打 Intel？——这次的芯片有何不同</a></h5>
-                            <div class="price-inner">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>新闻简介</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-course-inner">
-                        <div class="thumb">
-                            <a href="columninfo.html"><img src="../assets/images/column/columnlist/CL-4.png" alt="img"></a>
-                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
-                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
-                        </div>
-                        <div class="details">
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>特约评论员：AAA</p>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p>01h 49m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><a href="#">云服务器是什么？ECS、BCC、CVM...</a></h5>
-                            <div class="price-inner">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>新闻简介</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-course-inner">
-                        <div class="thumb">
-                            <a href="columninfo.html"><img src="../assets/images/column/columnlist/CL-5.png" alt="img"></a>
-                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
-                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
-                        </div>
-                        <div class="details">
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>特约评论员：AAA</p>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p>01h 49m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><a href="#">ubuntu20.04.2上安装nginx+php-fpm</a></h5>
-                            <div class="price-inner">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>新闻简介</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-course-inner">
-                        <div class="thumb">
-                            <a href="columninfo.html"><img src="../assets/images/column/columnlist/CL-6.png" alt="img"></a>
-                            <div class="rating">4.9/5 <i class="fa fa-star"></i></div>
-                            <a href="#" class="bookmark"><i class="fa fa-bookmark-o"></i></a>
-                        </div>
-                        <div class="details">
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>特约评论员：AAA</p>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p>01h 49m</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><a href="#">收藏 | 阿里程序员常用的 15 款开发者工具（2020 版）</a></h5>
-                            <div class="price-inner">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p>新闻简介</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--    左侧栏-->
+    <div class="col-2" style="padding-left: 10rem;margin-top: 4rem">
+        <div style="position: fixed;margin-top: 4rem;background-color: white;height: 100%">
+            <h1 style="background-color: #669966;text-align: center">热门专栏</h1>
+            <ul style="text-align: left">
+                <li class="list-unstyled news-list-item">
+                    <div><a href=""><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></a></div>
+                    <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
+                </li>
+                <span class="news-list-item-dot"></span>
+                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
+                <span class="news-list-item-dot"></span>
+                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
+                <span class="news-list-item-dot"></span>
+                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
+                <span class="news-list-item-dot"></span>
+                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
+                <span class="news-list-item-dot"></span>
+                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
+                <span class="news-list-item-dot"></span>
+            </ul>
         </div>
     </div>
 
-    <div class="col-2" style="background-color: white">
-        <h1 style="background-color: #669966">最新专栏</h1>
-        <ul class="list-unstyled">
-            <li>
-                <div><img src="../assets/images/column/ReSou.jpg" style="width: 150px;height: 100px"></div>
-                <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
-            </li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">地球爆炸</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">宇宙重启</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">第三次世界大战爆发</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">米哈游收购腾讯</a></li>
-            <li class="celanbiaoti list-unstyled" href="#"><a class="text-muted" href="columninfo.html">软院整治操场臭味</a></li>
-        </ul>
+    <div class="col-6">
+
+<!--        轮播-->
+        <section id="mu-testimonials">
+            <div class="container" style="margin-bottom: 2rem">
+
+                <h1 style="text-align: center;margin-top: 7rem">特约专栏</h1>
+
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-md-9 col-sm-6">
+                                <a class="TextOfLunBoPic stroke">深入理解PHP+Mysql分布式事务与解决方案</a>
+                                <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="background-color: white">
+                                <img src="../assets/images/s2.jpg" height="200">
+                                <br>
+                                <a>本报特约评论员：</a>
+                                <h1>AAA</h1>
+                                <a>为您解读华师操场恶臭气味，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-9 col-sm-6">
+                                <a class="TextOfLunBoPic stroke">你可能未曾使用的新 Java 特性</a>
+                                <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-2.png" class="w-100" alt="" width="500" height="400"/></a>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="background-color: white">
+                                <img src="../assets/images/s3.jpg" height="200">
+                                <br>
+                                <a>本报特约评论员：</a>
+                                <h1>BBB</h1>
+                                <a>为您解读华师最新美式教学，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-9 col-sm-6">
+                                <a class="TextOfLunBoPic stroke">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
+                                <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-3.png" class="w-100" alt="" width="500" height="400"/></a>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="background-color: white">
+                                <img src="../assets/images/s3.jpg" height="200">
+                                <br>
+                                <a>本报特约评论员：</a>
+                                <h1>CCC</h1>
+                                <a>为您解读华师光速校园网，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="latest-course-area pd-bottom-110" style="background:white">
+            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+                <div class="col-8" style="padding-left: 2rem">
+                    <div>
+                        <a class="LieBiaoBiaoTi" href="columninfo.html">一文了解 AlphaFold 2 背后的 PDB 蛋白质结构数据集<br></a>
+                    </div>
+                    <div>
+                        <a style="font-size: 15px">DeepMind 的最新一代算法 AlphaFold 2，在近日被称为「蛋白质奥林匹克竞赛」的 CASP 中，完虐其它对手.</a>
+                        <div style="position: relative;top: 25px">
+                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
+                            <a style="font-size: 13px">作者：</a>
+                            <a style="font-size: 17px">AAA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/column/columnlist/CL-1.png" width="250" height="130">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+                <div class="col-8" style="padding-left: 2rem">
+                    <div>
+                        <a class="LieBiaoBiaoTi" href="columninfo.html">如何开启MySQL远程连接<br></a>
+                    </div>
+                    <div>
+                        <a style="font-size: 15px">MySql-Server 出于安全方面考虑只允许本机(localhost, 127.0.0.1)来连接访问，这对于 Web-Server 与 MySql-Server 都在同一台服务器上的网站架构来说是没有问题的。</a>
+                        <div style="position: relative;top: 25px">
+                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
+                            <a style="font-size: 13px">作者：</a>
+                            <a style="font-size: 17px">AAA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/column/columnlist/CL-2.png" width="250" height="130">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+                <div class="col-8" style="padding-left: 2rem">
+                    <div>
+                        <a class="LieBiaoBiaoTi" href="columninfo.html">M1 暴打 Intel？——这次的芯片有何不同<br></a>
+                    </div>
+                    <div>
+                        <a style="font-size: 15px">这次的芯片到底有何不同，以至于让那么多人说苹果不讲武德。</a>
+                        <div style="position: relative;top: 25px">
+                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
+                            <a style="font-size: 13px">作者：</a>
+                            <a style="font-size: 17px">AAA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/column/columnlist/CL-3.png" width="250" height="130">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+                <div class="col-8" style="padding-left: 2rem">
+                    <div>
+                        <a class="LieBiaoBiaoTi" href="columninfo.html">云服务器是什么？ECS、BCC、CVM...<br></a>
+                    </div>
+                    <div>
+                        <a style="font-size: 15px">云服务器是一种简单高效、处理能力可弹性伸缩的计算服务，帮助用户快速构建更稳定、安全的应用，提升运维效率，降低 IT 成本，使用户更专注于核心业务创新。</a>
+                        <div style="position: relative;top: 25px">
+                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
+                            <a style="font-size: 13px">作者：</a>
+                            <a style="font-size: 17px">AAA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/column/columnlist/CL-4.png" width="250" height="130">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+                <div class="col-8" style="padding-left: 2rem">
+                    <div>
+                        <a class="LieBiaoBiaoTi" href="columninfo.html">ubuntu20.04.2上安装nginx+php-fpm<br></a>
+                    </div>
+                    <div>
+                        <a style="font-size: 15px">虽说已经有很多ubuntu的安装教程了，但是今天我还是要写一篇这样的文章</a>
+                        <div style="position: relative;top: 25px">
+                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
+                            <a style="font-size: 13px">作者：</a>
+                            <a style="font-size: 17px">AAA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/column/columnlist/CL-5.png" width="250" height="130">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+                <div class="col-8" style="padding-left: 2rem">
+                    <div>
+                        <a class="LieBiaoBiaoTi" href="columninfo.html">收藏 | 阿里程序员常用的 15 款开发者工具（2020 版）<br></a>
+                    </div>
+                    <div>
+                        <a style="font-size: 15px">本文精选了一些阿里经济体内部最受开发者欢迎的开发者工具，筛选出一些带有普适性同样适合外部开发者的，希望能助力开发者们提高开发效率。</a>
+                        <div style="position: relative;top: 25px">
+                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
+                            <a style="font-size: 13px">作者：</a>
+                            <a style="font-size: 17px">AAA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/column/columnlist/CL-6.png" width="250" height="130">
+                </div>
+            </div>
+
+        </div>
     </div>
+
+<!--    右侧栏-->
+    <div class="col-2" style="margin-top: 4rem">
+        <div style="position: fixed;margin-top: 4rem;background-color: white;width: 15%;height: 100%">
+            <h1 style="background-color: #669966;text-align: center">热门作者</h1>
+            <div class="ReMenZuoZhe">
+                <div style="float: left">
+                    <img src="../assets/images/s1.jpg" class="YongHuTouXiang-CeLan">
+                </div>
+
+                <div style="margin-left: 60px">
+                    <a style="font-size: 20px;font-weight: bold">AAA</a>
+                    <p style="float: right">文章数：233</p>
+                    <p>经验极其丰富的程序员</p>
+                </div>
+            </div>
+
+            <div class="ReMenZuoZhe">
+                <div style="float: left">
+                    <img src="../assets/images/s2.jpg" class="YongHuTouXiang-CeLan">
+                </div>
+
+                <div style="margin-left: 60px">
+                    <a style="font-size: 20px;font-weight: bold">BBB</a>
+                    <p style="float: right">文章数：233</p>
+                    <p>参与过国内各大重要项目</p>
+                </div>
+            </div>
+
+            <div class="ReMenZuoZhe">
+                <div style="float: left">
+                    <img src="../assets/images/s3.jpg" class="YongHuTouXiang-CeLan">
+                </div>
+
+                <div style="margin-left: 60px">
+                    <a style="font-size: 20px;font-weight: bold">CCC</a>
+                    <p style="float: right">文章数：233</p>
+                    <p>十分熟悉硬件相关知识</p>
+                </div>
+            </div>
+
+            <div class="ReMenZuoZhe">
+                <div style="float: left">
+                    <img src="../assets/images/s1.jpg" class="YongHuTouXiang-CeLan">
+                </div>
+
+                <div style="margin-left: 60px">
+                    <a style="font-size: 20px;font-weight: bold">DDD</a>
+                    <p style="float: right">文章数：233</p>
+
+                    <p>经验极其丰富的程序员</p>
+                </div>
+            </div>
+
+            <div class="ReMenZuoZhe">
+                <div style="float: left">
+                    <img src="../assets/images/s2.jpg" class="YongHuTouXiang-CeLan">
+                </div>
+
+                <div style="margin-left: 60px">
+                    <a style="font-size: 20px;font-weight: bold">EEE</a>
+                    <p style="float: right">文章数：233</p>
+
+                    <p>参与过国内各大重要项目</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-1"></div>
 </div>
 
-<!-- latest-course end -->
 
 
 <main role="main">
