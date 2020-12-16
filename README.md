@@ -60,27 +60,3 @@
 改善了news和newsinfo的布局和部分样式
 ### 19:45 刘佳乐
 index整体已优化完成，除替换图片外不会再有任何改动
-### 0:07 陈丽莎 张婉淳
-更新了software.js,software_info.html,database.txt，软件详情内容显示数据库存储信息。  【目前数据库中存储软件信息的图片、描述，统一存储的是Pr的软件信息，后期可依据需求修改数据库文件】
-### 0:07 张婉淳
-解决了服务器下页面跳转问题（前端人员留意服务器挂载目录，根据服务器的目录在html写链接）  
-/index.html  
-/new/news.html  
-/new/newsinfo.html  
-/public/column.html  
-/public/columninfo.html  
-/soft/software.html  
-/soft/softwareinfo.html
-
-## 12/15
-### 22:49 张婉淳
-更新了software.js,software_info.html,database.txt（运行需重新导入数据库），安装教程从数据库读取
-### 23:24 刘佳乐  
-重新整理了一遍，综合了这几天的更新，目前的各个文件应该都是最新的了，请各位去下载到本地，检查检查自己负责的页面是否是最新的（我怕我有遗漏），有问题请先跟我说再进行更改
-
-## 12/16
-### 4:53 刘佳乐
-software.html的问题是，外部js文件无法用jquery选择<script type="text/html" id="tpdownloadlist"></script>内的任一标签，尚未解决，我快先要被解决了。。。
-### 16:07 刘佳乐 张婉淳
-解决了software.html里的bug  
-建议大伙善用检查器（泪目
