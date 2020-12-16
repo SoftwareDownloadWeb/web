@@ -30,6 +30,8 @@
     <!-- Poppins for Title -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+    <!-- jQuery library -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="/node_modules/art-template/lib/template-web.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -68,16 +70,33 @@
             }
             let downloadlist=getDownloadlist();
             let categorylist=getCategorylist();
-            console.log(downloadlist);
 
             document.getElementById('div_downloadlist').innerHTML=template('tpdownloadlist',{
                 downloadlist:downloadlist,
                 categorylist:categorylist
             });
-
+            $.ajax({
+                url: "../assets/js/jquery.filterizr.min.js",
+                dataType: "script",
+                cache: true,
+                async: false,
+                success: function () {
+                    //todo
+                }
+            });
+            $.ajax({
+                url: "../assets/js/custom.js",
+                dataType: "script",
+                cache: true,
+                async: false,
+                success: function () {
+                    //todo
+                }
+            });
         }
 
     </script>
+
 </head>
 <body>
 
@@ -154,12 +173,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
-                    <!--div_downloadlist-->
-                    <div id="div_downloadlist">
-                    </div>
-
-
                     <!--template_downloadlist-->
                     <script type="text/html" id="tpdownloadlist">
                         <div class="mu-portfolio-area">
@@ -197,7 +210,9 @@
                             </div>
                         </div>
                     </script>
-
+                    <!--div_downloadlist-->
+                    <div id="div_downloadlist">
+                    </div>
                 </div>
 
             </div>
@@ -208,19 +223,21 @@
 </main>
 <!-- End main content -->
 
-<!-- jQuery library -->
-<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Bootstrap -->
 <script src="../assets/js/bootstrap.min.js"></script>
 <!-- Slick slider -->
 <script type="text/javascript" src="../assets/js/slick.min.js"></script>
-<!-- Filterable Gallery js -->
-<script type="text/javascript" src="../assets/js/jquery.filterizr.min.js"></script>
-<!-- Gallery Lightbox -->
-<script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>
 <!-- Ajax contact form  -->
 <script type="text/javascript" src="../assets/js/app.js"></script>
+<!-- Filterable Gallery js -->
+<!--
+<script type="text/javascript" src="../assets/js/jquery.filterizr.min.js"></script>
+-->
+<!-- Gallery Lightbox -->
+<script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>
+
 <!-- Featured Slider -->
 <script type="text/javascript" src="../assets/js/typed.min.js"></script>
 <!-- On scroll JS  -->
@@ -228,7 +245,9 @@
 <!-- Progress Bar -->
 <script type="text/javascript" src="../assets/js/jquery.lineProgressbar.js"></script>
 <!-- Custom js -->
+<!--
 <script type="text/javascript" src="../assets/js/custom.js"></script>
+-->
 
 </body>
 </html>
