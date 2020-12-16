@@ -27,7 +27,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/web" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -101,6 +101,8 @@
       <workItem from="1607962034532" duration="1526000" />
       <workItem from="1608007068716" duration="8167000" />
       <workItem from="1608022884264" duration="207000" />
+      <workItem from="1608118188772" duration="227000" />
+      <workItem from="1608118870755" duration="303000" />
     </task>
     <servers />
   </component>

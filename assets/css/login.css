@@ -14,28 +14,46 @@
 }
 
 .p_top{
-    height: 100%;
+    margin-top: 15%;
     text-align: center;
 }
 .a1_top{
+    align-content: center;
     cursor: pointer;
     float:left;
     width:50%;
     color: black;
+    height: 100%;
 }
 .a2_top{
     cursor: pointer;
     float:left;
     width:50%;
     color: gray;
+    height: 100%;
+}
+.a_login_left{
+    height: 100%;
+    width:49%;
+    float: left;
+}
+.a_login_right{
+    height: 100%;
+    width:50%;
+    float: left;
+}
+.a_img{
+    border-radius: 25px 0 0 25px;
+    width: 100%;
+    height: 100%;
 }
 .a_login{
-    width:30%;
+    width:60%;
     height: 60%;
     border-radius: 25px;
     border: 1px solid cornflowerblue;
     position: fixed;
-    left: 35%;
+    left: 20%;
     top: 20%;
     background-color:white;
 }
