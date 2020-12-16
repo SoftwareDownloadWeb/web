@@ -84,3 +84,5 @@ software.html的问题是，外部js文件无法用jquery选择<script type="tex
 ### 16:07 刘佳乐 张婉淳
 解决了software.html里的bug  
 建议大伙善用检查器（泪目
+### 19:47 柳浩天
+登陆注册浮窗样式更新
