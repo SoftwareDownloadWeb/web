@@ -212,15 +212,15 @@
             position: relative;
         }
         .TextOfLunBoPic{
+            z-index: 3;
             position: absolute;
-            top: 15px;
-            left: 30px;
-            font-size: 30px;
-            font-weight: bold;
+            top: 320px;
+            font-size: 25px;
+            font-weight: bolder;
         }
 
         .stroke {
-            -webkit-text-stroke: 1px white;
+            -webkit-text-stroke: 1px whitesmoke;
         }
 
         .linear {
@@ -272,12 +272,11 @@
             margin-right: 10px;
             padding-top: 10px;
             padding-bottom: 10px;
-            border-bottom:solid 1px #2f2f2f;
         }
 
     </style>
 </head>
-<body style="background-color:#F0FFFF">
+<body style="background-color:#f7f7f7">
 
 <!-- Start Header -->
 <header id="mu-header" class="" role="banner" style="background-color: #339999">
@@ -330,7 +329,7 @@
     <div class="col-1"></div>
 
 <!--    左侧栏-->
-    <div class="col-2" style="padding-left: 10rem;margin-top: 4rem">
+    <div class="col-2 " style="padding-left: 10rem;margin-top: 4rem">
         <div style="position: fixed;margin-top: 4rem;background-color: white;height: 100%">
             <h1 style="background-color: #669966;text-align: center">热门专栏</h1>
             <ul style="text-align: left">
@@ -372,13 +371,13 @@
 
                     <!-- 轮播图片 -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="col-md-9 col-sm-6">
-                                <a class="TextOfLunBoPic stroke">深入理解PHP+Mysql分布式事务与解决方案</a>
+                        <div class="carousel-item active ">
+                            <div class="col-md-9 col-sm-6 lunbo-cover">
+                                <a class="TextOfLunBoPic">深入理解PHP+Mysql分布式事务与解决方案</a>
                                 <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
-                            <div class="col-md-3 col-sm-6" style="background-color: white">
-                                <img src="../assets/images/s2.jpg" height="200">
+                            <div class="col-md-3 col-sm-6" style="background-color: white;padding: 0">
+                                <img src="../assets/images/s2.jpg" height="200" style="width: 100%">
                                 <br>
                                 <a>本报特约评论员：</a>
                                 <h1>AAA</h1>
@@ -386,12 +385,12 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-9 col-sm-6">
-                                <a class="TextOfLunBoPic stroke">你可能未曾使用的新 Java 特性</a>
+                            <div class="col-md-9 col-sm-6 lunbo-cover">
+                                <a class="TextOfLunBoPic">你可能未曾使用的新 Java 特性</a>
                                 <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-2.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
-                            <div class="col-md-3 col-sm-6" style="background-color: white">
-                                <img src="../assets/images/s3.jpg" height="200">
+                            <div class="col-md-3 col-sm-6" style="background-color: white;padding: 0">
+                                <img src="../assets/images/s3.jpg" height="200" style="width: 100%">
                                 <br>
                                 <a>本报特约评论员：</a>
                                 <h1>BBB</h1>
@@ -399,12 +398,12 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-9 col-sm-6">
-                                <a class="TextOfLunBoPic stroke">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
+                            <div class="col-md-9 col-sm-6 lunbo-cover">
+                                <a class="TextOfLunBoPic">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
                                 <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-3.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
-                            <div class="col-md-3 col-sm-6" style="background-color: white">
-                                <img src="../assets/images/s3.jpg" height="200">
+                            <div class="col-md-3 col-sm-6" style="background-color: white;padding: 0">
+                                <img src="../assets/images/s3.jpg" height="200" style="width: 100%">
                                 <br>
                                 <a>本报特约评论员：</a>
                                 <h1>CCC</h1>
@@ -426,8 +425,8 @@
             </div>
         </section>
 
-        <div class="latest-course-area pd-bottom-110" style="background:white">
-            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+        <div class="latest-course-area pd-bottom-110 " style="background:white">
+            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
                 <div class="col-8" style="padding-left: 2rem">
                     <div>
                         <a class="LieBiaoBiaoTi" href="columninfo.html">一文了解 AlphaFold 2 背后的 PDB 蛋白质结构数据集<br></a>
@@ -446,7 +445,7 @@
                 </div>
             </div>
 
-            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
                 <div class="col-8" style="padding-left: 2rem">
                     <div>
                         <a class="LieBiaoBiaoTi" href="columninfo.html">如何开启MySQL远程连接<br></a>
@@ -465,7 +464,7 @@
                 </div>
             </div>
 
-            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
                 <div class="col-8" style="padding-left: 2rem">
                     <div>
                         <a class="LieBiaoBiaoTi" href="columninfo.html">M1 暴打 Intel？——这次的芯片有何不同<br></a>
@@ -484,7 +483,7 @@
                 </div>
             </div>
 
-            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
                 <div class="col-8" style="padding-left: 2rem">
                     <div>
                         <a class="LieBiaoBiaoTi" href="columninfo.html">云服务器是什么？ECS、BCC、CVM...<br></a>
@@ -503,7 +502,7 @@
                 </div>
             </div>
 
-            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
                 <div class="col-8" style="padding-left: 2rem">
                     <div>
                         <a class="LieBiaoBiaoTi" href="columninfo.html">ubuntu20.04.2上安装nginx+php-fpm<br></a>
@@ -522,7 +521,7 @@
                 </div>
             </div>
 
-            <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
                 <div class="col-8" style="padding-left: 2rem">
                     <div>
                         <a class="LieBiaoBiaoTi" href="columninfo.html">收藏 | 阿里程序员常用的 15 款开发者工具（2020 版）<br></a>
@@ -552,14 +551,13 @@
                 <div style="float: left">
                     <img src="../assets/images/s1.jpg" class="YongHuTouXiang-CeLan">
                 </div>
-
                 <div style="margin-left: 60px">
                     <a style="font-size: 20px;font-weight: bold">AAA</a>
                     <p style="float: right">文章数：233</p>
                     <p>经验极其丰富的程序员</p>
                 </div>
             </div>
-
+            <span class="news-list-item-dot"></span>
             <div class="ReMenZuoZhe">
                 <div style="float: left">
                     <img src="../assets/images/s2.jpg" class="YongHuTouXiang-CeLan">
@@ -571,7 +569,7 @@
                     <p>参与过国内各大重要项目</p>
                 </div>
             </div>
-
+            <span class="news-list-item-dot"></span>
             <div class="ReMenZuoZhe">
                 <div style="float: left">
                     <img src="../assets/images/s3.jpg" class="YongHuTouXiang-CeLan">
@@ -583,7 +581,7 @@
                     <p>十分熟悉硬件相关知识</p>
                 </div>
             </div>
-
+            <span class="news-list-item-dot"></span>
             <div class="ReMenZuoZhe">
                 <div style="float: left">
                     <img src="../assets/images/s1.jpg" class="YongHuTouXiang-CeLan">
@@ -596,7 +594,7 @@
                     <p>经验极其丰富的程序员</p>
                 </div>
             </div>
-
+            <span class="news-list-item-dot"></span>
             <div class="ReMenZuoZhe">
                 <div style="float: left">
                     <img src="../assets/images/s2.jpg" class="YongHuTouXiang-CeLan">
