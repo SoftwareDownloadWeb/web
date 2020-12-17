@@ -162,7 +162,7 @@
 .news-list-item-dot{
     height: 2px;
     border-radius: 100%;
-    width: 80%;
+    width: 100%;
     display: inline-block;
     background-color: #339999;
 }
@@ -231,7 +231,7 @@
     margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom:solid 1px #2f2f2f;
+
 }
 
 .DanHangShengLueHao {
@@ -239,4 +239,17 @@
     text-overflow:ellipsis;
     white-space: nowrap;
     max-width: 80%;
+}
+.lunbo-cover::after{
+    position: absolute;
+    padding: 0;
+    content: '';
+    background: linear-gradient(to top, #339999, transparent 95%);
+    top: 65%;
+    height: 35%;
+    left: 15px;
+    width: 95%;
+}
+.litixiaoguo{
+    box-shadow: 0 0 5px 1px lightgray;
 }
