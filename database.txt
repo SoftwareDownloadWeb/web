@@ -582,3 +582,76 @@ insert  into `user`(`id`,`name`,`password`,`email`) values
 
 (3,'cc','123','cc@123.com');
 
+/*Table structure for table `author` */
+
+DROP TABLE IF EXISTS `author`;
+
+CREATE TABLE `author` (
+  `aId` int NOT NULL,
+  `name` varchar(15) DEFAULT NULL,
+  `num` int DEFAULT NULL,
+  `description` varchar(40) DEFAULT NULL,
+  `aimgurl` varchar(40) DEFAULT NULL,
+  `detailDes` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`aId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `author` */
+
+insert  into `author`(`aId`,`name`,`num`,`description`,`aimgurl`,`detailDes`) values 
+(1,'Peter',342,'其丰富的程序员','assets/images/s1.jpg','Peter有着丰富的美式教学经验，熟读图灵传记，精通林纽克斯，极其擅长从零搭建操作系统。'),
+(2,'Colloline',233,'国参与过内各大重要项目','assets/images/s2.jpg','Colloline有着丰富的美式教学经验，熟读图灵传记，精通林纽克斯，极其擅长从零搭建操作系统。'),
+(3,'Alice',334,'十分熟悉硬件相关知识','assets/images/s3.jpg','Alice有着丰富的美式教学经验，熟读图灵传记，精通林纽克斯，极其擅长从零搭建操作系统。'),
+(4,'Tony',213,'数量掌握java语言','assets/images/s1.jpg','Tony有着丰富的美式教学经验，熟读图灵传记，精通林纽克斯，极其擅长从零搭建操作系统。'),
+(5,'Tuling',542,'优秀的操作系统开发者','assets/images/s2.jpg','Tuling有着丰富的美式教学经验，熟读图灵传记，精通林纽克斯，极其擅长从零搭建操作系统。'),
+(6,'Sisi',222,'python爬虫技术人员','assets/images/s1.jpg','Sisi有着丰富的美式教学经验，熟读图灵传记，精通林纽克斯，极其擅长从零搭建操作系统。'),
+(7,'Zhangli',221,'前端开发人员','assets/images/s1.jpg','AAA有着丰富的美式教学经验，熟读图灵传记，精通林纽克斯，极其擅长从零搭建操作系统。');
+
+/*Table structure for table `colcont` */
+
+DROP TABLE IF EXISTS `colcont`;
+
+CREATE TABLE `colcont` (
+  `colId` int NOT NULL,
+  `t1` varchar(20) DEFAULT NULL,
+  `t2` varchar(20) DEFAULT NULL,
+  `p1` varchar(1000) DEFAULT NULL,
+  `p2` varchar(1000) DEFAULT NULL,
+  `p3` varchar(1000) DEFAULT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `img1` varchar(40) DEFAULT NULL,
+  `img2` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`colId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `colcont` */
+
+insert  into `colcont`(`colId`,`t1`,`t2`,`p1`,`p2`,`p3`,`title`,`img1`,`img2`) values 
+(1,'事务的ACID特性','常见的分布式事务解决方案','事务应该具有4个属性：原子性、一致性、隔离性、持续性.原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。 一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。 隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。 持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。分布式事务：分布式事务的参与者、资源管理器、事务管理器等位于不用的节点上，这些不同的节点相互协作共同完成一个具有逻辑完整性的事务。mysql从5.0开始支持XA DataSource。Connector/J 版本要使用5.0版本，5.0以下的不基于XA协议的两阶段提交 XA协议由Tuxedo首先提出的，并交给X/Open组织，作为资源管理器（数据库）与事务管理器的接口标准。目前，Oracle、Informix、DB2和Sybase等各大数据库厂家都提供对XA的支持。XA协议采用两阶段提交方式来管理分布式事务。XA接口提供资源管理器与事务管理器之间进行通信的标准接口。XA协议包括两套函数，以xa_开头的及以ax_开头的。','以下的函数使事务管理器可以对资源管理器进行的操作： 1）xa_open,xa_close：建立和关闭与资源管理器的连接。 2）xa_start,xa_end：开始和结束一个本地事务。 3）xa_prepare,xa_commit,xa_rollback：预提交、提交和回滚一个本地事务。 4）xa_recover：回滚一个已进行预提交的事务。 5）ax_开头的函数使资源管理器可以动态地在事务管理器中进行注册，并可以对XID(TRANSACTION IDS)进行操作。 6）ax_reg,ax_unreg；允许一个资源管理器在一个TMS(TRANSACTION MANAGER SERVER)中动态注册或撤消注册。XA实现分布式事务的原理如下：','MySQL XA分为两类，内部XA与外部XA;内部XA用于同一实例下跨多个引擎的事务，由大家熟悉的Binlog作为协调者;外部XA用于跨多MySQL实例的分 布式事务，需要应用层介入作为协调者(崩溃时的悬挂事务，全局提交还是回滚，需要由应用层决定，对应用层的实现要求较高);Binlog作为内部XA的协调者，在binlog中出现的内部xid，在crash recover时，由binlog负责提交。(这是因为，binlog不进行prepare， 只进行commit，因此在binlog中出现的内部xid，一定能够保证其在底层各存储引擎中已经完成prepare)。MySQL数据库外部XA可以用在分布式数据库代理层，实现对MySQL数据库的分布式事务支持，例如开源的代理工具：网易的DDB，淘宝的TDDL，B2B的Cobar等等。','事务(Transaction)是访问并可能更新数据库中各种数据项的一个程序执行单元；','assets/images/column/columninfo/CI-1.png','assets/images/column/columninfo/CI-2.png'),
+(2,'事务的ACID特性','常见的分布式事务解决方案','事务应该具有4个属性：原子性、一致性、隔离性、持续性.原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。 一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。 隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。 持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。分布式事务：分布式事务的参与者、资源管理器、事务管理器等位于不用的节点上，这些不同的节点相互协作共同完成一个具有逻辑完整性的事务。mysql从5.0开始支持XA DataSource。Connector/J 版本要使用5.0版本，5.0以下的不基于XA协议的两阶段提交 XA协议由Tuxedo首先提出的，并交给X/Open组织，作为资源管理器（数据库）与事务管理器的接口标准。目前，Oracle、Informix、DB2和Sybase等各大数据库厂家都提供对XA的支持。XA协议采用两阶段提交方式来管理分布式事务。XA接口提供资源管理器与事务管理器之间进行通信的标准接口。XA协议包括两套函数，以xa_开头的及以ax_开头的。','以下的函数使事务管理器可以对资源管理器进行的操作： 1）xa_open,xa_close：建立和关闭与资源管理器的连接。 2）xa_start,xa_end：开始和结束一个本地事务。 3）xa_prepare,xa_commit,xa_rollback：预提交、提交和回滚一个本地事务。 4）xa_recover：回滚一个已进行预提交的事务。 5）ax_开头的函数使资源管理器可以动态地在事务管理器中进行注册，并可以对XID(TRANSACTION IDS)进行操作。 6）ax_reg,ax_unreg；允许一个资源管理器在一个TMS(TRANSACTION MANAGER SERVER)中动态注册或撤消注册。XA实现分布式事务的原理如下：','MySQL XA分为两类，内部XA与外部XA;内部XA用于同一实例下跨多个引擎的事务，由大家熟悉的Binlog作为协调者;外部XA用于跨多MySQL实例的分 布式事务，需要应用层介入作为协调者(崩溃时的悬挂事务，全局提交还是回滚，需要由应用层决定，对应用层的实现要求较高);Binlog作为内部XA的协调者，在binlog中出现的内部xid，在crash recover时，由binlog负责提交。(这是因为，binlog不进行prepare， 只进行commit，因此在binlog中出现的内部xid，一定能够保证其在底层各存储引擎中已经完成prepare)。MySQL数据库外部XA可以用在分布式数据库代理层，实现对MySQL数据库的分布式事务支持，例如开源的代理工具：网易的DDB，淘宝的TDDL，B2B的Cobar等等。','事务(Transaction)是访问并可能更新数据库中各种数据项的一个程序执行单元；','assets/images/column/columninfo/CI-1.png','assets/images/column/columninfo/CI-2.png'),
+(3,'事务的ACID特性','常见的分布式事务解决方案','事务应该具有4个属性：原子性、一致性、隔离性、持续性.原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。 一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。 隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。 持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。分布式事务：分布式事务的参与者、资源管理器、事务管理器等位于不用的节点上，这些不同的节点相互协作共同完成一个具有逻辑完整性的事务。mysql从5.0开始支持XA DataSource。Connector/J 版本要使用5.0版本，5.0以下的不基于XA协议的两阶段提交 XA协议由Tuxedo首先提出的，并交给X/Open组织，作为资源管理器（数据库）与事务管理器的接口标准。目前，Oracle、Informix、DB2和Sybase等各大数据库厂家都提供对XA的支持。XA协议采用两阶段提交方式来管理分布式事务。XA接口提供资源管理器与事务管理器之间进行通信的标准接口。XA协议包括两套函数，以xa_开头的及以ax_开头的。','以下的函数使事务管理器可以对资源管理器进行的操作： 1）xa_open,xa_close：建立和关闭与资源管理器的连接。 2）xa_start,xa_end：开始和结束一个本地事务。 3）xa_prepare,xa_commit,xa_rollback：预提交、提交和回滚一个本地事务。 4）xa_recover：回滚一个已进行预提交的事务。 5）ax_开头的函数使资源管理器可以动态地在事务管理器中进行注册，并可以对XID(TRANSACTION IDS)进行操作。 6）ax_reg,ax_unreg；允许一个资源管理器在一个TMS(TRANSACTION MANAGER SERVER)中动态注册或撤消注册。XA实现分布式事务的原理如下：','MySQL XA分为两类，内部XA与外部XA;内部XA用于同一实例下跨多个引擎的事务，由大家熟悉的Binlog作为协调者;外部XA用于跨多MySQL实例的分 布式事务，需要应用层介入作为协调者(崩溃时的悬挂事务，全局提交还是回滚，需要由应用层决定，对应用层的实现要求较高);Binlog作为内部XA的协调者，在binlog中出现的内部xid，在crash recover时，由binlog负责提交。(这是因为，binlog不进行prepare， 只进行commit，因此在binlog中出现的内部xid，一定能够保证其在底层各存储引擎中已经完成prepare)。MySQL数据库外部XA可以用在分布式数据库代理层，实现对MySQL数据库的分布式事务支持，例如开源的代理工具：网易的DDB，淘宝的TDDL，B2B的Cobar等等。','事务(Transaction)是访问并可能更新数据库中各种数据项的一个程序执行单元；','assets/images/column/columninfo/CI-1.png','assets/images/column/columninfo/CI-2.png'),
+(4,'事务的ACID特性','常见的分布式事务解决方案','事务应该具有4个属性：原子性、一致性、隔离性、持续性.原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。 一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。 隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。 持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。分布式事务：分布式事务的参与者、资源管理器、事务管理器等位于不用的节点上，这些不同的节点相互协作共同完成一个具有逻辑完整性的事务。mysql从5.0开始支持XA DataSource。Connector/J 版本要使用5.0版本，5.0以下的不基于XA协议的两阶段提交 XA协议由Tuxedo首先提出的，并交给X/Open组织，作为资源管理器（数据库）与事务管理器的接口标准。目前，Oracle、Informix、DB2和Sybase等各大数据库厂家都提供对XA的支持。XA协议采用两阶段提交方式来管理分布式事务。XA接口提供资源管理器与事务管理器之间进行通信的标准接口。XA协议包括两套函数，以xa_开头的及以ax_开头的。','以下的函数使事务管理器可以对资源管理器进行的操作： 1）xa_open,xa_close：建立和关闭与资源管理器的连接。 2）xa_start,xa_end：开始和结束一个本地事务。 3）xa_prepare,xa_commit,xa_rollback：预提交、提交和回滚一个本地事务。 4）xa_recover：回滚一个已进行预提交的事务。 5）ax_开头的函数使资源管理器可以动态地在事务管理器中进行注册，并可以对XID(TRANSACTION IDS)进行操作。 6）ax_reg,ax_unreg；允许一个资源管理器在一个TMS(TRANSACTION MANAGER SERVER)中动态注册或撤消注册。XA实现分布式事务的原理如下：','MySQL XA分为两类，内部XA与外部XA;内部XA用于同一实例下跨多个引擎的事务，由大家熟悉的Binlog作为协调者;外部XA用于跨多MySQL实例的分 布式事务，需要应用层介入作为协调者(崩溃时的悬挂事务，全局提交还是回滚，需要由应用层决定，对应用层的实现要求较高);Binlog作为内部XA的协调者，在binlog中出现的内部xid，在crash recover时，由binlog负责提交。(这是因为，binlog不进行prepare， 只进行commit，因此在binlog中出现的内部xid，一定能够保证其在底层各存储引擎中已经完成prepare)。MySQL数据库外部XA可以用在分布式数据库代理层，实现对MySQL数据库的分布式事务支持，例如开源的代理工具：网易的DDB，淘宝的TDDL，B2B的Cobar等等。','事务(Transaction)是访问并可能更新数据库中各种数据项的一个程序执行单元；','assets/images/column/columninfo/CI-1.png','assets/images/column/columninfo/CI-2.png'),
+(5,'事务的ACID特性','常见的分布式事务解决方案','事务应该具有4个属性：原子性、一致性、隔离性、持续性.原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。 一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。 隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。 持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。分布式事务：分布式事务的参与者、资源管理器、事务管理器等位于不用的节点上，这些不同的节点相互协作共同完成一个具有逻辑完整性的事务。mysql从5.0开始支持XA DataSource。Connector/J 版本要使用5.0版本，5.0以下的不基于XA协议的两阶段提交 XA协议由Tuxedo首先提出的，并交给X/Open组织，作为资源管理器（数据库）与事务管理器的接口标准。目前，Oracle、Informix、DB2和Sybase等各大数据库厂家都提供对XA的支持。XA协议采用两阶段提交方式来管理分布式事务。XA接口提供资源管理器与事务管理器之间进行通信的标准接口。XA协议包括两套函数，以xa_开头的及以ax_开头的。','以下的函数使事务管理器可以对资源管理器进行的操作： 1）xa_open,xa_close：建立和关闭与资源管理器的连接。 2）xa_start,xa_end：开始和结束一个本地事务。 3）xa_prepare,xa_commit,xa_rollback：预提交、提交和回滚一个本地事务。 4）xa_recover：回滚一个已进行预提交的事务。 5）ax_开头的函数使资源管理器可以动态地在事务管理器中进行注册，并可以对XID(TRANSACTION IDS)进行操作。 6）ax_reg,ax_unreg；允许一个资源管理器在一个TMS(TRANSACTION MANAGER SERVER)中动态注册或撤消注册。XA实现分布式事务的原理如下：','MySQL XA分为两类，内部XA与外部XA;内部XA用于同一实例下跨多个引擎的事务，由大家熟悉的Binlog作为协调者;外部XA用于跨多MySQL实例的分 布式事务，需要应用层介入作为协调者(崩溃时的悬挂事务，全局提交还是回滚，需要由应用层决定，对应用层的实现要求较高);Binlog作为内部XA的协调者，在binlog中出现的内部xid，在crash recover时，由binlog负责提交。(这是因为，binlog不进行prepare， 只进行commit，因此在binlog中出现的内部xid，一定能够保证其在底层各存储引擎中已经完成prepare)。MySQL数据库外部XA可以用在分布式数据库代理层，实现对MySQL数据库的分布式事务支持，例如开源的代理工具：网易的DDB，淘宝的TDDL，B2B的Cobar等等。','事务(Transaction)是访问并可能更新数据库中各种数据项的一个程序执行单元；','assets/images/column/columninfo/CI-1.png','assets/images/column/columninfo/CI-3.png'),
+(6,'事务的ACID特性','常见的分布式事务解决方案','事务应该具有4个属性：原子性、一致性、隔离性、持续性.原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。 一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。 隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。 持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。分布式事务：分布式事务的参与者、资源管理器、事务管理器等位于不用的节点上，这些不同的节点相互协作共同完成一个具有逻辑完整性的事务。mysql从5.0开始支持XA DataSource。Connector/J 版本要使用5.0版本，5.0以下的不基于XA协议的两阶段提交 XA协议由Tuxedo首先提出的，并交给X/Open组织，作为资源管理器（数据库）与事务管理器的接口标准。目前，Oracle、Informix、DB2和Sybase等各大数据库厂家都提供对XA的支持。XA协议采用两阶段提交方式来管理分布式事务。XA接口提供资源管理器与事务管理器之间进行通信的标准接口。XA协议包括两套函数，以xa_开头的及以ax_开头的。','以下的函数使事务管理器可以对资源管理器进行的操作： 1）xa_open,xa_close：建立和关闭与资源管理器的连接。 2）xa_start,xa_end：开始和结束一个本地事务。 3）xa_prepare,xa_commit,xa_rollback：预提交、提交和回滚一个本地事务。 4）xa_recover：回滚一个已进行预提交的事务。 5）ax_开头的函数使资源管理器可以动态地在事务管理器中进行注册，并可以对XID(TRANSACTION IDS)进行操作。 6）ax_reg,ax_unreg；允许一个资源管理器在一个TMS(TRANSACTION MANAGER SERVER)中动态注册或撤消注册。XA实现分布式事务的原理如下：','MySQL XA分为两类，内部XA与外部XA;内部XA用于同一实例下跨多个引擎的事务，由大家熟悉的Binlog作为协调者;外部XA用于跨多MySQL实例的分 布式事务，需要应用层介入作为协调者(崩溃时的悬挂事务，全局提交还是回滚，需要由应用层决定，对应用层的实现要求较高);Binlog作为内部XA的协调者，在binlog中出现的内部xid，在crash recover时，由binlog负责提交。(这是因为，binlog不进行prepare， 只进行commit，因此在binlog中出现的内部xid，一定能够保证其在底层各存储引擎中已经完成prepare)。MySQL数据库外部XA可以用在分布式数据库代理层，实现对MySQL数据库的分布式事务支持，例如开源的代理工具：网易的DDB，淘宝的TDDL，B2B的Cobar等等。','事务(Transaction)是访问并可能更新数据库中各种数据项的一个程序执行单元；','assets/images/column/columninfo/CI-1.png','assets/images/column/columninfo/CI-3.png');
+
+/*Table structure for table `cols` */
+
+DROP TABLE IF EXISTS `cols`;
+
+CREATE TABLE `cols` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `description` varchar(200) DEFAULT NULL,
+  `imgurl` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+/*Data for the table `cols` */
+
+insert  into `cols`(`id`,`name`,`description`,`imgurl`) values 
+(1,'一文了解 AlphaFold 2 背后的 PDB 蛋白质结构数据集','DeepMind 的最新一代算法 AlphaFold 2，在近日被称为「蛋白质奥林匹克竞赛」的 CASP 中，完虐其它对手.','assets/images/column/columnlist/CL-1.png'),
+(2,'如何开启MySQL远程连接','MySql-Server 出于安全方面考虑只允许本机(localhost, 127.0.0.1)来连接访问，这对于 Web-Server 与 MySql-Server 都在同一台服务器上的网站架构来说是没有问题的。','assets/images/column/columnlist/CL-2.png'),
+(3,'M1 暴打 Intel？——这次的芯片有何不同','这次的芯片到底有何不同，以至于让那么多人说苹果不讲武德。','assets/images/column/columnlist/CL-3.png'),
+(4,'云服务器是什么？ECS、BCC、CVM...','云服务器是一种简单高效、处理能力可弹性伸缩的计算服务，帮助用户快速构建更稳定、安全的应用，提升运维效率，降低 IT 成本，使用户更专注于核心业务创新。','assets/images/column/columnlist/CL-4.png'),
+(5,'ubuntu20.04.2上安装nginx+php-fpm','虽说已经有很多ubuntu的安装教程了，但是今天我还是要写一篇这样的文章','assets/images/column/columnlist/CL-5.png'),
+(6,'收藏 | 阿里程序员常用的 15 款开发者工具（2020 版）','本文精选了一些阿里经济体内部最受开发者欢迎的开发者工具，筛选出一些带有普适性同样适合外部开发者的，希望能助力开发者们提高开发效率。','assets/images/column/columnlist/CL-6.png');
