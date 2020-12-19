@@ -7,18 +7,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>专栏-DOWNLOAD ME!</title>
 
+    <base href="/">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Slick slider -->
-    <link href="../assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Gallery Lightbox -->
-    <link href="../assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="../assets/css/theme-color/default-theme.css" rel="stylesheet">
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main Style -->
     <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
@@ -42,12 +43,11 @@
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="../assets/css/aLunStyle.css">
+    <link rel="stylesheet" href="assets/css/aLunStyle.css">
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
-    <!--    <script src="assets/js/jquery.min.js"></script>-->
-    <!--    <script src="assets/js/popper.min.js"></script>-->
-    <!--    <script src="assets/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <!--    art-template-->
+    <script src="node_modules/art-template/lib/template-web.js"></script>
 
     <style>
         .section-title {
@@ -212,15 +212,15 @@
             position: relative;
         }
         .TextOfLunBoPic{
-            z-index: 3;
             position: absolute;
-            top: 320px;
-            font-size: 25px;
-            font-weight: bolder;
+            top: 15px;
+            left: 30px;
+            font-size: 30px;
+            font-weight: bold;
         }
 
         .stroke {
-            -webkit-text-stroke: 1px whitesmoke;
+            -webkit-text-stroke: 1px white;
         }
 
         .linear {
@@ -272,11 +272,12 @@
             margin-right: 10px;
             padding-top: 10px;
             padding-bottom: 10px;
+            border-bottom:solid 1px #2f2f2f;
         }
 
     </style>
 </head>
-<body style="background-color:#f7f7f7">
+<body style="background-color:#F0FFFF">
 
 <!-- Start Header -->
 <header id="mu-header" class="" role="banner" style="background-color: #339999">
@@ -293,7 +294,7 @@
                     </button>
 
                     <!--Text Logo-->
-                    <a class="navbar-brand" href="../index.html">DOWNLOADME!</a>
+                    <a class="navbar-brand" href="/">DOWNLOADME!</a>
                     <!-- Image Logo -->
                     <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
                 </div>
@@ -314,7 +315,7 @@
                         </li>
                         <!--点击头像跳出登录页面（窗口），登录页面中有“SIGN UP”按钮-->
                         <li><a href="javascript:void(0)" onclick="login_test('XuanFu')" class="navbar-brand-img">
-                            <img src="../assets/images/user.png">
+                            <img src="assets/images/user.png">
                         </a></li>
 
                     </ul>
@@ -324,37 +325,91 @@
     </div>
 </header>
 <!-- End Header -->
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+            type:"get",
+            dataType:"json",
+            url:"http://127.0.0.1:8888/column/columnList",
+            success:function (result) {
+                console.log("ok");
+                // let html=template('tcpMiddle',{data:result});
+                let html2=template('tcpLeft',{data2:result});
+                // let html3=template('tcpRight',{data3:result});
+                // let contM=document.querySelector('#contMiddle');
+                let contL=document.querySelector('#contL');
+                // let contR=document.querySelector('#contR');
+                // contM.innerHTML=html;
+                contL.innerHTML=html2;
+                // contR.innerHTML=html3;
+            }
 
+        });
+        hotAuthor();
+        Mcontent();
+    })
+    function detailInfo(num) {
+        document.cookie="cnum="+num+";path=/;httpOnlyCookies=false";
+        window.location.href="/column/columninfo";
+    }
+    function hotAuthor() {
+        $.ajax({
+            type:"get",
+            dataType:"json",
+            url:"http://127.0.0.1:8888/column/authorList",
+            success:function (result) {
+                let html3=template('tcpRight',{data3:result});
+                let contR=document.querySelector('#contR');
+                contR.innerHTML="<h1 style='background-color: #669966;text-align: center'>热门作者</h1>"+html3;
+            }
+        });
+    }
+    function Mcontent() {
+        $.ajax({
+            type:"get",
+            dataType:"json",
+            url:"http://127.0.0.1:8888/column/contList",
+            success:function (result) {
+                console.log("ok");
+                let html=template('tcpMiddle',{data1:result});
+                let contM=document.querySelector('#contM');
+                contM.innerHTML=html;;
+            }
+
+        });
+    }
+</script>
 <div class="row">
     <div class="col-1"></div>
 
-<!--    左侧栏-->
-    <div class="col-2 " style="padding-left: 10rem;margin-top: 4rem">
+    <!--    左侧栏-->
+    <div class="col-2" style="padding-left: 10rem;margin-top: 4rem">
         <div style="position: fixed;margin-top: 4rem;background-color: white;height: 100%">
             <h1 style="background-color: #669966;text-align: center">热门专栏</h1>
-            <ul style="text-align: left">
-                <li class="list-unstyled news-list-item">
-                    <div><a href=""><img src="../assets/images/news/ReSou.jpg" style="width: 150px;height: 100px"></a></div>
-                    <div><a class="text-muted" href="#">国足入围世界杯决赛</a></div>
-                </li>
-                <span class="news-list-item-dot"></span>
-                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">地球爆炸</a></li>
-                <span class="news-list-item-dot"></span>
-                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">宇宙重启</a></li>
-                <span class="news-list-item-dot"></span>
-                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">第三次世界大战爆发</a></li>
-                <span class="news-list-item-dot"></span>
-                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">米哈游收购腾讯</a></li>
-                <span class="news-list-item-dot"></span>
-                <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="newsinfo.html">软院整治操场臭味</a></li>
-                <span class="news-list-item-dot"></span>
+            <ul style="text-align: left" id="contL">
+                <script type="text/html" id="tcpLeft">
+                    {{each data2 as value i}}
+                    {{if value.type==="hot"}}
+                    {{if value.id===1}}
+                    <li class="list-unstyled news-list-item">
+                        <div><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}},'{{value.type}}')"><img src="{{value.imgurl}}" style="width: 150px;height: 100px"></a></div>
+                        <div><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}},'{{value.type}}')">{{value.name}}</a></div>
+                    </li>
+                    <span class="news-list-item-dot"></span>
+                    {{else}}
+                    <li class="celanbiaoti list-unstyled news-list-item" href="#"><a class="text-muted" href="javascript:void(0)" onclick="detailInfo({{value.infoId}},'{{value.type}}')">{{value.name}}</a></li>
+                    <span class="news-list-item-dot"></span>
+                    {{/if}}
+                    {{/if}}
+                    {{/each}}
+                </script>
             </ul>
         </div>
     </div>
 
     <div class="col-6">
 
-<!--        轮播-->
+        <!--        轮播-->
         <section id="mu-testimonials">
             <div class="container" style="margin-bottom: 2rem">
 
@@ -371,42 +426,42 @@
 
                     <!-- 轮播图片 -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active ">
-                            <div class="col-md-9 col-sm-6 lunbo-cover">
-                                <a class="TextOfLunBoPic">深入理解PHP+Mysql分布式事务与解决方案</a>
-                                <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
+                        <div class="carousel-item active">
+                            <div class="col-md-9 col-sm-6">
+                                <a class="TextOfLunBoPic stroke">深入理解PHP+Mysql分布式事务与解决方案</a>
+                                <a href="javascript:void(0)" onclick="detailInfo(1)"><img src="assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
-                            <div class="col-md-3 col-sm-6" style="background-color: white;padding: 0">
-                                <img src="../assets/images/s2.jpg" height="200" style="width: 100%">
+                            <div class="col-md-3 col-sm-6" style="background-color: white">
+                                <img src="assets/images/s1.jpg" height="200">
                                 <br>
                                 <a>本报特约评论员：</a>
-                                <h1>AAA</h1>
+                                <h1>Peter</h1>
                                 <a>为您解读华师操场恶臭气味，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-9 col-sm-6 lunbo-cover">
-                                <a class="TextOfLunBoPic">你可能未曾使用的新 Java 特性</a>
-                                <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-2.png" class="w-100" alt="" width="500" height="400"/></a>
+                            <div class="col-md-9 col-sm-6">
+                                <a class="TextOfLunBoPic stroke">你可能未曾使用的新 Java 特性</a>
+                                <a href="javascript:void(0)" onclick="detailInfo(2)"><img src="assets/images/column/LunBo/LB-2.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
-                            <div class="col-md-3 col-sm-6" style="background-color: white;padding: 0">
-                                <img src="../assets/images/s3.jpg" height="200" style="width: 100%">
+                            <div class="col-md-3 col-sm-6" style="background-color: white">
+                                <img src="assets/images/s2.jpg" height="200">
                                 <br>
                                 <a>本报特约评论员：</a>
-                                <h1>BBB</h1>
+                                <h1>Colloline</h1>
                                 <a>为您解读华师最新美式教学，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-9 col-sm-6 lunbo-cover">
-                                <a class="TextOfLunBoPic">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
-                                <a href="columninfo.html"><img src="../assets/images/column/LunBo/LB-3.png" class="w-100" alt="" width="500" height="400"/></a>
+                            <div class="col-md-9 col-sm-6">
+                                <a class="TextOfLunBoPic stroke">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
+                                <a href="javascript:void(0)" onclick="detailInfo(3)"><img src="assets/images/column/LunBo/LB-3.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
-                            <div class="col-md-3 col-sm-6" style="background-color: white;padding: 0">
-                                <img src="../assets/images/s3.jpg" height="200" style="width: 100%">
+                            <div class="col-md-3 col-sm-6" style="background-color: white">
+                                <img src="assets/images/s3.jpg" height="200">
                                 <br>
                                 <a>本报特约评论员：</a>
-                                <h1>CCC</h1>
+                                <h1>Alice</h1>
                                 <a>为您解读华师光速校园网，到底是人性的扭曲还是道德的沦丧，敬请关注本期专栏</a>
                             </div>
                         </div>
@@ -425,189 +480,51 @@
             </div>
         </section>
 
-        <div class="latest-course-area pd-bottom-110 " style="background:white">
-            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
-                <div class="col-8" style="padding-left: 2rem">
-                    <div>
-                        <a class="LieBiaoBiaoTi" href="columninfo.html">一文了解 AlphaFold 2 背后的 PDB 蛋白质结构数据集<br></a>
-                    </div>
-                    <div>
-                        <a style="font-size: 15px">DeepMind 的最新一代算法 AlphaFold 2，在近日被称为「蛋白质奥林匹克竞赛」的 CASP 中，完虐其它对手.</a>
-                        <div style="position: relative;top: 25px">
-                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
-                            <a style="font-size: 13px">作者：</a>
-                            <a style="font-size: 17px">AAA</a>
+<!--        中间部分-->
+        <div class="latest-course-area pd-bottom-110" style="background:white" id="contM">
+            <script type="text/html" id="tcpMiddle">
+                {{each data1 as value i}}
+                <div class="row" style="padding-top: 3rem;padding-bottom: 3rem;border-bottom:solid 1px #2f2f2f">
+                    <div class="col-8" style="padding-left: 2rem">
+                        <div>
+                            <a class="LieBiaoBiaoTi" href="javascript:void(0)" onclick="detailInfo({{value.id}})">{{value.cname}}<br></a>
+                        </div>
+                        <div>
+                            <a style="font-size: 15px">{{value.description}}</a>
+                            <div style="position: relative;top: 25px">
+                                <img src="{{value.aimgurl}}" class="YongHuTouXiang">
+                                <a style="font-size: 13px">作者：</a>
+                                <a style="font-size: 17px">{{value.aname}}</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/images/column/columnlist/CL-1.png" width="250" height="130">
-                </div>
-            </div>
-
-            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
-                <div class="col-8" style="padding-left: 2rem">
-                    <div>
-                        <a class="LieBiaoBiaoTi" href="columninfo.html">如何开启MySQL远程连接<br></a>
-                    </div>
-                    <div>
-                        <a style="font-size: 15px">MySql-Server 出于安全方面考虑只允许本机(localhost, 127.0.0.1)来连接访问，这对于 Web-Server 与 MySql-Server 都在同一台服务器上的网站架构来说是没有问题的。</a>
-                        <div style="position: relative;top: 25px">
-                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
-                            <a style="font-size: 13px">作者：</a>
-                            <a style="font-size: 17px">AAA</a>
-                        </div>
+                    <div class="col-4">
+                        <img src="{{value.imgurl}}" width="250" height="130">
                     </div>
                 </div>
-                <div class="col-4">
-                    <img src="../assets/images/column/columnlist/CL-2.png" width="250" height="130">
-                </div>
-            </div>
-
-            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
-                <div class="col-8" style="padding-left: 2rem">
-                    <div>
-                        <a class="LieBiaoBiaoTi" href="columninfo.html">M1 暴打 Intel？——这次的芯片有何不同<br></a>
-                    </div>
-                    <div>
-                        <a style="font-size: 15px">这次的芯片到底有何不同，以至于让那么多人说苹果不讲武德。</a>
-                        <div style="position: relative;top: 25px">
-                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
-                            <a style="font-size: 13px">作者：</a>
-                            <a style="font-size: 17px">AAA</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/images/column/columnlist/CL-3.png" width="250" height="130">
-                </div>
-            </div>
-
-            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
-                <div class="col-8" style="padding-left: 2rem">
-                    <div>
-                        <a class="LieBiaoBiaoTi" href="columninfo.html">云服务器是什么？ECS、BCC、CVM...<br></a>
-                    </div>
-                    <div>
-                        <a style="font-size: 15px">云服务器是一种简单高效、处理能力可弹性伸缩的计算服务，帮助用户快速构建更稳定、安全的应用，提升运维效率，降低 IT 成本，使用户更专注于核心业务创新。</a>
-                        <div style="position: relative;top: 25px">
-                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
-                            <a style="font-size: 13px">作者：</a>
-                            <a style="font-size: 17px">AAA</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/images/column/columnlist/CL-4.png" width="250" height="130">
-                </div>
-            </div>
-
-            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
-                <div class="col-8" style="padding-left: 2rem">
-                    <div>
-                        <a class="LieBiaoBiaoTi" href="columninfo.html">ubuntu20.04.2上安装nginx+php-fpm<br></a>
-                    </div>
-                    <div>
-                        <a style="font-size: 15px">虽说已经有很多ubuntu的安装教程了，但是今天我还是要写一篇这样的文章</a>
-                        <div style="position: relative;top: 25px">
-                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
-                            <a style="font-size: 13px">作者：</a>
-                            <a style="font-size: 17px">AAA</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/images/column/columnlist/CL-5.png" width="250" height="130">
-                </div>
-            </div>
-
-            <div class="row litixiaoguo" style="padding-top: 3rem;padding-bottom: 3rem;margin-left: 0">
-                <div class="col-8" style="padding-left: 2rem">
-                    <div>
-                        <a class="LieBiaoBiaoTi" href="columninfo.html">收藏 | 阿里程序员常用的 15 款开发者工具（2020 版）<br></a>
-                    </div>
-                    <div>
-                        <a style="font-size: 15px">本文精选了一些阿里经济体内部最受开发者欢迎的开发者工具，筛选出一些带有普适性同样适合外部开发者的，希望能助力开发者们提高开发效率。</a>
-                        <div style="position: relative;top: 25px">
-                            <img src="../assets/images/s1.jpg" class="YongHuTouXiang">
-                            <a style="font-size: 13px">作者：</a>
-                            <a style="font-size: 17px">AAA</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/images/column/columnlist/CL-6.png" width="250" height="130">
-                </div>
-            </div>
-
+                {{/each}}
+            </script>
         </div>
     </div>
 
-<!--    右侧栏-->
+    <!--    右侧栏-->
     <div class="col-2" style="margin-top: 4rem">
-        <div style="position: fixed;margin-top: 4rem;background-color: white;width: 15%;height: 100%">
-            <h1 style="background-color: #669966;text-align: center">热门作者</h1>
-            <div class="ReMenZuoZhe">
-                <div style="float: left">
-                    <img src="../assets/images/s1.jpg" class="YongHuTouXiang-CeLan">
-                </div>
-                <div style="margin-left: 60px">
-                    <a style="font-size: 20px;font-weight: bold">AAA</a>
-                    <p style="float: right">文章数：233</p>
-                    <p>经验极其丰富的程序员</p>
-                </div>
-            </div>
-            <span class="news-list-item-dot"></span>
-            <div class="ReMenZuoZhe">
-                <div style="float: left">
-                    <img src="../assets/images/s2.jpg" class="YongHuTouXiang-CeLan">
-                </div>
+        <div style="position: fixed;margin-top: 4rem;background-color: white;width: 15%;height: 100%" id="contR">
+            <script type="text/html" id="tcpRight">
+                {{each data3 as value i}}
+                <div class="ReMenZuoZhe">
+                        <div style="float: left">
+                            <img src="{{value.aimgurl}}" class="YongHuTouXiang-CeLan">
+                        </div>
 
-                <div style="margin-left: 60px">
-                    <a style="font-size: 20px;font-weight: bold">BBB</a>
-                    <p style="float: right">文章数：233</p>
-                    <p>参与过国内各大重要项目</p>
+                        <div style="margin-left: 60px">
+                            <a style="font-size: 20px;font-weight: bold">{{value.name}}</a>
+                            <p style="float: right">文章数：{{value.num}}</p>
+                            <p>{{value.description}}</p>
+                        </div>
                 </div>
-            </div>
-            <span class="news-list-item-dot"></span>
-            <div class="ReMenZuoZhe">
-                <div style="float: left">
-                    <img src="../assets/images/s3.jpg" class="YongHuTouXiang-CeLan">
-                </div>
-
-                <div style="margin-left: 60px">
-                    <a style="font-size: 20px;font-weight: bold">CCC</a>
-                    <p style="float: right">文章数：233</p>
-                    <p>十分熟悉硬件相关知识</p>
-                </div>
-            </div>
-            <span class="news-list-item-dot"></span>
-            <div class="ReMenZuoZhe">
-                <div style="float: left">
-                    <img src="../assets/images/s1.jpg" class="YongHuTouXiang-CeLan">
-                </div>
-
-                <div style="margin-left: 60px">
-                    <a style="font-size: 20px;font-weight: bold">DDD</a>
-                    <p style="float: right">文章数：233</p>
-
-                    <p>经验极其丰富的程序员</p>
-                </div>
-            </div>
-            <span class="news-list-item-dot"></span>
-            <div class="ReMenZuoZhe">
-                <div style="float: left">
-                    <img src="../assets/images/s2.jpg" class="YongHuTouXiang-CeLan">
-                </div>
-
-                <div style="margin-left: 60px">
-                    <a style="font-size: 20px;font-weight: bold">EEE</a>
-                    <p style="float: right">文章数：233</p>
-
-                    <p>参与过国内各大重要项目</p>
-                </div>
-            </div>
-
+                {{/each}}
+            </script>
         </div>
     </div>
     <div class="col-1"></div>
@@ -666,7 +583,7 @@
 
 
 <!-- Custom js -->
-<script type="text/javascript" src="../assets/js/custom.js"></script>
+<!--<script type="text/javascript" src="../assets/js/custom.js"></script>-->
 
 
 </body>
