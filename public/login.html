@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/login.css"/>
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/login/Suspended_window.js"></script>
+	<script type="text/javascript">
+		function del() {
+				let aa=document.getElementById('aa');
+				aa.submit();
+				parent.location.reload();
+		}
+	</script>
+</head>
+<body>
+	<form id="aa" action="/user/login" method="post">
+		<input class="a_input" id="username" type="text" name="username"  placeholder="账户或者邮箱"/><br/>
+		<input class="a_input" id="password" name="password"  placeholder="密码"><br/>
+		<input class="a_submit" id="sub" type="button"  value="Submit" onclick="del()"/>
+	</form>
+</body>
+</html>
