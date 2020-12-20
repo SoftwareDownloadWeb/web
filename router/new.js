@@ -12,21 +12,30 @@ r.get('/news',(req,res)=>{
     res.sendFile(path.join(__dirname,'../public/news.html'));
 })
 r.get('/hotnew',(req,res)=>{
-    console.log(req.query.username);
-    pool.query('select * from news',(err,result)=>{
-        if(err) throw err;
-        else{
-            console.log(result);
-            res.json(result);
-        }
-    });
+    let a=req.query.infotype;
+    if(a==="all"){
+        console.log(a);
+        pool.query('select * from news',(err,result)=>{
+            if(err) throw err;
+            else{
+                res.json(result);
+            }
+        });
+    }else {
+        console.log(a);
+        pool.query('select * from news where type=?',[a],(err,result)=>{
+            if(err) throw err;
+            else{
+                res.json(result);
+            }
+        });
+    }
 })
 r.get('/pageinfo',(req,res)=>{
     let a=req.query.num;
     pool.query('select * from detailnew where infoId=?',[a],(err,result)=>{
         if(err) throw err;
         else{
-            console.log(result);
             res.json(result);
         }
     });
@@ -39,7 +48,6 @@ r.get('/columninfo',(req,res)=>{
     pool.query('select * from detailnew where infoId=?',[id],(err,result)=>{
         if(err) throw err;
         else{
-            console.log(result);
             let json=JSON.stringify({
                 msg:"成功",
                 result:[{
