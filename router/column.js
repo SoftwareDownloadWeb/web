@@ -9,13 +9,11 @@ const r=express.Router();
 
 //中间处理各种数据
 r.get('/columns',(req,res)=>{
-    // res.redirect('http://baidu.com');
-    // res.send("h?");
     res.sendFile(path.join(__dirname,'../public/column.html'));
 })
+//热门专栏
 r.get('/columnList',(req,res)=>{
-    console.log("aa");
-    pool.query('select * from news',(err,result)=>{
+    pool.query('select * from news limit 6',(err,result)=>{
         if(err) throw err;
         else{
             console.log(result);
@@ -23,37 +21,49 @@ r.get('/columnList',(req,res)=>{
         }
     });
 })
+//页面跳转
 r.get('/columninfo',(req,res)=>{
     res.sendFile(path.join(__dirname,'../public/columninfo.html'));
 })
-//绑定onclick事件
-r.get('/detailinfo',(req,res)=>{
-    let id=req.query.num;
-    pool.query('select * from detailnew where infoId=?',[id],(err,result)=>{
+
+// 热门作者
+r.get('/authorList',(req,res)=>{
+    pool.query('select * from author order by num desc limit 6',(err,result)=>{
         if(err) throw err;
         else{
-            console.log(result);
-            let json=JSON.stringify({
-                msg:"成功",
-                result:[{
-                    "infoId":result[0].infoId,
-                    "name":result[0].name,
-                    "para1":result[0].para1,
-                    "para2":result[0].para2,
-                    "para3":result[0].para3,
-                    "para4":result[0].para4,
-                    "para5":result[0].para5,
-                    "para6":result[0].para6
-                }],
-                status:1
-            })
-
             res.json(result);
         }
-    });
+    })
 })
+r.get('/authorList2',(req,res)=>{
+    pool.query('select * from author',(err,result)=>{
+        if(err) throw err;
+        else{
+            res.json(result);
+        }
+    })
+})
+//轮播下的专栏内容
+r.get('/contList',(req,res)=>{
+    pool.query('select id,cols.name as cname,cols.description,imgurl,author.name as aname,aimgurl from cols,author where cols.id=author.aId',(err,result)=>{
+        if(err) throw err;
+        else{
+            res.json(result);
+        }
+    })
+})
+r.get('/cont',(req,res)=>{
+    let a=req.query.cnum;
+    console.log(a);
+    pool.query('select colcont.*,cols.name as cname from colcont,cols where ' +
+        'colcont.colId=cols.id and colcont.colId=?',[a],(err,result)=>{
+        if (err) throw err;
+        else{
+            console.log(result);
+            res.json(result);
+        }
+    })
 
-
-
+})
 //导出路由器
 module.exports=r;
