@@ -4,9 +4,9 @@ const express=require('express');
 const userRouter=require('./router/user');
 const newRouter=require('./router/new');
 const softRouter=require('./router/software');
-const indexRouter=require('./router/index');
 const columnRouter=require('./router/column');
 const bodyParser=require('body-parser');
+const cookieParser=require('cookie-parser');
 const app=express();
 
 app.listen(8888);
@@ -15,10 +15,12 @@ app.listen(8888);
 app.use(bodyParser.urlencoded({
     entended:false
 }))
+app.use(bodyParser.json())
+app.use(cookieParser())
 app.get('/',(req,res)=>{
-   // res.redirect("http://127.0.0.1:8888/index.html");
     res.sendFile(__dirname+'/index.html');
 })
+
 
 
 app.use('/public',express.static('./public'));
@@ -29,5 +31,4 @@ app.use('/node_modules',express.static('./node_modules'));
 app.use('/user',userRouter)
 app.use('/new',newRouter)
 app.use('/soft',softRouter)
-app.use('/index',indexRouter)
 app.use('/column',columnRouter)
