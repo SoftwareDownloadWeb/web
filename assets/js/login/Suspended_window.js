@@ -22,6 +22,6 @@ function login(type) {
         b.style.color="black";
         a.style.color="gray";
     }
-    iframe.src = "login/" + type + ".html";
+    iframe.src = "public/" + type + ".html";
     console.log(iframe.src);
 }
