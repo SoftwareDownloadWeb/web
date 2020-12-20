@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>主页-DOWNLOAD ME!</title>
+	<base href="/">
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
 	<!-- Font Awesome -->
@@ -42,7 +43,6 @@
 	<![endif]-->
 </head>
 <body>
-
 <!-- Start Header -->
 <header id="mu-header" class="" role="banner">
 	<div class="container">
@@ -58,7 +58,7 @@
 					</button>
 
 					<!--Text Logo-->
-					<a class="navbar-brand" href="">DOWNLOADME!</a>
+					<a class="navbar-brand" href="/">DOWNLOADME!</a>
 					<!-- Image Logo -->
 					<!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.jpeg"></a> -->
 				</div>
@@ -255,16 +255,6 @@
 											<div class="mu-pro-bar mu-jquery-bar">
 											</div>
 										</div>
-										<!-- Start Social Media -->
-										<!--<div class="mu-social-media">
-                                            <h3>Social</h3>
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </div>-->
-										<!-- Download Ressume Button -->
-										<!--<a href="#" class="mu-resume-btn">Download My Resume</a>-->
 									</div>
 								</div>
 								<!--news-->
@@ -272,7 +262,7 @@
 
 									<div class="mu-about-content-left row no-gutters">
 										<div class="see-more">
-											<a href="new/news"><h6>see more</h6></a>
+											<a href="/new/news"><h6>see more</h6></a>
 										</div>
 										<div class="row">
 											<div class="col-lg-6 cover cover-top news-top">
@@ -327,7 +317,7 @@
 						<div class="mu-service-content">
 							<div class="row">
 								<div class="see-more">
-									<a href="public/column.html"><h6>see more</h6></a>
+									<a href="/column/columns"><h6>see more</h6></a>
 								</div>
 
 								<!-- Service Single Content -->
@@ -478,28 +468,9 @@
 			</div>
 		</div>
 	</section>
-	<!-- End Software -->
 </main>
-<div class="a_XuanFu" id="XuanFu" onclick="login_test('XuanFu')">
-	<div class="a_login"  onclick="login_cancelBubble()">
-		<div class="a_login_left">
-			<img class="a_img" src="assets/images/logo.png">
-		</div>
-		<div class="a_login_right">
-			<div class="a_top">
-				<div id="a_login" class="a1_top" onclick="login('login')">
-					<p class="p_top" >登录</p>
-				</div>
-				<div id="a_register" class="a2_top" onclick="login('register')">
-					<p class="p_top">注册</p>
-				</div>
-			</div>
-			<iframe class="a_iframe" id="a_iframe" src="login/login.html"></iframe>
-		</div>
-	</div>
-</div>
-<!-- End main content -->
 
+<!-- End main content -->
 
 <!-- jQuery library -->
 <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
@@ -524,29 +495,72 @@
 
 <!-- Custom js -->
 <script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+<div class="a_XuanFu" id="XuanFu" onclick="login_test('XuanFu')">
+	<div class="a_login"  onclick="login_cancelBubble()">
+		<div class="a_login_left">
+		</div>
+		<div class="a_login_right">
+			<div class="a_top">
+				<div id="a_login" class="a1_top" onclick="login('login')">
+					<p class="p_top" >登录</p>
+				</div>
+				<div id="a_register" class="a2_top" onclick="login('register')">
+					<p class="p_top">注册</p>
+				</div>
+			</div>
+			<iframe class="a_iframe" id="a_iframe" src="public/login.html"></iframe>
+		</div>
+	</div>
+</div>
 <script type="text/javascript">
 	$(function () {
+		//设置cookie
+		function setCookie(cname, cvalue, exdays) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			var expires = "expires="+d.toUTCString();
+			document.cookie = cname + "=" + cvalue + "; " + expires;
+		}
+
 		let name;
+		let status;
+		console.log("Cookie:"+document.cookie);
 		let sum=document.cookie.split("; ");
-		console.log(sum.length);
 		for(let i=0;i<sum.length;i++){
 			let arr=sum[i].split("=");
-			if(arr[0]=="username"){
+			if(arr[0]==="username"){
 				name=arr[1];
-				console.log(name);
+			}
+			else if(arr[0]==="mystatus"){
+				status=arr[1];
+				console.log("status"+status);
 			}
 		}
-		if(name!="error" && name!=""){
-				alert(name+"登录成功！");
+		if(status=="log"){
+			setCookie("mystatus", "", -1);                  //删除cookie
+			if(name!="error" && name!=null){
+				alert("登录成功！");
 			}else if (name=="error") {
 				alert("用户名或密码错误！");
+				document.getElementById("XuanFu").style.display="block";
 				login('login');
 			}
+			setCookie("mystatus", "", -1);
+		}else if(status=="error"){
+			alert("该邮箱已被注册！");
+			setCookie("mystatus", "", -1);                  //删除cookie
+			document.getElementById("XuanFu").style.display="block";
+			login('register');
+		}else if (status=="success") {
+			alert("注册成功！");
+			setCookie("mystatus", "", -1);                  //删除cookie
+			document.getElementById("XuanFu").style.display="block";
+			login('login');
+		}
 	})
 
 </script>
-
-
-
 </body>
 </html>
