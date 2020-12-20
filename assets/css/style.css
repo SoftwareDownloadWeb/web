@@ -598,7 +598,7 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .no-gutters {
 	margin-right: 0;
@@ -606,10 +606,17 @@ button:focus {
 }
 
 .see-more{
-	padding-left: 90%;
+	padding-left: 88%;
 }
 .see-more h6{
-	color: #339999
+	color: #339999;
+}
+
+.see-more h6:hover,
+.see-more h6:focus{
+	color: #C3543C;
+	font-size: 20px;
+	-webkit-transition: all 0.5s;
 }
 
 .cover{
@@ -627,6 +634,22 @@ button:focus {
 	font-size: 15px;
 	margin-bottom: 20px;
 }
+
+.aLun-cover::after{
+	position: absolute;
+	content: '';
+	margin: 0 auto;
+	padding: 0 40px;
+	background: linear-gradient(to top,  #FFFFFF 30%, transparent);
+	top: 70%;
+	left: 2%;
+	height: 30%;
+	width: 96%;
+}
+.aLun-cover a{
+	text-align: center;
+}
+
 .cover::after{
 	position: absolute;
 	content: '';

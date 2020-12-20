@@ -31,6 +31,7 @@
     <!-- Poppins for Title -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/css/aLunStyle.css">
     <!-- 新 Bootstrap4 核心 CSS 文件 -->
     <!--        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
     <!---->
@@ -43,239 +44,11 @@
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/aLunStyle.css">
 
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <!--    art-template-->
     <script src="node_modules/art-template/lib/template-web.js"></script>
 
-    <style>
-        .section-title {
-            margin-bottom: 47px;
-            position: relative;
-        }
-        .section-title .sub-title {
-            /*color: var(--main-color);*/
-        }
-        .section-title h2 {
-            margin-bottom: 0;
-        }
-        .section-title p {
-            margin-bottom: 0;
-            margin-top: 13px;
-        }
-        .section-title a {
-            margin-top: 25px;
-        }
-
-        .btn-base {
-            color: #fff;
-            border: 0;
-            /*background: var(--main-color);*/
-        }
-        .btn-base:before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: #022334;
-            transform: scaleX(0);
-            transform-origin: 0 50%;
-            transition-duration: 0.4s;
-        }
-        .btn-base:hover, .btn-base:focus {
-            color: #fff;
-        }
-        .btn-base:hover:before, .btn-base:focus:before {
-            transform: scaleX(1);
-        }
-        .course-view-details-inner .details ul.price-area .btn-base {
-            margin-right: 10px;
-        }
-
-        .single-course-inner {
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 30px;
-        }
-        .single-course-inner .thumb {
-            overflow: hidden;
-            position: relative;
-        }
-        .single-course-inner .thumb img {
-            transition: 0.7s;
-        }
-        .single-course-inner .thumb .rating {
-            background: #f8f8f8;
-            height: 36px;
-            line-height: 36px;
-            padding: 0 22px;
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            border-radius: 0 6px 0 0;
-            font-size: 14px;
-            font-weight: 600;
-        }
-        .single-course-inner .thumb .rating i {
-            /*color: var(--main-color);*/
-        }
-        .single-course-inner .thumb .bookmark {
-            display: inline-block;
-            position: absolute;
-            right: 25px;
-            top: 20px;
-            color: #fff;
-            transition: 0.4s;
-        }
-        .single-course-inner .thumb .bookmark:hover {
-            /*color: var(--main-color);*/
-        }
-        .single-course-inner .details {
-            background: #f8f8f8;
-            padding: 25px 30px;
-            position: relative;
-        }
-        .single-course-inner .details .price {
-            height: 55px;
-            width: 55px;
-            line-height: 56px;
-            color: #fff;
-            font-weight: 500;
-            text-align: center;
-            /*background: var(--main-color);*/
-            display: inline-block;
-            position: absolute;
-            right: 20px;
-            top: -27px;
-            z-index: 2;
-            border-radius: 50%;
-        }
-        .single-course-inner .details .meta p {
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 0;
-        }
-        .single-course-inner .details h5 {
-            font-size: 18px;
-            margin-top: 12px;
-            margin-bottom: 25px;
-        }
-        .single-course-inner .details .price-inner p {
-            font-weight: 600;
-            margin-bottom: 0;
-            /*color: var(--heading-color);*/
-        }
-        .single-course-inner .details .price-inner a {
-            font-weight: 600;
-            /*color: var(--heading-color);*/
-        }
-        .single-course-inner .details .price-inner a:hover {
-            /*color: var(--main-color);*/
-        }
-        .single-course-inner:hover .thumb img {
-            transform: scale(1.1);
-        }
-        .single-course-inner.style-two .details {
-            padding: 25px 15px;
-        }
-
-        .carousel-indicators li{
-            width: 12px;
-            height: 12px;
-            background-color: #fff;
-            margin-left: 6px;
-            margin-right: 6px;
-            border-radius: 50%;
-        }
-        .carousel-indicators .active{
-            background-color: #0aa1ed;
-        }
-        .carousel-control-prev,
-        .carousel-control-next{
-            width: 4%;
-            height: 20%;
-            background-color: #aaaaaa;
-            top:40%;
-            border-radius: 0.25rem;
-        }
-
-        .celanbiaoti{
-            font-size: 20px;
-        }
-
-        .DivOfLunBoPic{
-            position: relative;
-        }
-        .TextOfLunBoPic{
-            position: absolute;
-            top: 15px;
-            left: 30px;
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .stroke {
-            -webkit-text-stroke: 1px white;
-        }
-
-        .linear {
-            width: 100%;
-            height: 600px;
-            FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#b8c4cb, endColorStr=red);
-            /*IE 6 7 8*/
-
-            background: -ms-linear-gradient(top, #033360, #006495);
-            /* IE 10 */
-
-            background: -moz-linear-gradient(top, #033360, #006495);
-            /*火狐*/
-
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#033360), to(#006495));
-            /*谷歌*/
-
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#033360), to(#006495));
-            /* Safari 4-5, Chrome 1-9*/
-
-            background: -webkit-linear-gradient(top, #033360, #006495);
-            /*Safari5.1 Chrome 10+*/
-
-            background: -o-linear-gradient(top, #033360, #006495);
-            /*Opera 11.10+*/
-        }
-
-        .YongHuTouXiang {
-            width:30px;
-            height:30px;
-            border-radius:100%;
-            overflow:hidden;
-        }
-
-        .YongHuTouXiang-CeLan {
-            width:50px;
-            height:50px;
-            border-radius:100%;
-            overflow:hidden;
-        }
-
-        .LieBiaoBiaoTi {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .ReMenZuoZhe {
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-bottom:solid 1px #2f2f2f;
-        }
-
-    </style>
 </head>
 <body style="background-color:#F0FFFF">
 
@@ -296,7 +69,7 @@
                     <!--Text Logo-->
                     <a class="navbar-brand" href="/">DOWNLOADME!</a>
                     <!-- Image Logo -->
-                    <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
+                    <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.jpeg"></a> -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
@@ -384,9 +157,9 @@
 
     <!--    左侧栏-->
     <div class="col-2" style="padding-left: 10rem;margin-top: 4rem">
-        <div style="position: fixed;margin-top: 4rem;background-color: white;height: 100%">
+        <div class="litixiaoguo" style="position: fixed;margin-top: 4rem;background-color: white;height: fit-content;width: 10%;border-radius: 10px">
             <h1 style="background-color: #669966;text-align: center">热门专栏</h1>
-            <ul style="text-align: left" id="contL">
+            <ul style="text-align: center" id="contL">
                 <script type="text/html" id="tcpLeft">
                     {{each data2 as value i}}
                     {{if value.type==="hot"}}
@@ -418,7 +191,7 @@
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
                     <!-- 指示符 -->
-                    <ul class="carousel-indicators">
+                    <ul class="carousel-indicators" style="margin: 0 auto;top: 403px">
                         <li data-target="#demo" data-slide-to="0" class="active"></li>
                         <li data-target="#demo" data-slide-to="1"></li>
                         <li data-target="#demo" data-slide-to="2"></li>
@@ -427,8 +200,8 @@
                     <!-- 轮播图片 -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="col-md-9 col-sm-6">
-                                <a class="TextOfLunBoPic stroke">深入理解PHP+Mysql分布式事务与解决方案</a>
+                            <div class="col-md-9 col-sm-6 aLun-cover">
+                                <a class="TextOfLunBoPic" style="color: darkslategray">深入理解PHP+Mysql分布式事务与解决方案</a>
                                 <a href="javascript:void(0)" onclick="detailInfo(1)"><img src="assets/images/column/LunBo/LB-1.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
                             <div class="col-md-3 col-sm-6" style="background-color: white">
@@ -440,8 +213,8 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-9 col-sm-6">
-                                <a class="TextOfLunBoPic stroke">你可能未曾使用的新 Java 特性</a>
+                            <div class="col-md-9 col-sm-6 aLun-cover">
+                                <a class="TextOfLunBoPic" style="color: darkslategray">你可能未曾使用的新 Java 特性</a>
                                 <a href="javascript:void(0)" onclick="detailInfo(2)"><img src="assets/images/column/LunBo/LB-2.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
                             <div class="col-md-3 col-sm-6" style="background-color: white">
@@ -453,8 +226,8 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-9 col-sm-6">
-                                <a class="TextOfLunBoPic stroke">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
+                            <div class="col-md-9 col-sm-6 aLun-cover">
+                                <a class="TextOfLunBoPic" style="color: darkslategray">支撑2715亿元海量订单 揭秘京东大促背后的数据库基石</a>
                                 <a href="javascript:void(0)" onclick="detailInfo(3)"><img src="assets/images/column/LunBo/LB-3.png" class="w-100" alt="" width="500" height="400"/></a>
                             </div>
                             <div class="col-md-3 col-sm-6" style="background-color: white">
@@ -509,7 +282,7 @@
 
     <!--    右侧栏-->
     <div class="col-2" style="margin-top: 4rem">
-        <div style="position: fixed;margin-top: 4rem;background-color: white;width: 15%;height: 100%" id="contR">
+        <div class="litixiaoguo" style="position: fixed;margin-top: 4rem;background-color: white;width: 15%;height: fit-content;border-radius: 10px" id="contR">
             <script type="text/html" id="tcpRight">
                 {{each data3 as value i}}
                 <div class="ReMenZuoZhe">
@@ -583,8 +356,7 @@
 
 
 <!-- Custom js -->
-<!--<script type="text/javascript" src="../assets/js/custom.js"></script>-->
-
+<script type="text/javascript" src="../assets/js/custom.js"></script>
 
 </body>
 </html>

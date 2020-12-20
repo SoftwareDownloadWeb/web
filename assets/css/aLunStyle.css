@@ -160,9 +160,9 @@
     padding: 0;
 }
 .news-list-item-dot{
-    height: 2px;
+    height: 1px;
     border-radius: 100%;
-    width: 100%;
+    width: 90%;
     display: inline-block;
     background-color: #339999;
 }
@@ -172,15 +172,15 @@
 }
 .TextOfLunBoPic{
     position: absolute;
-    top: 15px;
+    z-index: 3;
+    top: 78%;
     left: 30px;
+    width: 90%;
     font-size: 30px;
     font-weight: bold;
+    color: whitesmoke;
 }
 
-.stroke {
-    -webkit-text-stroke: 1px white;
-}
 
 .linear {
     width: 100%;
@@ -251,5 +251,5 @@
     width: 95%;
 }
 .litixiaoguo{
-    box-shadow: 0 0 5px 1px lightgray;
+    box-shadow: 0 0 10px 10px lightgray;
 }
